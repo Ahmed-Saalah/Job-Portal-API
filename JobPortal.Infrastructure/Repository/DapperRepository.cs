@@ -12,7 +12,7 @@ namespace JobPortal.Infrastructure.Repository
 
         public DapperRepository(IConfiguration configuration)
         {
-            _connectionString = configuration.GetConnectionString("Default");
+            _connectionString = configuration.GetConnectionString("Defult");
         }
 
         private IDbConnection CreateConnection() => new SqlConnection(_connectionString);

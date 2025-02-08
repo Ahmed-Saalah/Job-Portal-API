@@ -34,3 +34,32 @@ The project follows the **Clean Architecture** pattern with the following layers
 2. **Application:** Includes business logic such as use cases and service interfaces.
 3. **Infrastructure:** Handles database access, third-party services, and repository implementations.
 4. **API:** The entry point for clients, managing HTTP requests and responses.
+
+## API Endpoints
+
+### **Authentication**  
+- `POST /api/account/register` → Register a new user.  
+- `POST /api/account/login` → Authenticate and get a JWT token.  
+- `POST /api/account/refreshToken/{refreshToken}` → Refresh JWT token.  
+
+---
+
+### **Jobs**  
+- `GET /api/jobs` → Retrieve all jobs (Dapper).  
+- `GET /api/jobs/{id}` → Retrieve a job by its ID (Dapper).  
+- `GET /api/jobs/category/{categoryId}` → Retrieve jobs by category ID (Dapper).  
+- `POST /api/jobs` → Allows recruiters to create a new job (EF).  
+- `PUT /api/jobs/{id}` → Allows recruiters to update an existing job (EF).  
+- `DELETE /api/jobs/{id}` → Allows recruiters to delete a job (EF).  
+
+---
+
+### **Job Applications**  
+- `GET /api/jobapplications/job/{jobId}` → Retrieve all applications for a specific job (Dapper).  
+- `GET /api/jobapplications/user/{userId}/job/{jobId}` → Retrieve a specific user's application for a job (Dapper).  
+- `POST /api/jobapplications` → Allows job seekers to apply for a job (EF).  
+- `PUT /api/jobapplications/update-status-by-recruiter` → Allows recruiters to update the application status (EF).  
+- `PUT /api/jobapplications/update-job-application` → Allows job seekers to update the application (EF).  
+- `DELETE /api/jobapplications/{id}` → Allows job seekers to withdraw their application (EF).  
+
+---

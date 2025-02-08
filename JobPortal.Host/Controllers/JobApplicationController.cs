@@ -10,7 +10,7 @@ namespace JobPortal.Host.Controllers
     public class JobApplicationController(IJobApplicationService jobApplicationService) : ControllerBase
     {
         [Authorize(Roles = "Recruiter")]
-        [HttpGet("GetAllJobApplications/{id}")]
+        [HttpGet("job/{id}")]
         public async Task<IActionResult> GetAllJobApplications(Guid id)
         {
             var jobApplications = await jobApplicationService.GetAllJobApplicationsAsync(id);
@@ -19,10 +19,10 @@ namespace JobPortal.Host.Controllers
                 return NotFound("No job applications found for the given job ID.");
             
             return Ok(jobApplications);
-        } // DONE
+        } 
 
 
-        [HttpGet("GetJobApplicationByUserIdAndJobId/{userId}/{jobId}")]
+        [HttpGet("user/{userId}/job/{jobId}")]
         public async Task<IActionResult> GetJobApplicationByUserId(string userId, Guid jobId)
         {
             var userApplication = await jobApplicationService.GetJobApplicationByUserIdAsync(userId, jobId);
@@ -32,7 +32,7 @@ namespace JobPortal.Host.Controllers
             }
 
             return Ok(userApplication);
-        } // DONE
+        } 
 
         [HttpPost("add-job-application")]
         public async Task<IActionResult> Add([FromBody] CreateJobApplicationDTO jobApplication)
@@ -42,7 +42,7 @@ namespace JobPortal.Host.Controllers
 
             var result = await jobApplicationService.AddAsync(jobApplication);
             return result.Success ? Ok(result) : BadRequest(result);
-        } // DONE
+        }
 
         [Authorize(Roles = "JobSeeker")]
         [HttpPut("update-job-application")]
@@ -55,8 +55,8 @@ namespace JobPortal.Host.Controllers
             return result.Success ? Ok(result) : BadRequest(result);
         }
         
-        [Authorize(Roles = "JobSeeker")]
-        [HttpPut("update-job-application-status")]
+        [Authorize(Roles = "Recruiter")]
+        [HttpPut("update-status-by-recruiter")]
         public async Task<IActionResult> UpdateJobApplicationStatus([FromBody] UpdateJobApplicationStatusDTO jobApplication)
         {
             if (!ModelState.IsValid)

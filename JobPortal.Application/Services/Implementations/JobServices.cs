@@ -37,6 +37,15 @@ namespace JobPortal.Application.Services.Implementations
             return mapper.Map<IEnumerable<GetJobDTO>>(rawData);
         }
 
+        public async Task<IEnumerable<GetJobDTO>> GetAllByCategoryIdAsync(Guid categoryId)
+        {
+            var rawData = await unitOfWork.Jobs.FindAsync(j => j.CategoryId == categoryId);
+            if (!rawData.Any())
+                return [];
+
+            return mapper.Map<IEnumerable<GetJobDTO>>(rawData);
+        }
+
         public async Task<GetJobDTO> GetByIdAsync(Guid id)
         {
             var rawData = await unitOfWork.Jobs.GetByIdAsync(id);

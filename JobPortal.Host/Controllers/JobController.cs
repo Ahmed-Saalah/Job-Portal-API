@@ -7,7 +7,7 @@ namespace JobPortal.Host.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class Job(IJobServices jobServices) : ControllerBase
+    public class JobController(IJobServices jobServices) : ControllerBase
     {
         [HttpGet("get-all-jobs")]
         public async Task<IActionResult> GetAll()
@@ -30,6 +30,17 @@ namespace JobPortal.Host.Controllers
             return Ok(job);
         }
 
+        [HttpGet("category/{categoryId}")]
+        public async Task<IActionResult> GetAllByCategory(Guid categoryId)
+        {
+            var jobs = await jobServices.GetAllByCategoryIdAsync(categoryId);
+            if (jobs == null)
+            {
+                return NotFound(jobs);
+            }
+            return Ok(jobs);
+        }
+        
         [Authorize(Roles = "Recruiter")]
         [HttpPost("add-job")]
         public async Task<IActionResult> Add(CreateJob job)

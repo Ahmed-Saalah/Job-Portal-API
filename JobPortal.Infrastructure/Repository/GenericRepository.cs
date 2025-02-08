@@ -9,12 +9,14 @@ namespace JobPortal.Infrastructure.Repository
     {
         private readonly AppDbContext _context;
         private readonly DbSet<T> _dbSet;
-        public GenericRepository(AppDbContext context)
+        private readonly IDapperRepository<T> _dapperRepository;
+        public GenericRepository(AppDbContext context, IDapperRepository<T> dapperRepository)
         {
             _context = context;
             _dbSet = _context.Set<T>();
+            _dapperRepository = dapperRepository;
         }
-       
+
         public async Task<int> AddAsync(T entity)
         {
             await _dbSet.AddAsync(entity);
@@ -32,19 +34,20 @@ namespace JobPortal.Infrastructure.Repository
             return 0;
         }
 
-        public async Task<IEnumerable<T>> FindAsync(Expression<Func<T, bool>> predicate)
-        {
-            return await _dbSet.Where(predicate).ToListAsync();
-        }
-
         public async Task<IEnumerable<T>> GetAllAsync()
         {
-            return await _dbSet.AsNoTracking().ToListAsync();
+            string query = $"SELECT * FROM {typeof(T).Name}s";
+            return await _dapperRepository.GetAllAsync(query);
         }
 
         public async Task<T> GetByIdAsync(Guid id)
         {
-            return await _dbSet.FindAsync(id);
+            string query = $"SELECT * FROM {typeof(T).Name}s WHERE Id = @Id";
+            return await _dapperRepository.GetByIdAsync(query, new { Id = id });
+        }
+        public async Task<IEnumerable<T>> FindAsync(Expression<Func<T, bool>> predicate)
+        {
+            return await _dbSet.Where(predicate).ToListAsync();
         }
 
         public async Task SaveAsync()
