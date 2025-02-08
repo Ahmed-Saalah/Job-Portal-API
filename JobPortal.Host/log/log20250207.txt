@@ -1,0 +1,967 @@
+2025-02-07 00:01:24.229 +02:00 [INF] Application is building...
+2025-02-07 00:01:24.777 +02:00 [INF] User profile is available. Using 'C:\Users\ahmed salah\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-02-07 00:01:24.921 +02:00 [INF] Application is running...
+2025-02-07 00:01:25.091 +02:00 [INF] Now listening on: http://localhost:5093
+2025-02-07 00:01:25.155 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-02-07 00:01:25.156 +02:00 [INF] Hosting environment: Development
+2025-02-07 00:01:25.157 +02:00 [INF] Content root path: D:\Projects\JobPortal\JobPortal.Host
+2025-02-07 00:01:25.891 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5093/swagger/index.html - null null
+2025-02-07 00:01:26.122 +02:00 [INF] HTTP GET /swagger/index.html responded 200 in 49.1226 ms
+2025-02-07 00:01:26.126 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5093/_framework/aspnetcore-browser-refresh.js - null null
+2025-02-07 00:01:26.131 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5093/swagger/index.html - 200 null text/html;charset=utf-8 255.619ms
+2025-02-07 00:01:26.133 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5093/_framework/aspnetcore-browser-refresh.js - 200 13780 application/javascript; charset=utf-8 7.2135ms
+2025-02-07 00:01:26.135 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5093/_vs/browserLink - null null
+2025-02-07 00:01:26.168 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5093/_vs/browserLink - 200 null text/javascript; charset=UTF-8 33.728ms
+2025-02-07 00:01:26.243 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5093/swagger/v1/swagger.json - null null
+2025-02-07 00:01:26.275 +02:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 24.1928 ms
+2025-02-07 00:01:26.280 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5093/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 37.0955ms
+2025-02-07 00:01:29.830 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5093/api/Job/get-all-jobs - null null
+2025-02-07 00:01:29.862 +02:00 [WRN] Failed to determine the https port for redirect.
+2025-02-07 00:01:29.865 +02:00 [INF] Executing endpoint 'JobPortal.Host.Controllers.Job.GetAll (JobPortal.Host)'
+2025-02-07 00:01:29.880 +02:00 [INF] Route matched with {action = "GetAll", controller = "Job", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller JobPortal.Host.Controllers.Job (JobPortal.Host).
+2025-02-07 00:01:30.369 +02:00 [WRN] No store type was specified for the decimal property 'SalaryMax' on entity type 'Job'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2025-02-07 00:01:30.373 +02:00 [WRN] No store type was specified for the decimal property 'SalaryMin' on entity type 'Job'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2025-02-07 00:01:36.805 +02:00 [INF] Executed DbCommand (140ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [j].[Id], [j].[CategoryId], [j].[CompanyId], [j].[Description], [j].[EmploymentType], [j].[ExperienceLevel], [j].[Location], [j].[Requirements], [j].[Responsibilities], [j].[SalaryMax], [j].[SalaryMin], [j].[Status], [j].[Title]
+FROM [Jobs] AS [j]
+2025-02-07 00:01:39.023 +02:00 [INF] Executed action JobPortal.Host.Controllers.Job.GetAll (JobPortal.Host) in 9139.9151ms
+2025-02-07 00:01:39.026 +02:00 [INF] Executed endpoint 'JobPortal.Host.Controllers.Job.GetAll (JobPortal.Host)'
+2025-02-07 00:01:49.930 +02:00 [ERR] Unknwon exception
+AutoMapper.AutoMapperMappingException: Error mapping types.
+
+Mapping types:
+List`1 -> IEnumerable`1
+System.Collections.Generic.List`1[[JobPortal.Domain.Entities.Job, JobPortal.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] -> System.Collections.Generic.IEnumerable`1[[JobPortal.Application.DTOs.Job.GetJobDTO, JobPortal.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]
+ ---> AutoMapper.AutoMapperMappingException: Missing type map configuration or unsupported mapping.
+
+Mapping types:
+Job -> GetJobDTO
+JobPortal.Domain.Entities.Job -> JobPortal.Application.DTOs.Job.GetJobDTO
+   at lambda_method42(Closure, Job, GetJobDTO, ResolutionContext)
+   at lambda_method41(Closure, Object, IEnumerable`1, ResolutionContext)
+   --- End of inner exception stack trace ---
+   at lambda_method41(Closure, Object, IEnumerable`1, ResolutionContext)
+   at JobPortal.Application.Services.Implementations.JobServices.GetAllAsync() in D:\Projects\JobPortal\JobPortal.Application\Services\Implementations\JobServices.cs:line 37
+   at JobPortal.Host.Controllers.Job.GetAll() in D:\Projects\JobPortal\JobPortal.Host\Controllers\Job.cs:line 15
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at JobPortal.Infrastructure.Middleware.ExceptionHandlingMiddleware.InvokeAsync(HttpContext context) in D:\Projects\JobPortal\JobPortal.Infrastructure\Middleware\ExceptionHandlingMiddleware.cs:line 20
+2025-02-07 00:01:52.689 +02:00 [ERR] HTTP GET /api/Job/get-all-jobs responded 500 in 22842.3203 ms
+2025-02-07 00:01:52.696 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5093/api/Job/get-all-jobs - 500 null application/json 22866.16ms
+2025-02-07 00:02:57.761 +02:00 [INF] Application is building...
+2025-02-07 00:02:57.927 +02:00 [INF] User profile is available. Using 'C:\Users\ahmed salah\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-02-07 00:02:58.010 +02:00 [INF] Application is running...
+2025-02-07 00:02:58.063 +02:00 [INF] Now listening on: http://localhost:5093
+2025-02-07 00:02:58.094 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-02-07 00:02:58.096 +02:00 [INF] Hosting environment: Development
+2025-02-07 00:02:58.097 +02:00 [INF] Content root path: D:\Projects\JobPortal\JobPortal.Host
+2025-02-07 00:02:58.320 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5093/swagger/index.html - null null
+2025-02-07 00:02:58.480 +02:00 [INF] HTTP GET /swagger/index.html responded 200 in 39.1512 ms
+2025-02-07 00:02:58.483 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5093/_framework/aspnetcore-browser-refresh.js - null null
+2025-02-07 00:02:58.485 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5093/swagger/index.html - 200 null text/html;charset=utf-8 167.5268ms
+2025-02-07 00:02:58.489 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5093/_framework/aspnetcore-browser-refresh.js - 200 13780 application/javascript; charset=utf-8 5.9803ms
+2025-02-07 00:02:58.493 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5093/_vs/browserLink - null null
+2025-02-07 00:02:58.516 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5093/_vs/browserLink - 200 null text/javascript; charset=UTF-8 23.2109ms
+2025-02-07 00:02:58.575 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5093/swagger/v1/swagger.json - null null
+2025-02-07 00:02:58.588 +02:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 8.7695 ms
+2025-02-07 00:02:58.590 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5093/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 14.7275ms
+2025-02-07 00:03:01.428 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5093/api/Job/get-all-jobs - null null
+2025-02-07 00:03:01.440 +02:00 [WRN] Failed to determine the https port for redirect.
+2025-02-07 00:03:01.443 +02:00 [INF] Executing endpoint 'JobPortal.Host.Controllers.Job.GetAll (JobPortal.Host)'
+2025-02-07 00:03:01.451 +02:00 [INF] Route matched with {action = "GetAll", controller = "Job", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller JobPortal.Host.Controllers.Job (JobPortal.Host).
+2025-02-07 00:03:01.824 +02:00 [WRN] No store type was specified for the decimal property 'SalaryMax' on entity type 'Job'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2025-02-07 00:03:01.828 +02:00 [WRN] No store type was specified for the decimal property 'SalaryMin' on entity type 'Job'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2025-02-07 00:03:02.757 +02:00 [INF] Executed DbCommand (115ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [j].[Id], [j].[CategoryId], [j].[CompanyId], [j].[Description], [j].[EmploymentType], [j].[ExperienceLevel], [j].[Location], [j].[Requirements], [j].[Responsibilities], [j].[SalaryMax], [j].[SalaryMin], [j].[Status], [j].[Title]
+FROM [Jobs] AS [j]
+2025-02-07 00:03:02.803 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[JobPortal.Application.DTOs.Job.GetJobDTO, JobPortal.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-02-07 00:03:02.827 +02:00 [INF] Executed action JobPortal.Host.Controllers.Job.GetAll (JobPortal.Host) in 1371.7742ms
+2025-02-07 00:03:02.830 +02:00 [INF] Executed endpoint 'JobPortal.Host.Controllers.Job.GetAll (JobPortal.Host)'
+2025-02-07 00:03:02.831 +02:00 [INF] HTTP GET /api/Job/get-all-jobs responded 200 in 1395.1430 ms
+2025-02-07 00:03:02.836 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5093/api/Job/get-all-jobs - 200 null application/json; charset=utf-8 1408.0665ms
+2025-02-07 00:06:46.587 +02:00 [INF] Application is building...
+2025-02-07 00:06:46.742 +02:00 [INF] User profile is available. Using 'C:\Users\ahmed salah\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-02-07 00:06:46.802 +02:00 [INF] Application is running...
+2025-02-07 00:06:46.851 +02:00 [INF] Now listening on: http://localhost:5093
+2025-02-07 00:06:46.880 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-02-07 00:06:46.883 +02:00 [INF] Hosting environment: Development
+2025-02-07 00:06:46.885 +02:00 [INF] Content root path: D:\Projects\JobPortal\JobPortal.Host
+2025-02-07 00:06:47.045 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5093/swagger/index.html - null null
+2025-02-07 00:06:47.144 +02:00 [INF] HTTP GET /swagger/index.html responded 200 in 31.2440 ms
+2025-02-07 00:06:47.151 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5093/swagger/index.html - 200 null text/html;charset=utf-8 107.1279ms
+2025-02-07 00:06:47.157 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5093/_vs/browserLink - null null
+2025-02-07 00:06:47.159 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5093/_framework/aspnetcore-browser-refresh.js - null null
+2025-02-07 00:06:47.163 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5093/_framework/aspnetcore-browser-refresh.js - 200 13780 application/javascript; charset=utf-8 4.1477ms
+2025-02-07 00:06:47.180 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5093/_vs/browserLink - 200 null text/javascript; charset=UTF-8 23.0778ms
+2025-02-07 00:06:47.324 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5093/swagger/v1/swagger.json - null null
+2025-02-07 00:06:47.338 +02:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 8.3795 ms
+2025-02-07 00:06:47.342 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5093/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 17.38ms
+2025-02-07 00:06:52.942 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5093/api/Job/get-all-jobs - null null
+2025-02-07 00:06:52.962 +02:00 [WRN] Failed to determine the https port for redirect.
+2025-02-07 00:06:52.965 +02:00 [INF] Executing endpoint 'JobPortal.Host.Controllers.Job.GetAll (JobPortal.Host)'
+2025-02-07 00:06:52.976 +02:00 [INF] Route matched with {action = "GetAll", controller = "Job", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller JobPortal.Host.Controllers.Job (JobPortal.Host).
+2025-02-07 00:06:53.349 +02:00 [WRN] No store type was specified for the decimal property 'SalaryMax' on entity type 'Job'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2025-02-07 00:06:53.354 +02:00 [WRN] No store type was specified for the decimal property 'SalaryMin' on entity type 'Job'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2025-02-07 00:06:54.367 +02:00 [INF] Executed DbCommand (128ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [j].[Id], [j].[CategoryId], [j].[CompanyId], [j].[Description], [j].[EmploymentType], [j].[ExperienceLevel], [j].[Location], [j].[Requirements], [j].[Responsibilities], [j].[SalaryMax], [j].[SalaryMin], [j].[Status], [j].[Title]
+FROM [Jobs] AS [j]
+2025-02-07 00:06:54.406 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[JobPortal.Application.DTOs.Job.GetJobDTO, JobPortal.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-02-07 00:06:54.432 +02:00 [INF] Executed action JobPortal.Host.Controllers.Job.GetAll (JobPortal.Host) in 1451.6799ms
+2025-02-07 00:06:54.435 +02:00 [INF] Executed endpoint 'JobPortal.Host.Controllers.Job.GetAll (JobPortal.Host)'
+2025-02-07 00:06:54.437 +02:00 [INF] HTTP GET /api/Job/get-all-jobs responded 200 in 1479.1158 ms
+2025-02-07 00:06:54.444 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5093/api/Job/get-all-jobs - 200 null application/json; charset=utf-8 1501.637ms
+2025-02-07 00:09:14.327 +02:00 [INF] Application is building...
+2025-02-07 00:09:14.487 +02:00 [INF] User profile is available. Using 'C:\Users\ahmed salah\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-02-07 00:09:14.550 +02:00 [INF] Application is running...
+2025-02-07 00:09:14.599 +02:00 [INF] Now listening on: http://localhost:5093
+2025-02-07 00:09:14.628 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-02-07 00:09:14.630 +02:00 [INF] Hosting environment: Development
+2025-02-07 00:09:14.633 +02:00 [INF] Content root path: D:\Projects\JobPortal\JobPortal.Host
+2025-02-07 00:09:14.995 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5093/swagger/index.html - null null
+2025-02-07 00:09:15.168 +02:00 [INF] HTTP GET /swagger/index.html responded 200 in 54.3009 ms
+2025-02-07 00:09:15.171 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5093/_framework/aspnetcore-browser-refresh.js - null null
+2025-02-07 00:09:15.174 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5093/swagger/index.html - 200 null text/html;charset=utf-8 180.7132ms
+2025-02-07 00:09:15.176 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5093/_framework/aspnetcore-browser-refresh.js - 200 13780 application/javascript; charset=utf-8 4.3978ms
+2025-02-07 00:09:15.181 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5093/_vs/browserLink - null null
+2025-02-07 00:09:15.207 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5093/_vs/browserLink - 200 null text/javascript; charset=UTF-8 26.7894ms
+2025-02-07 00:09:15.257 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5093/swagger/v1/swagger.json - null null
+2025-02-07 00:09:15.267 +02:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 6.5277 ms
+2025-02-07 00:09:15.273 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5093/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 16.151ms
+2025-02-07 00:10:48.939 +02:00 [INF] Application is building...
+2025-02-07 00:10:49.080 +02:00 [INF] User profile is available. Using 'C:\Users\ahmed salah\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-02-07 00:10:49.139 +02:00 [INF] Application is running...
+2025-02-07 00:10:49.188 +02:00 [INF] Now listening on: http://localhost:5093
+2025-02-07 00:10:49.217 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-02-07 00:10:49.220 +02:00 [INF] Hosting environment: Development
+2025-02-07 00:10:49.221 +02:00 [INF] Content root path: D:\Projects\JobPortal\JobPortal.Host
+2025-02-07 00:10:49.435 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5093/swagger/index.html - null null
+2025-02-07 00:10:49.539 +02:00 [INF] HTTP GET /swagger/index.html responded 200 in 33.8350 ms
+2025-02-07 00:10:49.546 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5093/swagger/index.html - 200 null text/html;charset=utf-8 111.6799ms
+2025-02-07 00:10:49.550 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5093/_vs/browserLink - null null
+2025-02-07 00:10:49.552 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5093/_framework/aspnetcore-browser-refresh.js - null null
+2025-02-07 00:10:49.555 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5093/_framework/aspnetcore-browser-refresh.js - 200 13780 application/javascript; charset=utf-8 3.6484ms
+2025-02-07 00:10:49.573 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5093/_vs/browserLink - 200 null text/javascript; charset=UTF-8 23.1828ms
+2025-02-07 00:10:49.740 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5093/swagger/v1/swagger.json - null null
+2025-02-07 00:10:49.751 +02:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 6.2030 ms
+2025-02-07 00:10:49.755 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5093/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 15.4339ms
+2025-02-07 00:10:57.091 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5093/api/Job/get-all-jobs - null null
+2025-02-07 00:10:57.103 +02:00 [WRN] Failed to determine the https port for redirect.
+2025-02-07 00:10:57.106 +02:00 [INF] Executing endpoint 'JobPortal.Host.Controllers.Job.GetAll (JobPortal.Host)'
+2025-02-07 00:10:57.116 +02:00 [INF] Route matched with {action = "GetAll", controller = "Job", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller JobPortal.Host.Controllers.Job (JobPortal.Host).
+2025-02-07 00:10:57.501 +02:00 [WRN] No store type was specified for the decimal property 'SalaryMax' on entity type 'Job'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2025-02-07 00:10:57.505 +02:00 [WRN] No store type was specified for the decimal property 'SalaryMin' on entity type 'Job'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2025-02-07 00:10:58.486 +02:00 [INF] Executed DbCommand (128ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [j].[Id], [j].[CategoryId], [j].[CompanyId], [j].[Description], [j].[EmploymentType], [j].[ExperienceLevel], [j].[Location], [j].[Requirements], [j].[Responsibilities], [j].[SalaryMax], [j].[SalaryMin], [j].[Status], [j].[Title]
+FROM [Jobs] AS [j]
+2025-02-07 00:10:58.523 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[JobPortal.Application.DTOs.Job.GetJobDTO, JobPortal.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-02-07 00:10:58.548 +02:00 [INF] Executed action JobPortal.Host.Controllers.Job.GetAll (JobPortal.Host) in 1427.5361ms
+2025-02-07 00:10:58.551 +02:00 [INF] Executed endpoint 'JobPortal.Host.Controllers.Job.GetAll (JobPortal.Host)'
+2025-02-07 00:10:58.552 +02:00 [INF] HTTP GET /api/Job/get-all-jobs responded 200 in 1453.4316 ms
+2025-02-07 00:10:58.557 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5093/api/Job/get-all-jobs - 200 null application/json; charset=utf-8 1465.613ms
+2025-02-07 00:12:03.612 +02:00 [INF] Application is building...
+2025-02-07 00:12:04.084 +02:00 [INF] User profile is available. Using 'C:\Users\ahmed salah\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-02-07 00:12:04.212 +02:00 [INF] Application is running...
+2025-02-07 00:12:04.336 +02:00 [INF] Now listening on: http://localhost:5093
+2025-02-07 00:12:04.368 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-02-07 00:12:04.371 +02:00 [INF] Hosting environment: Development
+2025-02-07 00:12:04.372 +02:00 [INF] Content root path: D:\Projects\JobPortal\JobPortal.Host
+2025-02-07 00:12:04.862 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5093/swagger/index.html - null null
+2025-02-07 00:12:05.182 +02:00 [INF] HTTP GET /swagger/index.html responded 200 in 63.5086 ms
+2025-02-07 00:12:05.193 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5093/_framework/aspnetcore-browser-refresh.js - null null
+2025-02-07 00:12:05.193 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5093/_vs/browserLink - null null
+2025-02-07 00:12:05.196 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5093/swagger/index.html - 200 null text/html;charset=utf-8 345.8108ms
+2025-02-07 00:12:05.200 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5093/_framework/aspnetcore-browser-refresh.js - 200 13780 application/javascript; charset=utf-8 6.7676ms
+2025-02-07 00:12:05.247 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5093/_vs/browserLink - 200 null text/javascript; charset=UTF-8 53.8732ms
+2025-02-07 00:12:05.292 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5093/swagger/v1/swagger.json - null null
+2025-02-07 00:12:05.301 +02:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 5.7739 ms
+2025-02-07 00:12:05.302 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5093/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 10.2848ms
+2025-02-07 00:12:12.015 +02:00 [INF] Request starting HTTP/1.1 PUT http://localhost:5093/api/job/update-job - application/json 322
+2025-02-07 00:12:12.090 +02:00 [WRN] Failed to determine the https port for redirect.
+2025-02-07 00:12:12.098 +02:00 [INF] Executing endpoint 'JobPortal.Host.Controllers.Job.Update (JobPortal.Host)'
+2025-02-07 00:12:12.117 +02:00 [INF] Route matched with {action = "Update", controller = "Job", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Update(JobPortal.Application.DTOs.Job.UpdateJob) on controller JobPortal.Host.Controllers.Job (JobPortal.Host).
+2025-02-07 00:12:12.614 +02:00 [WRN] No store type was specified for the decimal property 'SalaryMax' on entity type 'Job'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2025-02-07 00:12:12.618 +02:00 [WRN] No store type was specified for the decimal property 'SalaryMin' on entity type 'Job'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2025-02-07 00:12:23.729 +02:00 [INF] Executed DbCommand (221ms) [Parameters=[@p12='?' (DbType = Guid), @p0='?' (DbType = Guid), @p1='?' (DbType = Guid), @p2='?' (Size = 4000), @p3='?' (Size = 4000), @p4='?' (Size = 4000), @p5='?' (Size = 4000), @p6='?' (Size = 4000), @p7='?' (Size = 4000), @p8='?' (Precision = 18) (Scale = 2) (DbType = Decimal), @p9='?' (Precision = 18) (Scale = 2) (DbType = Decimal), @p10='?' (Size = 4000), @p11='?' (Size = 50)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [Jobs] SET [CategoryId] = @p0, [CompanyId] = @p1, [Description] = @p2, [EmploymentType] = @p3, [ExperienceLevel] = @p4, [Location] = @p5, [Requirements] = @p6, [Responsibilities] = @p7, [SalaryMax] = @p8, [SalaryMin] = @p9, [Status] = @p10, [Title] = @p11
+OUTPUT 1
+WHERE [Id] = @p12;
+2025-02-07 00:12:23.827 +02:00 [ERR] An exception occurred in the database while saving changes for context type 'JobPortal.Infrastructure.Data.AppDbContext'.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The UPDATE statement conflicted with the FOREIGN KEY constraint "FK_Jobs_Categories_CategoryId". The conflict occurred in database "JobPortalAppDb", table "dbo.Categories", column 'Id'.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryHasMoreRows(Boolean& moreRows)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryReadInternal(Boolean setTimeout, Boolean& more)
+   at Microsoft.Data.SqlClient.SqlDataReader.ReadAsyncExecute(Task task, Object state)
+   at Microsoft.Data.SqlClient.SqlDataReader.InvokeAsyncCall[T](SqlDataReaderBaseAsyncCallContext`1 context)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSetWithRowsAffectedOnlyAsync(Int32 commandIndex, RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeAsync(RelationalDataReader reader, CancellationToken cancellationToken)
+ClientConnectionId:e3dbe6e9-5e87-40ef-9f62-b70470b23f28
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeAsync(RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.<>c__DisplayClass30_0`2.<<ExecuteAsync>b__0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteImplementationAsync[TState,TResult](Func`4 operation, Func`4 verifySucceeded, TState state, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteImplementationAsync[TState,TResult](Func`4 operation, Func`4 verifySucceeded, TState state, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The UPDATE statement conflicted with the FOREIGN KEY constraint "FK_Jobs_Categories_CategoryId". The conflict occurred in database "JobPortalAppDb", table "dbo.Categories", column 'Id'.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryHasMoreRows(Boolean& moreRows)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryReadInternal(Boolean setTimeout, Boolean& more)
+   at Microsoft.Data.SqlClient.SqlDataReader.ReadAsyncExecute(Task task, Object state)
+   at Microsoft.Data.SqlClient.SqlDataReader.InvokeAsyncCall[T](SqlDataReaderBaseAsyncCallContext`1 context)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSetWithRowsAffectedOnlyAsync(Int32 commandIndex, RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeAsync(RelationalDataReader reader, CancellationToken cancellationToken)
+ClientConnectionId:e3dbe6e9-5e87-40ef-9f62-b70470b23f28
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeAsync(RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.<>c__DisplayClass30_0`2.<<ExecuteAsync>b__0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteImplementationAsync[TState,TResult](Func`4 operation, Func`4 verifySucceeded, TState state, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteImplementationAsync[TState,TResult](Func`4 operation, Func`4 verifySucceeded, TState state, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+2025-02-07 00:12:24.123 +02:00 [INF] Executed action JobPortal.Host.Controllers.Job.Update (JobPortal.Host) in 11999.1355ms
+2025-02-07 00:12:24.127 +02:00 [INF] Executed endpoint 'JobPortal.Host.Controllers.Job.Update (JobPortal.Host)'
+2025-02-07 00:16:46.744 +02:00 [INF] Application is building...
+2025-02-07 00:16:47.157 +02:00 [INF] User profile is available. Using 'C:\Users\ahmed salah\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-02-07 00:16:47.267 +02:00 [INF] Application is running...
+2025-02-07 00:16:47.407 +02:00 [INF] Now listening on: http://localhost:5093
+2025-02-07 00:16:47.441 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-02-07 00:16:47.444 +02:00 [INF] Hosting environment: Development
+2025-02-07 00:16:47.445 +02:00 [INF] Content root path: D:\Projects\JobPortal\JobPortal.Host
+2025-02-07 00:16:47.906 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5093/swagger/index.html - null null
+2025-02-07 00:16:48.179 +02:00 [INF] HTTP GET /swagger/index.html responded 200 in 70.6167 ms
+2025-02-07 00:16:48.185 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5093/swagger/index.html - 200 null text/html;charset=utf-8 285.9916ms
+2025-02-07 00:16:48.186 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5093/_framework/aspnetcore-browser-refresh.js - null null
+2025-02-07 00:16:48.193 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5093/_vs/browserLink - null null
+2025-02-07 00:16:48.197 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5093/_framework/aspnetcore-browser-refresh.js - 200 13780 application/javascript; charset=utf-8 12.036ms
+2025-02-07 00:16:48.241 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5093/_vs/browserLink - 200 null text/javascript; charset=UTF-8 48.6174ms
+2025-02-07 00:16:48.285 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5093/swagger/v1/swagger.json - null null
+2025-02-07 00:16:48.308 +02:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 17.1444 ms
+2025-02-07 00:16:48.311 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5093/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 25.7725ms
+2025-02-07 00:17:04.074 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5093/api/Job/get-all-jobs - null null
+2025-02-07 00:17:04.107 +02:00 [WRN] Failed to determine the https port for redirect.
+2025-02-07 00:17:04.110 +02:00 [INF] Executing endpoint 'JobPortal.Host.Controllers.Job.GetAll (JobPortal.Host)'
+2025-02-07 00:17:04.120 +02:00 [INF] Route matched with {action = "GetAll", controller = "Job", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller JobPortal.Host.Controllers.Job (JobPortal.Host).
+2025-02-07 00:17:04.599 +02:00 [WRN] No store type was specified for the decimal property 'SalaryMax' on entity type 'Job'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2025-02-07 00:17:04.602 +02:00 [WRN] No store type was specified for the decimal property 'SalaryMin' on entity type 'Job'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2025-02-07 00:17:05.642 +02:00 [INF] Executed DbCommand (112ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [j].[Id], [j].[CategoryId], [j].[CompanyId], [j].[Description], [j].[EmploymentType], [j].[ExperienceLevel], [j].[Location], [j].[Requirements], [j].[Responsibilities], [j].[SalaryMax], [j].[SalaryMin], [j].[Status], [j].[Title]
+FROM [Jobs] AS [j]
+2025-02-07 00:17:05.691 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[JobPortal.Application.DTOs.Job.GetJobDTO, JobPortal.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-02-07 00:17:05.720 +02:00 [INF] Executed action JobPortal.Host.Controllers.Job.GetAll (JobPortal.Host) in 1595.5696ms
+2025-02-07 00:17:05.724 +02:00 [INF] Executed endpoint 'JobPortal.Host.Controllers.Job.GetAll (JobPortal.Host)'
+2025-02-07 00:17:05.726 +02:00 [INF] HTTP GET /api/Job/get-all-jobs responded 200 in 1635.5660 ms
+2025-02-07 00:17:05.734 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5093/api/Job/get-all-jobs - 200 null application/json; charset=utf-8 1659.8724ms
+2025-02-07 00:17:25.841 +02:00 [INF] Request starting HTTP/1.1 PUT http://localhost:5093/api/job/update-job - application/json 322
+2025-02-07 00:17:25.883 +02:00 [INF] Executing endpoint 'JobPortal.Host.Controllers.Job.Update (JobPortal.Host)'
+2025-02-07 00:17:25.893 +02:00 [INF] Route matched with {action = "Update", controller = "Job", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Update(JobPortal.Application.DTOs.Job.UpdateJob) on controller JobPortal.Host.Controllers.Job (JobPortal.Host).
+2025-02-07 00:18:34.708 +02:00 [INF] Application is building...
+2025-02-07 00:18:35.147 +02:00 [INF] User profile is available. Using 'C:\Users\ahmed salah\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-02-07 00:18:35.256 +02:00 [INF] Application is running...
+2025-02-07 00:18:35.386 +02:00 [INF] Now listening on: http://localhost:5093
+2025-02-07 00:18:35.420 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-02-07 00:18:35.422 +02:00 [INF] Hosting environment: Development
+2025-02-07 00:18:35.423 +02:00 [INF] Content root path: D:\Projects\JobPortal\JobPortal.Host
+2025-02-07 00:18:35.970 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5093/swagger/index.html - null null
+2025-02-07 00:18:36.273 +02:00 [INF] HTTP GET /swagger/index.html responded 200 in 59.5903 ms
+2025-02-07 00:18:36.283 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5093/_framework/aspnetcore-browser-refresh.js - null null
+2025-02-07 00:18:36.285 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5093/_vs/browserLink - null null
+2025-02-07 00:18:36.289 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5093/swagger/index.html - 200 null text/html;charset=utf-8 327.8769ms
+2025-02-07 00:18:36.291 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5093/_framework/aspnetcore-browser-refresh.js - 200 13780 application/javascript; charset=utf-8 8.8733ms
+2025-02-07 00:18:36.337 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5093/_vs/browserLink - 200 null text/javascript; charset=UTF-8 52.2968ms
+2025-02-07 00:18:36.378 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5093/swagger/v1/swagger.json - null null
+2025-02-07 00:18:36.396 +02:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 10.1317 ms
+2025-02-07 00:18:36.402 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5093/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 23.4619ms
+2025-02-07 00:18:39.047 +02:00 [INF] Request starting HTTP/1.1 PUT http://localhost:5093/api/job/update-job - application/json 347
+2025-02-07 00:18:39.109 +02:00 [WRN] Failed to determine the https port for redirect.
+2025-02-07 00:18:39.114 +02:00 [INF] Executing endpoint 'JobPortal.Host.Controllers.Job.Update (JobPortal.Host)'
+2025-02-07 00:18:39.129 +02:00 [INF] Route matched with {action = "Update", controller = "Job", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Update(JobPortal.Application.DTOs.Job.UpdateJob) on controller JobPortal.Host.Controllers.Job (JobPortal.Host).
+2025-02-07 00:18:39.682 +02:00 [WRN] No store type was specified for the decimal property 'SalaryMax' on entity type 'Job'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2025-02-07 00:18:39.687 +02:00 [WRN] No store type was specified for the decimal property 'SalaryMin' on entity type 'Job'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2025-02-07 00:19:17.342 +02:00 [INF] Executed DbCommand (231ms) [Parameters=[@p12='?' (DbType = Guid), @p0='?' (DbType = Guid), @p1='?' (DbType = Guid), @p2='?' (Size = 4000), @p3='?' (Size = 4000), @p4='?' (Size = 4000), @p5='?' (Size = 4000), @p6='?' (Size = 4000), @p7='?' (Size = 4000), @p8='?' (Precision = 18) (Scale = 2) (DbType = Decimal), @p9='?' (Precision = 18) (Scale = 2) (DbType = Decimal), @p10='?' (Size = 4000), @p11='?' (Size = 50)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [Jobs] SET [CategoryId] = @p0, [CompanyId] = @p1, [Description] = @p2, [EmploymentType] = @p3, [ExperienceLevel] = @p4, [Location] = @p5, [Requirements] = @p6, [Responsibilities] = @p7, [SalaryMax] = @p8, [SalaryMin] = @p9, [Status] = @p10, [Title] = @p11
+OUTPUT 1
+WHERE [Id] = @p12;
+2025-02-07 00:19:17.390 +02:00 [ERR] An exception occurred in the database while saving changes for context type 'JobPortal.Infrastructure.Data.AppDbContext'.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The UPDATE statement conflicted with the FOREIGN KEY constraint "FK_Jobs_Categories_CategoryId". The conflict occurred in database "JobPortalAppDb", table "dbo.Categories", column 'Id'.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryHasMoreRows(Boolean& moreRows)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryReadInternal(Boolean setTimeout, Boolean& more)
+   at Microsoft.Data.SqlClient.SqlDataReader.ReadAsyncExecute(Task task, Object state)
+   at Microsoft.Data.SqlClient.SqlDataReader.InvokeAsyncCall[T](SqlDataReaderBaseAsyncCallContext`1 context)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSetWithRowsAffectedOnlyAsync(Int32 commandIndex, RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeAsync(RelationalDataReader reader, CancellationToken cancellationToken)
+ClientConnectionId:8783fc89-be89-4b3a-b08e-992d188dcec9
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeAsync(RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.<>c__DisplayClass30_0`2.<<ExecuteAsync>b__0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteImplementationAsync[TState,TResult](Func`4 operation, Func`4 verifySucceeded, TState state, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteImplementationAsync[TState,TResult](Func`4 operation, Func`4 verifySucceeded, TState state, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The UPDATE statement conflicted with the FOREIGN KEY constraint "FK_Jobs_Categories_CategoryId". The conflict occurred in database "JobPortalAppDb", table "dbo.Categories", column 'Id'.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryHasMoreRows(Boolean& moreRows)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryReadInternal(Boolean setTimeout, Boolean& more)
+   at Microsoft.Data.SqlClient.SqlDataReader.ReadAsyncExecute(Task task, Object state)
+   at Microsoft.Data.SqlClient.SqlDataReader.InvokeAsyncCall[T](SqlDataReaderBaseAsyncCallContext`1 context)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSetWithRowsAffectedOnlyAsync(Int32 commandIndex, RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeAsync(RelationalDataReader reader, CancellationToken cancellationToken)
+ClientConnectionId:8783fc89-be89-4b3a-b08e-992d188dcec9
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeAsync(RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.<>c__DisplayClass30_0`2.<<ExecuteAsync>b__0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteImplementationAsync[TState,TResult](Func`4 operation, Func`4 verifySucceeded, TState state, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteImplementationAsync[TState,TResult](Func`4 operation, Func`4 verifySucceeded, TState state, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+2025-02-07 00:19:17.656 +02:00 [INF] Executed action JobPortal.Host.Controllers.Job.Update (JobPortal.Host) in 38520.4632ms
+2025-02-07 00:19:17.660 +02:00 [INF] Executed endpoint 'JobPortal.Host.Controllers.Job.Update (JobPortal.Host)'
+2025-02-07 00:21:54.502 +02:00 [INF] Application is building...
+2025-02-07 00:21:54.961 +02:00 [INF] User profile is available. Using 'C:\Users\ahmed salah\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-02-07 00:21:55.077 +02:00 [INF] Application is running...
+2025-02-07 00:21:55.206 +02:00 [INF] Now listening on: http://localhost:5093
+2025-02-07 00:21:55.240 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-02-07 00:21:55.243 +02:00 [INF] Hosting environment: Development
+2025-02-07 00:21:55.244 +02:00 [INF] Content root path: D:\Projects\JobPortal\JobPortal.Host
+2025-02-07 00:21:55.768 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5093/swagger/index.html - null null
+2025-02-07 00:21:56.089 +02:00 [INF] HTTP GET /swagger/index.html responded 200 in 73.5639 ms
+2025-02-07 00:21:56.094 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5093/_framework/aspnetcore-browser-refresh.js - null null
+2025-02-07 00:21:56.099 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5093/swagger/index.html - 200 null text/html;charset=utf-8 336.8476ms
+2025-02-07 00:21:56.101 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5093/_framework/aspnetcore-browser-refresh.js - 200 13780 application/javascript; charset=utf-8 7.2833ms
+2025-02-07 00:21:56.113 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5093/_vs/browserLink - null null
+2025-02-07 00:21:56.179 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5093/_vs/browserLink - 200 null text/javascript; charset=UTF-8 66.4884ms
+2025-02-07 00:21:56.227 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5093/swagger/v1/swagger.json - null null
+2025-02-07 00:21:56.243 +02:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 10.5432 ms
+2025-02-07 00:21:56.244 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5093/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 17.084ms
+2025-02-07 00:21:59.818 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5093/api/Job/get-all-jobs - null null
+2025-02-07 00:21:59.843 +02:00 [WRN] Failed to determine the https port for redirect.
+2025-02-07 00:21:59.846 +02:00 [INF] Executing endpoint 'JobPortal.Host.Controllers.Job.GetAll (JobPortal.Host)'
+2025-02-07 00:21:59.861 +02:00 [INF] Route matched with {action = "GetAll", controller = "Job", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller JobPortal.Host.Controllers.Job (JobPortal.Host).
+2025-02-07 00:22:00.375 +02:00 [WRN] No store type was specified for the decimal property 'SalaryMax' on entity type 'Job'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2025-02-07 00:22:00.378 +02:00 [WRN] No store type was specified for the decimal property 'SalaryMin' on entity type 'Job'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2025-02-07 00:22:01.584 +02:00 [INF] Executed DbCommand (141ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [j].[Id], [j].[CategoryId], [j].[CompanyId], [j].[Description], [j].[EmploymentType], [j].[ExperienceLevel], [j].[Location], [j].[Requirements], [j].[Responsibilities], [j].[SalaryMax], [j].[SalaryMin], [j].[Status], [j].[Title]
+FROM [Jobs] AS [j]
+2025-02-07 00:22:01.629 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[JobPortal.Application.DTOs.Job.GetJobDTO, JobPortal.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-02-07 00:22:01.657 +02:00 [INF] Executed action JobPortal.Host.Controllers.Job.GetAll (JobPortal.Host) in 1792.5815ms
+2025-02-07 00:22:01.660 +02:00 [INF] Executed endpoint 'JobPortal.Host.Controllers.Job.GetAll (JobPortal.Host)'
+2025-02-07 00:22:01.661 +02:00 [INF] HTTP GET /api/Job/get-all-jobs responded 200 in 1833.0030 ms
+2025-02-07 00:22:01.667 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5093/api/Job/get-all-jobs - 200 null application/json; charset=utf-8 1849.0909ms
+2025-02-07 00:22:50.878 +02:00 [INF] Request starting HTTP/1.1 PUT http://localhost:5093/api/job/update-job - application/json 460
+2025-02-07 00:22:50.922 +02:00 [INF] Executing endpoint 'JobPortal.Host.Controllers.Job.Update (JobPortal.Host)'
+2025-02-07 00:22:50.930 +02:00 [INF] Route matched with {action = "Update", controller = "Job", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Update(JobPortal.Application.DTOs.Job.UpdateJob) on controller JobPortal.Host.Controllers.Job (JobPortal.Host).
+2025-02-07 00:22:57.242 +02:00 [INF] Executed DbCommand (70ms) [Parameters=[@p12='?' (DbType = Guid), @p0='?' (DbType = Guid), @p1='?' (DbType = Guid), @p2='?' (Size = 4000), @p3='?' (Size = 4000), @p4='?' (Size = 4000), @p5='?' (Size = 4000), @p6='?' (Size = 4000), @p7='?' (Size = 4000), @p8='?' (Precision = 18) (Scale = 2) (DbType = Decimal), @p9='?' (Precision = 18) (Scale = 2) (DbType = Decimal), @p10='?' (Size = 4000), @p11='?' (Size = 50)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [Jobs] SET [CategoryId] = @p0, [CompanyId] = @p1, [Description] = @p2, [EmploymentType] = @p3, [ExperienceLevel] = @p4, [Location] = @p5, [Requirements] = @p6, [Responsibilities] = @p7, [SalaryMax] = @p8, [SalaryMin] = @p9, [Status] = @p10, [Title] = @p11
+OUTPUT 1
+WHERE [Id] = @p12;
+2025-02-07 00:23:06.725 +02:00 [INF] Executing OkObjectResult, writing value of type 'JobPortal.Application.DTOs.ServiceResponse'.
+2025-02-07 00:23:06.758 +02:00 [INF] Executed action JobPortal.Host.Controllers.Job.Update (JobPortal.Host) in 15824.4412ms
+2025-02-07 00:23:06.761 +02:00 [INF] Executed endpoint 'JobPortal.Host.Controllers.Job.Update (JobPortal.Host)'
+2025-02-07 00:23:06.761 +02:00 [INF] HTTP PUT /api/job/update-job responded 200 in 15842.8836 ms
+2025-02-07 00:23:06.763 +02:00 [INF] Request finished HTTP/1.1 PUT http://localhost:5093/api/job/update-job - 200 null application/json; charset=utf-8 15884.4848ms
+2025-02-07 00:23:21.962 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5093/api/Job/get-all-jobs - null null
+2025-02-07 00:23:21.967 +02:00 [INF] Executing endpoint 'JobPortal.Host.Controllers.Job.GetAll (JobPortal.Host)'
+2025-02-07 00:23:21.968 +02:00 [INF] Route matched with {action = "GetAll", controller = "Job", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller JobPortal.Host.Controllers.Job (JobPortal.Host).
+2025-02-07 00:23:21.990 +02:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [j].[Id], [j].[CategoryId], [j].[CompanyId], [j].[Description], [j].[EmploymentType], [j].[ExperienceLevel], [j].[Location], [j].[Requirements], [j].[Responsibilities], [j].[SalaryMax], [j].[SalaryMin], [j].[Status], [j].[Title]
+FROM [Jobs] AS [j]
+2025-02-07 00:23:21.993 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[JobPortal.Application.DTOs.Job.GetJobDTO, JobPortal.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-02-07 00:23:21.994 +02:00 [INF] Executed action JobPortal.Host.Controllers.Job.GetAll (JobPortal.Host) in 24.1245ms
+2025-02-07 00:23:21.995 +02:00 [INF] Executed endpoint 'JobPortal.Host.Controllers.Job.GetAll (JobPortal.Host)'
+2025-02-07 00:23:21.995 +02:00 [INF] HTTP GET /api/Job/get-all-jobs responded 200 in 28.6411 ms
+2025-02-07 00:23:21.996 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5093/api/Job/get-all-jobs - 200 null application/json; charset=utf-8 34.6592ms
+2025-02-07 00:23:34.011 +02:00 [INF] Request starting HTTP/1.1 PUT http://localhost:5093/api/job/update-job - application/json 460
+2025-02-07 00:23:34.021 +02:00 [INF] Authorization failed. These requirements were not met:
+RolesAuthorizationRequirement:User.IsInRole must be true for one of the following roles: (Recruiter)
+2025-02-07 00:23:34.024 +02:00 [INF] AuthenticationScheme: Bearer was challenged.
+2025-02-07 00:23:34.026 +02:00 [INF] HTTP PUT /api/job/update-job responded 401 in 6.8810 ms
+2025-02-07 00:23:34.028 +02:00 [INF] Request finished HTTP/1.1 PUT http://localhost:5093/api/job/update-job - 401 0 null 16.4708ms
+2025-02-07 17:06:24.418 +02:00 [INF] Application is building...
+2025-02-07 17:06:24.690 +02:00 [ERR] Application failed to start.
+Microsoft.Extensions.Hosting.HostAbortedException: The host was aborted.
+   at Microsoft.Extensions.Hosting.HostFactoryResolver.HostingListener.ThrowHostAborted()
+   at Microsoft.Extensions.Hosting.HostFactoryResolver.HostingListener.OnNext(KeyValuePair`2 value)
+   at System.Diagnostics.DiagnosticListener.Write(String name, Object value)
+   at Microsoft.Extensions.Hosting.HostBuilder.ResolveHost(IServiceProvider serviceProvider, DiagnosticListener diagnosticListener)
+   at Microsoft.Extensions.Hosting.HostApplicationBuilder.Build()
+   at Microsoft.AspNetCore.Builder.WebApplicationBuilder.Build()
+   at Program.Main(String[] args) in D:\Projects\JobPortal\JobPortal.Host\Program.cs:line 44
+2025-02-07 17:06:37.362 +02:00 [INF] Application is building...
+2025-02-07 17:06:37.504 +02:00 [ERR] Application failed to start.
+Microsoft.Extensions.Hosting.HostAbortedException: The host was aborted.
+   at Microsoft.Extensions.Hosting.HostFactoryResolver.HostingListener.ThrowHostAborted()
+   at Microsoft.Extensions.Hosting.HostFactoryResolver.HostingListener.OnNext(KeyValuePair`2 value)
+   at System.Diagnostics.DiagnosticListener.Write(String name, Object value)
+   at Microsoft.Extensions.Hosting.HostBuilder.ResolveHost(IServiceProvider serviceProvider, DiagnosticListener diagnosticListener)
+   at Microsoft.Extensions.Hosting.HostApplicationBuilder.Build()
+   at Microsoft.AspNetCore.Builder.WebApplicationBuilder.Build()
+   at Program.Main(String[] args) in D:\Projects\JobPortal\JobPortal.Host\Program.cs:line 44
+2025-02-07 17:28:54.695 +02:00 [INF] Application is building...
+2025-02-07 17:28:55.017 +02:00 [INF] User profile is available. Using 'C:\Users\ahmed salah\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-02-07 17:28:55.139 +02:00 [INF] Application is running...
+2025-02-07 17:28:55.338 +02:00 [INF] Now listening on: http://localhost:5093
+2025-02-07 17:28:55.411 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-02-07 17:28:55.413 +02:00 [INF] Hosting environment: Development
+2025-02-07 17:28:55.416 +02:00 [INF] Content root path: D:\Projects\JobPortal\JobPortal.Host
+2025-02-07 17:29:00.768 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5093/swagger/index.html - null null
+2025-02-07 17:29:01.154 +02:00 [INF] HTTP GET /swagger/index.html responded 200 in 111.6479 ms
+2025-02-07 17:29:01.169 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5093/_framework/aspnetcore-browser-refresh.js - null null
+2025-02-07 17:29:01.173 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5093/_vs/browserLink - null null
+2025-02-07 17:29:01.183 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5093/swagger/index.html - 200 null text/html;charset=utf-8 408.3703ms
+2025-02-07 17:29:01.195 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5093/_framework/aspnetcore-browser-refresh.js - 200 13780 application/javascript; charset=utf-8 26.1322ms
+2025-02-07 17:29:01.332 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5093/_vs/browserLink - 200 null text/javascript; charset=UTF-8 158.483ms
+2025-02-07 17:29:01.495 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5093/swagger/v1/swagger.json - null null
+2025-02-07 17:29:01.575 +02:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 67.9214 ms
+2025-02-07 17:29:01.596 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5093/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 100.8187ms
+2025-02-07 17:34:32.714 +02:00 [INF] Application is building...
+2025-02-07 17:34:34.025 +02:00 [INF] User profile is available. Using 'C:\Users\ahmed salah\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-02-07 17:34:34.372 +02:00 [INF] Application is running...
+2025-02-07 17:34:34.726 +02:00 [INF] Now listening on: http://localhost:5093
+2025-02-07 17:34:34.826 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-02-07 17:34:34.830 +02:00 [INF] Hosting environment: Development
+2025-02-07 17:34:34.833 +02:00 [INF] Content root path: D:\Projects\JobPortal\JobPortal.Host
+2025-02-07 17:34:35.665 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5093/swagger/index.html - null null
+2025-02-07 17:34:36.396 +02:00 [INF] HTTP GET /swagger/index.html responded 200 in 181.9372 ms
+2025-02-07 17:34:36.409 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5093/_framework/aspnetcore-browser-refresh.js - null null
+2025-02-07 17:34:36.424 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5093/_vs/browserLink - null null
+2025-02-07 17:34:36.431 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5093/swagger/index.html - 200 null text/html;charset=utf-8 786.6864ms
+2025-02-07 17:34:36.442 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5093/_framework/aspnetcore-browser-refresh.js - 200 13780 application/javascript; charset=utf-8 34.0642ms
+2025-02-07 17:34:36.617 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5093/_vs/browserLink - 200 null text/javascript; charset=UTF-8 193.6016ms
+2025-02-07 17:34:36.743 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5093/swagger/v1/swagger.json - null null
+2025-02-07 17:34:36.903 +02:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 42.3478 ms
+2025-02-07 17:34:36.909 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5093/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 166.1188ms
+2025-02-07 17:34:46.962 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5093/api/JobApplication/add-job-application - application/json 217
+2025-02-07 17:34:47.005 +02:00 [INF] CORS policy execution failed.
+2025-02-07 17:34:47.009 +02:00 [INF] Request origin http://localhost:5093 does not have permission to access the resource.
+2025-02-07 17:34:47.130 +02:00 [WRN] Failed to determine the https port for redirect.
+2025-02-07 17:34:47.145 +02:00 [INF] Executing endpoint 'JobPortal.Host.Controllers.JobApplicationController.Add (JobPortal.Host)'
+2025-02-07 17:34:47.213 +02:00 [INF] Route matched with {action = "Add", controller = "JobApplication", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Add(JobPortal.Application.DTOs.JopApllication.CreateJobApplicationDTO) on controller JobPortal.Host.Controllers.JobApplicationController (JobPortal.Host).
+2025-02-07 17:34:47.239 +02:00 [INF] Executed action JobPortal.Host.Controllers.JobApplicationController.Add (JobPortal.Host) in 8.0806ms
+2025-02-07 17:34:47.247 +02:00 [INF] Executed endpoint 'JobPortal.Host.Controllers.JobApplicationController.Add (JobPortal.Host)'
+2025-02-07 17:34:47.365 +02:00 [ERR] Unknwon exception
+System.InvalidOperationException: Unable to resolve service for type 'JobPortal.Application.Services.Interfaces.IJobApplicationService' while attempting to activate 'JobPortal.Host.Controllers.JobApplicationController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.ThrowHelperUnableToResolveService(Type type, Type requiredBy)
+   at lambda_method10(Closure, IServiceProvider, Object[])
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at JobPortal.Infrastructure.Middleware.ExceptionHandlingMiddleware.InvokeAsync(HttpContext context) in D:\Projects\JobPortal\JobPortal.Infrastructure\Middleware\ExceptionHandlingMiddleware.cs:line 15
+2025-02-07 17:34:47.498 +02:00 [ERR] HTTP POST /api/JobApplication/add-job-application responded 500 in 482.9282 ms
+2025-02-07 17:34:47.506 +02:00 [INF] Request finished HTTP/1.1 POST http://localhost:5093/api/JobApplication/add-job-application - 500 null application/json 543.4223ms
+2025-02-07 17:35:24.608 +02:00 [INF] Application is building...
+2025-02-07 17:35:25.509 +02:00 [INF] User profile is available. Using 'C:\Users\ahmed salah\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-02-07 17:35:25.741 +02:00 [INF] Application is running...
+2025-02-07 17:35:26.071 +02:00 [INF] Now listening on: http://localhost:5093
+2025-02-07 17:35:26.137 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-02-07 17:35:26.141 +02:00 [INF] Hosting environment: Development
+2025-02-07 17:35:26.148 +02:00 [INF] Content root path: D:\Projects\JobPortal\JobPortal.Host
+2025-02-07 17:35:26.994 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5093/swagger/index.html - null null
+2025-02-07 17:35:27.820 +02:00 [INF] HTTP GET /swagger/index.html responded 200 in 181.5813 ms
+2025-02-07 17:35:27.832 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5093/_framework/aspnetcore-browser-refresh.js - null null
+2025-02-07 17:35:27.835 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5093/_vs/browserLink - null null
+2025-02-07 17:35:27.857 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5093/swagger/index.html - 200 null text/html;charset=utf-8 878.3093ms
+2025-02-07 17:35:27.875 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5093/_framework/aspnetcore-browser-refresh.js - 200 13780 application/javascript; charset=utf-8 43.1629ms
+2025-02-07 17:35:27.986 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5093/_vs/browserLink - 200 null text/javascript; charset=UTF-8 151.414ms
+2025-02-07 17:35:28.122 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5093/swagger/v1/swagger.json - null null
+2025-02-07 17:35:28.210 +02:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 75.0155 ms
+2025-02-07 17:35:28.240 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5093/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 118.0995ms
+2025-02-07 17:35:35.858 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5093/api/JobApplication/add-job-application - application/json 217
+2025-02-07 17:35:35.894 +02:00 [INF] CORS policy execution failed.
+2025-02-07 17:35:35.898 +02:00 [INF] Request origin http://localhost:5093 does not have permission to access the resource.
+2025-02-07 17:35:35.953 +02:00 [WRN] Failed to determine the https port for redirect.
+2025-02-07 17:35:35.963 +02:00 [INF] Executing endpoint 'JobPortal.Host.Controllers.JobApplicationController.Add (JobPortal.Host)'
+2025-02-07 17:35:36.032 +02:00 [INF] Route matched with {action = "Add", controller = "JobApplication", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Add(JobPortal.Application.DTOs.JopApllication.CreateJobApplicationDTO) on controller JobPortal.Host.Controllers.JobApplicationController (JobPortal.Host).
+2025-02-07 17:35:38.153 +02:00 [WRN] No store type was specified for the decimal property 'SalaryMax' on entity type 'Job'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2025-02-07 17:35:38.158 +02:00 [WRN] No store type was specified for the decimal property 'SalaryMin' on entity type 'Job'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2025-02-07 17:35:50.967 +02:00 [INF] Executed action JobPortal.Host.Controllers.JobApplicationController.Add (JobPortal.Host) in 14917.9571ms
+2025-02-07 17:35:50.989 +02:00 [INF] Executed endpoint 'JobPortal.Host.Controllers.JobApplicationController.Add (JobPortal.Host)'
+2025-02-07 17:36:07.831 +02:00 [ERR] Unknwon exception
+AutoMapper.AutoMapperMappingException: Missing type map configuration or unsupported mapping.
+
+Mapping types:
+CreateJobApplicationDTO -> JobApplication
+JobPortal.Application.DTOs.JopApllication.CreateJobApplicationDTO -> JobPortal.Domain.Entities.JobApplication
+   at lambda_method26(Closure, Object, JobApplication, ResolutionContext)
+   at JobPortal.Application.Services.Implementations.JobApplicationService.AddAsync(CreateJobApplicationDTO job) in D:\Projects\JobPortal\JobPortal.Application\Services\Implementations\JobApplicationService.cs:line 14
+   at JobPortal.Host.Controllers.JobApplicationController.Add(CreateJobApplicationDTO jobApplication) in D:\Projects\JobPortal\JobPortal.Host\Controllers\JobApplicationController.cs:line 43
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at JobPortal.Infrastructure.Middleware.ExceptionHandlingMiddleware.InvokeAsync(HttpContext context) in D:\Projects\JobPortal\JobPortal.Infrastructure\Middleware\ExceptionHandlingMiddleware.cs:line 15
+2025-02-07 17:36:11.828 +02:00 [ERR] HTTP POST /api/JobApplication/add-job-application responded 500 in 35924.1502 ms
+2025-02-07 17:36:11.866 +02:00 [INF] Request finished HTTP/1.1 POST http://localhost:5093/api/JobApplication/add-job-application - 500 null application/json 36008.6439ms
+2025-02-07 17:37:20.577 +02:00 [INF] Application is building...
+2025-02-07 17:37:21.576 +02:00 [INF] User profile is available. Using 'C:\Users\ahmed salah\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-02-07 17:37:21.817 +02:00 [INF] Application is running...
+2025-02-07 17:37:22.130 +02:00 [INF] Now listening on: http://localhost:5093
+2025-02-07 17:37:22.181 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-02-07 17:37:22.185 +02:00 [INF] Hosting environment: Development
+2025-02-07 17:37:22.188 +02:00 [INF] Content root path: D:\Projects\JobPortal\JobPortal.Host
+2025-02-07 17:37:23.141 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5093/swagger/index.html - null null
+2025-02-07 17:37:23.824 +02:00 [INF] HTTP GET /swagger/index.html responded 200 in 193.5409 ms
+2025-02-07 17:37:23.828 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5093/_vs/browserLink - null null
+2025-02-07 17:37:23.828 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5093/_framework/aspnetcore-browser-refresh.js - null null
+2025-02-07 17:37:23.853 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5093/swagger/index.html - 200 null text/html;charset=utf-8 724.0987ms
+2025-02-07 17:37:23.864 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5093/_framework/aspnetcore-browser-refresh.js - 200 13780 application/javascript; charset=utf-8 36.0858ms
+2025-02-07 17:37:23.999 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5093/_vs/browserLink - 200 null text/javascript; charset=UTF-8 171.3839ms
+2025-02-07 17:37:24.100 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5093/swagger/v1/swagger.json - null null
+2025-02-07 17:37:24.161 +02:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 45.3359 ms
+2025-02-07 17:37:24.183 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5093/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 82.8813ms
+2025-02-07 17:37:30.363 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5093/api/JobApplication/add-job-application - application/json 217
+2025-02-07 17:37:30.397 +02:00 [INF] CORS policy execution failed.
+2025-02-07 17:37:30.400 +02:00 [INF] Request origin http://localhost:5093 does not have permission to access the resource.
+2025-02-07 17:37:30.445 +02:00 [WRN] Failed to determine the https port for redirect.
+2025-02-07 17:37:30.454 +02:00 [INF] Executing endpoint 'JobPortal.Host.Controllers.JobApplicationController.Add (JobPortal.Host)'
+2025-02-07 17:37:30.486 +02:00 [INF] Route matched with {action = "Add", controller = "JobApplication", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Add(JobPortal.Application.DTOs.JopApllication.CreateJobApplicationDTO) on controller JobPortal.Host.Controllers.JobApplicationController (JobPortal.Host).
+2025-02-07 17:37:31.721 +02:00 [WRN] No store type was specified for the decimal property 'SalaryMax' on entity type 'Job'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2025-02-07 17:37:31.729 +02:00 [WRN] No store type was specified for the decimal property 'SalaryMin' on entity type 'Job'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2025-02-07 17:37:49.951 +02:00 [INF] Executed DbCommand (312ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (Size = 50), @p2='?' (Size = 50), @p3='?' (DbType = DateTime2), @p4='?' (DbType = Guid), @p5='?' (Size = 4000), @p6='?' (DbType = Int32), @p7='?' (Size = 450), @p8='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [JobsApplication] ([Id], [ApplicantFirstName], [ApplicantLastName], [ApplicationDate], [JobId], [ResumeUrl], [Status], [UserId], [YearsOfExperience])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8);
+2025-02-07 17:37:58.841 +02:00 [INF] Executing OkObjectResult, writing value of type 'JobPortal.Application.DTOs.ServiceResponse'.
+2025-02-07 17:37:58.943 +02:00 [INF] Executed action JobPortal.Host.Controllers.JobApplicationController.Add (JobPortal.Host) in 28436.3696ms
+2025-02-07 17:37:58.950 +02:00 [INF] Executed endpoint 'JobPortal.Host.Controllers.JobApplicationController.Add (JobPortal.Host)'
+2025-02-07 17:37:58.956 +02:00 [INF] HTTP POST /api/JobApplication/add-job-application responded 200 in 28551.4838 ms
+2025-02-07 17:37:58.979 +02:00 [INF] Request finished HTTP/1.1 POST http://localhost:5093/api/JobApplication/add-job-application - 200 null application/json; charset=utf-8 28615.7579ms
+2025-02-07 17:38:30.211 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5093/api/JobApplication/GetAllJobApplications/19734da5-e3d8-4197-2221-08dd46f92edc - null null
+2025-02-07 17:38:30.243 +02:00 [INF] Authorization failed. These requirements were not met:
+RolesAuthorizationRequirement:User.IsInRole must be true for one of the following roles: (Recruiter)
+2025-02-07 17:38:30.253 +02:00 [INF] AuthenticationScheme: Bearer was challenged.
+2025-02-07 17:38:30.258 +02:00 [INF] HTTP GET /api/JobApplication/GetAllJobApplications/19734da5-e3d8-4197-2221-08dd46f92edc responded 401 in 26.1330 ms
+2025-02-07 17:38:30.271 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5093/api/JobApplication/GetAllJobApplications/19734da5-e3d8-4197-2221-08dd46f92edc - 401 0 null 60.6094ms
+2025-02-07 17:38:53.226 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5093/api/JobApplication/GetJobApplicationByUserIdAndJobId/270743a1-59ef-46b8-b43d-5433e996b13d/19734da5-e3d8-4197-2221-08dd46f92edc - null null
+2025-02-07 17:38:53.263 +02:00 [INF] Executing endpoint 'JobPortal.Host.Controllers.JobApplicationController.GetJobApplicationByUserId (JobPortal.Host)'
+2025-02-07 17:38:53.278 +02:00 [INF] Route matched with {action = "GetJobApplicationByUserId", controller = "JobApplication", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetJobApplicationByUserId(System.String, System.Guid) on controller JobPortal.Host.Controllers.JobApplicationController (JobPortal.Host).
+2025-02-07 17:38:53.799 +02:00 [INF] Executed DbCommand (29ms) [Parameters=[@__userId_0='?' (Size = 450), @__jobId_1='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT [j].[Id], [j].[ApplicantFirstName], [j].[ApplicantLastName], [j].[ApplicationDate], [j].[JobId], [j].[ResumeUrl], [j].[Status], [j].[UserId], [j].[YearsOfExperience]
+FROM [JobsApplication] AS [j]
+WHERE [j].[UserId] = @__userId_0 AND [j].[JobId] = @__jobId_1
+2025-02-07 17:38:53.862 +02:00 [INF] Executing OkObjectResult, writing value of type 'JobPortal.Application.DTOs.JopApllication.GetJobApplicationDTO'.
+2025-02-07 17:38:53.892 +02:00 [INF] Executed action JobPortal.Host.Controllers.JobApplicationController.GetJobApplicationByUserId (JobPortal.Host) in 601.8369ms
+2025-02-07 17:38:53.899 +02:00 [INF] Executed endpoint 'JobPortal.Host.Controllers.JobApplicationController.GetJobApplicationByUserId (JobPortal.Host)'
+2025-02-07 17:38:53.906 +02:00 [INF] HTTP GET /api/JobApplication/GetJobApplicationByUserIdAndJobId/270743a1-59ef-46b8-b43d-5433e996b13d/19734da5-e3d8-4197-2221-08dd46f92edc responded 200 in 642.5705 ms
+2025-02-07 17:38:53.918 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5093/api/JobApplication/GetJobApplicationByUserIdAndJobId/270743a1-59ef-46b8-b43d-5433e996b13d/19734da5-e3d8-4197-2221-08dd46f92edc - 200 null application/json; charset=utf-8 692.1712ms
+2025-02-07 17:39:36.654 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5093/api/Account/login - application/json 60
+2025-02-07 17:39:36.690 +02:00 [INF] CORS policy execution failed.
+2025-02-07 17:39:36.694 +02:00 [INF] Request origin http://localhost:5093 does not have permission to access the resource.
+2025-02-07 17:39:36.701 +02:00 [INF] Executing endpoint 'JobPortal.Host.Controllers.AccountController.Login (JobPortal.Host)'
+2025-02-07 17:39:36.720 +02:00 [INF] Route matched with {action = "Login", controller = "Account", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(JobPortal.Application.DTOs.Identity.LoginDTO) on controller JobPortal.Host.Controllers.AccountController (JobPortal.Host).
+2025-02-07 17:39:37.286 +02:00 [INF] Executed DbCommand (141ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Education], [a].[Email], [a].[EmailConfirmed], [a].[Fullname], [a].[Location], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[ProfileImageUrl], [a].[ResumeUrl], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2025-02-07 17:39:37.383 +02:00 [INF] Executed DbCommand (10ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Education], [a].[Email], [a].[EmailConfirmed], [a].[Fullname], [a].[Location], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[ProfileImageUrl], [a].[ResumeUrl], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2025-02-07 17:39:37.481 +02:00 [INF] Executed DbCommand (24ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a0].[Name]
+FROM [AspNetUserRoles] AS [a]
+INNER JOIN [AspNetRoles] AS [a0] ON [a].[RoleId] = [a0].[Id]
+WHERE [a].[UserId] = @__userId_0
+2025-02-07 17:39:37.641 +02:00 [INF] Executed DbCommand (7ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Education], [a].[Email], [a].[EmailConfirmed], [a].[Fullname], [a].[Location], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[ProfileImageUrl], [a].[ResumeUrl], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2025-02-07 17:39:37.666 +02:00 [INF] Executed DbCommand (10ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Education], [a].[Email], [a].[EmailConfirmed], [a].[Fullname], [a].[Location], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[ProfileImageUrl], [a].[ResumeUrl], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2025-02-07 17:39:37.681 +02:00 [INF] Executed DbCommand (4ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Education], [a].[Email], [a].[EmailConfirmed], [a].[Fullname], [a].[Location], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[ProfileImageUrl], [a].[ResumeUrl], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2025-02-07 17:39:37.701 +02:00 [INF] Executed DbCommand (8ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a0].[Name]
+FROM [AspNetUserRoles] AS [a]
+INNER JOIN [AspNetRoles] AS [a0] ON [a].[RoleId] = [a0].[Id]
+WHERE [a].[UserId] = @__userId_0
+2025-02-07 17:39:37.876 +02:00 [INF] Executed DbCommand (19ms) [Parameters=[@__refreshToken_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [r].[Id], [r].[Token], [r].[UserId]
+FROM [RefreshTokens] AS [r]
+WHERE [r].[Token] = @__refreshToken_0
+2025-02-07 17:39:37.940 +02:00 [INF] Executed DbCommand (6ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (Size = 4000), @p2='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [RefreshTokens] ([Id], [Token], [UserId])
+VALUES (@p0, @p1, @p2);
+2025-02-07 17:39:37.951 +02:00 [INF] Executing OkObjectResult, writing value of type 'JobPortal.Application.DTOs.LoginResponse'.
+2025-02-07 17:39:37.960 +02:00 [INF] Executed action JobPortal.Host.Controllers.AccountController.Login (JobPortal.Host) in 1229.913ms
+2025-02-07 17:39:37.965 +02:00 [INF] Executed endpoint 'JobPortal.Host.Controllers.AccountController.Login (JobPortal.Host)'
+2025-02-07 17:39:37.969 +02:00 [INF] HTTP POST /api/Account/login responded 200 in 1267.9508 ms
+2025-02-07 17:39:37.978 +02:00 [INF] Request finished HTTP/1.1 POST http://localhost:5093/api/Account/login - 200 null application/json; charset=utf-8 1325.1778ms
+2025-02-07 17:40:46.223 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5093/api/JobApplication/GetAllJobApplications/19734da5-e3d8-4197-2221-08dd46f92edc - null null
+2025-02-07 17:40:46.638 +02:00 [INF] Executing endpoint 'JobPortal.Host.Controllers.JobApplicationController.GetAllJobApplications (JobPortal.Host)'
+2025-02-07 17:40:46.652 +02:00 [INF] Route matched with {action = "GetAllJobApplications", controller = "JobApplication", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllJobApplications(System.Guid) on controller JobPortal.Host.Controllers.JobApplicationController (JobPortal.Host).
+2025-02-07 17:40:46.687 +02:00 [INF] Executed DbCommand (10ms) [Parameters=[@__JobId_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT [j].[Id], [j].[ApplicantFirstName], [j].[ApplicantLastName], [j].[ApplicationDate], [j].[JobId], [j].[ResumeUrl], [j].[Status], [j].[UserId], [j].[YearsOfExperience]
+FROM [JobsApplication] AS [j]
+WHERE [j].[JobId] = @__JobId_0
+2025-02-07 17:40:46.710 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[JobPortal.Application.DTOs.JopApllication.GetJobApplicationDTO, JobPortal.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-02-07 17:40:46.717 +02:00 [INF] Executed action JobPortal.Host.Controllers.JobApplicationController.GetAllJobApplications (JobPortal.Host) in 54.3838ms
+2025-02-07 17:40:46.723 +02:00 [INF] Executed endpoint 'JobPortal.Host.Controllers.JobApplicationController.GetAllJobApplications (JobPortal.Host)'
+2025-02-07 17:40:46.730 +02:00 [INF] HTTP GET /api/JobApplication/GetAllJobApplications/19734da5-e3d8-4197-2221-08dd46f92edc responded 200 in 92.8380 ms
+2025-02-07 17:40:46.737 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5093/api/JobApplication/GetAllJobApplications/19734da5-e3d8-4197-2221-08dd46f92edc - 200 null application/json; charset=utf-8 515.1423ms
+2025-02-07 17:40:58.080 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5093/api/JobApplication/GetAllJobApplications/19734da5-e3d8-4197-2221-08dd46f92edc - null null
+2025-02-07 17:40:58.090 +02:00 [INF] Authorization failed. These requirements were not met:
+RolesAuthorizationRequirement:User.IsInRole must be true for one of the following roles: (Recruiter)
+2025-02-07 17:40:58.092 +02:00 [INF] AuthenticationScheme: Bearer was challenged.
+2025-02-07 17:40:58.094 +02:00 [INF] HTTP GET /api/JobApplication/GetAllJobApplications/19734da5-e3d8-4197-2221-08dd46f92edc responded 401 in 5.1769 ms
+2025-02-07 17:40:58.101 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5093/api/JobApplication/GetAllJobApplications/19734da5-e3d8-4197-2221-08dd46f92edc - 401 0 null 21.1054ms
+2025-02-07 17:41:01.288 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5093/api/JobApplication/GetAllJobApplications/19734da5-e3d8-4197-2221-08dd46f92edc - null null
+2025-02-07 17:41:01.308 +02:00 [INF] Executing endpoint 'JobPortal.Host.Controllers.JobApplicationController.GetAllJobApplications (JobPortal.Host)'
+2025-02-07 17:41:01.317 +02:00 [INF] Route matched with {action = "GetAllJobApplications", controller = "JobApplication", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllJobApplications(System.Guid) on controller JobPortal.Host.Controllers.JobApplicationController (JobPortal.Host).
+2025-02-07 17:41:01.337 +02:00 [INF] Executed DbCommand (9ms) [Parameters=[@__JobId_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT [j].[Id], [j].[ApplicantFirstName], [j].[ApplicantLastName], [j].[ApplicationDate], [j].[JobId], [j].[ResumeUrl], [j].[Status], [j].[UserId], [j].[YearsOfExperience]
+FROM [JobsApplication] AS [j]
+WHERE [j].[JobId] = @__JobId_0
+2025-02-07 17:41:01.347 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[JobPortal.Application.DTOs.JopApllication.GetJobApplicationDTO, JobPortal.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-02-07 17:41:01.353 +02:00 [INF] Executed action JobPortal.Host.Controllers.JobApplicationController.GetAllJobApplications (JobPortal.Host) in 27.3805ms
+2025-02-07 17:41:01.359 +02:00 [INF] Executed endpoint 'JobPortal.Host.Controllers.JobApplicationController.GetAllJobApplications (JobPortal.Host)'
+2025-02-07 17:41:01.363 +02:00 [INF] HTTP GET /api/JobApplication/GetAllJobApplications/19734da5-e3d8-4197-2221-08dd46f92edc responded 200 in 55.2750 ms
+2025-02-07 17:41:01.376 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5093/api/JobApplication/GetAllJobApplications/19734da5-e3d8-4197-2221-08dd46f92edc - 200 null application/json; charset=utf-8 88.4335ms
+2025-02-07 18:05:38.158 +02:00 [INF] Application is building...
+2025-02-07 18:05:39.374 +02:00 [INF] User profile is available. Using 'C:\Users\ahmed salah\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-02-07 18:05:39.724 +02:00 [INF] Application is running...
+2025-02-07 18:05:40.039 +02:00 [INF] Now listening on: http://localhost:5093
+2025-02-07 18:05:40.143 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-02-07 18:05:40.147 +02:00 [INF] Hosting environment: Development
+2025-02-07 18:05:40.150 +02:00 [INF] Content root path: D:\Projects\JobPortal\JobPortal.Host
+2025-02-07 18:05:44.487 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5093/swagger/index.html - null null
+2025-02-07 18:05:45.370 +02:00 [INF] HTTP GET /swagger/index.html responded 200 in 202.7980 ms
+2025-02-07 18:05:45.386 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5093/_framework/aspnetcore-browser-refresh.js - null null
+2025-02-07 18:05:45.428 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5093/_vs/browserLink - null null
+2025-02-07 18:05:45.440 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5093/swagger/index.html - 200 null text/html;charset=utf-8 969.5792ms
+2025-02-07 18:05:45.451 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5093/_framework/aspnetcore-browser-refresh.js - 200 13780 application/javascript; charset=utf-8 65.8656ms
+2025-02-07 18:05:45.600 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5093/_vs/browserLink - 200 null text/javascript; charset=UTF-8 176.109ms
+2025-02-07 18:05:45.661 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5093/swagger/v1/swagger.json - null null
+2025-02-07 18:05:45.722 +02:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 49.5690 ms
+2025-02-07 18:05:45.731 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5093/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 70.0968ms
+2025-02-07 18:08:27.579 +02:00 [INF] Application is building...
+2025-02-07 18:08:28.417 +02:00 [INF] User profile is available. Using 'C:\Users\ahmed salah\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-02-07 18:08:28.647 +02:00 [INF] Application is running...
+2025-02-07 18:08:28.935 +02:00 [INF] Now listening on: http://localhost:5093
+2025-02-07 18:08:29.043 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-02-07 18:08:29.046 +02:00 [INF] Hosting environment: Development
+2025-02-07 18:08:29.050 +02:00 [INF] Content root path: D:\Projects\JobPortal\JobPortal.Host
+2025-02-07 18:08:29.734 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5093/swagger/index.html - null null
+2025-02-07 18:08:30.276 +02:00 [INF] HTTP GET /swagger/index.html responded 200 in 134.1707 ms
+2025-02-07 18:08:30.286 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5093/_framework/aspnetcore-browser-refresh.js - null null
+2025-02-07 18:08:30.293 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5093/_vs/browserLink - null null
+2025-02-07 18:08:30.299 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5093/swagger/index.html - 200 null text/html;charset=utf-8 582.0474ms
+2025-02-07 18:08:30.309 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5093/_framework/aspnetcore-browser-refresh.js - 200 13780 application/javascript; charset=utf-8 22.8647ms
+2025-02-07 18:08:30.470 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5093/_vs/browserLink - 200 null text/javascript; charset=UTF-8 176.9854ms
+2025-02-07 18:08:30.574 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5093/swagger/v1/swagger.json - null null
+2025-02-07 18:08:30.641 +02:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 52.1636 ms
+2025-02-07 18:08:30.663 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5093/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 88.6292ms
+2025-02-07 18:08:36.949 +02:00 [INF] Request starting HTTP/1.1 PUT http://localhost:5093/api/JobApplication/update-job-application - application/json 290
+2025-02-07 18:08:36.982 +02:00 [INF] CORS policy execution failed.
+2025-02-07 18:08:36.987 +02:00 [INF] Request origin http://localhost:5093 does not have permission to access the resource.
+2025-02-07 18:08:37.154 +02:00 [WRN] Failed to determine the https port for redirect.
+2025-02-07 18:08:37.173 +02:00 [INF] Authorization failed. These requirements were not met:
+RolesAuthorizationRequirement:User.IsInRole must be true for one of the following roles: (JobSeeker)
+2025-02-07 18:08:37.188 +02:00 [INF] AuthenticationScheme: Bearer was challenged.
+2025-02-07 18:08:37.193 +02:00 [INF] HTTP PUT /api/JobApplication/update-job-application responded 401 in 197.5156 ms
+2025-02-07 18:08:37.201 +02:00 [INF] Request finished HTTP/1.1 PUT http://localhost:5093/api/JobApplication/update-job-application - 401 0 null 251.9556ms
+2025-02-07 18:09:44.428 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5093/api/Account/login - application/json 59
+2025-02-07 18:09:44.447 +02:00 [INF] CORS policy execution failed.
+2025-02-07 18:09:44.450 +02:00 [INF] Request origin http://localhost:5093 does not have permission to access the resource.
+2025-02-07 18:09:44.468 +02:00 [INF] Executing endpoint 'JobPortal.Host.Controllers.AccountController.Login (JobPortal.Host)'
+2025-02-07 18:09:44.568 +02:00 [INF] Route matched with {action = "Login", controller = "Account", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(JobPortal.Application.DTOs.Identity.LoginDTO) on controller JobPortal.Host.Controllers.AccountController (JobPortal.Host).
+2025-02-07 18:09:48.116 +02:00 [WRN] No store type was specified for the decimal property 'SalaryMax' on entity type 'Job'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2025-02-07 18:09:48.122 +02:00 [WRN] No store type was specified for the decimal property 'SalaryMin' on entity type 'Job'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2025-02-07 18:09:51.311 +02:00 [INF] Executed DbCommand (337ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Education], [a].[Email], [a].[EmailConfirmed], [a].[Fullname], [a].[Location], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[ProfileImageUrl], [a].[ResumeUrl], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2025-02-07 18:09:51.710 +02:00 [INF] Executed DbCommand (7ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Education], [a].[Email], [a].[EmailConfirmed], [a].[Fullname], [a].[Location], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[ProfileImageUrl], [a].[ResumeUrl], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2025-02-07 18:09:51.872 +02:00 [INF] Executed DbCommand (26ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a0].[Name]
+FROM [AspNetUserRoles] AS [a]
+INNER JOIN [AspNetRoles] AS [a0] ON [a].[RoleId] = [a0].[Id]
+WHERE [a].[UserId] = @__userId_0
+2025-02-07 18:09:52.250 +02:00 [INF] Executed DbCommand (4ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Education], [a].[Email], [a].[EmailConfirmed], [a].[Fullname], [a].[Location], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[ProfileImageUrl], [a].[ResumeUrl], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2025-02-07 18:09:52.266 +02:00 [INF] Executed DbCommand (3ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Education], [a].[Email], [a].[EmailConfirmed], [a].[Fullname], [a].[Location], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[ProfileImageUrl], [a].[ResumeUrl], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2025-02-07 18:09:52.279 +02:00 [INF] Executed DbCommand (3ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Education], [a].[Email], [a].[EmailConfirmed], [a].[Fullname], [a].[Location], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[ProfileImageUrl], [a].[ResumeUrl], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2025-02-07 18:09:52.294 +02:00 [INF] Executed DbCommand (4ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a0].[Name]
+FROM [AspNetUserRoles] AS [a]
+INNER JOIN [AspNetRoles] AS [a0] ON [a].[RoleId] = [a0].[Id]
+WHERE [a].[UserId] = @__userId_0
+2025-02-07 18:09:52.474 +02:00 [INF] Executed DbCommand (17ms) [Parameters=[@__refreshToken_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [r].[Id], [r].[Token], [r].[UserId]
+FROM [RefreshTokens] AS [r]
+WHERE [r].[Token] = @__refreshToken_0
+2025-02-07 18:09:52.854 +02:00 [INF] Executed DbCommand (8ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (Size = 4000), @p2='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [RefreshTokens] ([Id], [Token], [UserId])
+VALUES (@p0, @p1, @p2);
+2025-02-07 18:09:52.919 +02:00 [INF] Executing OkObjectResult, writing value of type 'JobPortal.Application.DTOs.LoginResponse'.
+2025-02-07 18:09:52.947 +02:00 [INF] Executed action JobPortal.Host.Controllers.AccountController.Login (JobPortal.Host) in 8363.057ms
+2025-02-07 18:09:52.955 +02:00 [INF] Executed endpoint 'JobPortal.Host.Controllers.AccountController.Login (JobPortal.Host)'
+2025-02-07 18:09:52.962 +02:00 [INF] HTTP POST /api/Account/login responded 200 in 8508.7721 ms
+2025-02-07 18:09:52.992 +02:00 [INF] Request finished HTTP/1.1 POST http://localhost:5093/api/Account/login - 200 null application/json; charset=utf-8 8567.6449ms
+2025-02-07 18:10:52.812 +02:00 [INF] Request starting HTTP/1.1 PUT http://localhost:5093/api/JobApplication/update-job-application - application/json 274
+2025-02-07 18:10:53.013 +02:00 [INF] Executing endpoint 'JobPortal.Host.Controllers.JobApplicationController.UpdateJobApplication (JobPortal.Host)'
+2025-02-07 18:10:53.029 +02:00 [INF] Route matched with {action = "UpdateJobApplication", controller = "JobApplication", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UpdateJobApplication(JobPortal.Application.DTOs.JopApllication.UpdateJobApllicationDTO) on controller JobPortal.Host.Controllers.JobApplicationController (JobPortal.Host).
+2025-02-07 18:11:13.615 +02:00 [INF] Executed DbCommand (54ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [j].[Id], [j].[ApplicantFirstName], [j].[ApplicantLastName], [j].[ApplicationDate], [j].[JobId], [j].[ResumeUrl], [j].[Status], [j].[UserId], [j].[YearsOfExperience]
+FROM [JobsApplication] AS [j]
+WHERE [j].[Id] = @__get_Item_0
+2025-02-07 18:11:25.836 +02:00 [INF] Executed DbCommand (56ms) [Parameters=[@p8='?' (DbType = Guid), @p0='?' (Size = 50), @p1='?' (Size = 50), @p2='?' (DbType = DateTime2), @p3='?' (DbType = Guid), @p4='?' (Size = 4000), @p5='?' (DbType = Int32), @p6='?' (Size = 450), @p7='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [JobsApplication] SET [ApplicantFirstName] = @p0, [ApplicantLastName] = @p1, [ApplicationDate] = @p2, [JobId] = @p3, [ResumeUrl] = @p4, [Status] = @p5, [UserId] = @p6, [YearsOfExperience] = @p7
+OUTPUT 1
+WHERE [Id] = @p8;
+2025-02-07 18:11:32.803 +02:00 [INF] Executing OkObjectResult, writing value of type 'JobPortal.Application.DTOs.ServiceResponse'.
+2025-02-07 18:11:32.886 +02:00 [INF] Executed action JobPortal.Host.Controllers.JobApplicationController.UpdateJobApplication (JobPortal.Host) in 39849.6671ms
+2025-02-07 18:11:32.891 +02:00 [INF] Executed endpoint 'JobPortal.Host.Controllers.JobApplicationController.UpdateJobApplication (JobPortal.Host)'
+2025-02-07 18:11:32.933 +02:00 [INF] HTTP PUT /api/JobApplication/update-job-application responded 200 in 39925.4318 ms
+2025-02-07 18:11:32.942 +02:00 [INF] Request finished HTTP/1.1 PUT http://localhost:5093/api/JobApplication/update-job-application - 200 null application/json; charset=utf-8 40130.9283ms
+2025-02-07 18:11:41.631 +02:00 [INF] Request starting HTTP/1.1 PUT http://localhost:5093/api/JobApplication/update-job-application - application/json 274
+2025-02-07 18:11:41.645 +02:00 [INF] Authorization failed. These requirements were not met:
+RolesAuthorizationRequirement:User.IsInRole must be true for one of the following roles: (JobSeeker)
+2025-02-07 18:11:41.650 +02:00 [INF] AuthenticationScheme: Bearer was challenged.
+2025-02-07 18:11:41.654 +02:00 [INF] HTTP PUT /api/JobApplication/update-job-application responded 401 in 15.3046 ms
+2025-02-07 18:11:41.659 +02:00 [INF] Request finished HTTP/1.1 PUT http://localhost:5093/api/JobApplication/update-job-application - 401 0 null 28.8653ms
+2025-02-07 18:12:41.744 +02:00 [INF] Request starting HTTP/1.1 PUT http://localhost:5093/api/JobApplication/update-job-application - application/json 270
+2025-02-07 18:12:41.763 +02:00 [INF] CORS policy execution failed.
+2025-02-07 18:12:41.766 +02:00 [INF] Request origin http://localhost:5093 does not have permission to access the resource.
+2025-02-07 18:12:41.770 +02:00 [INF] Authorization failed. These requirements were not met:
+RolesAuthorizationRequirement:User.IsInRole must be true for one of the following roles: (JobSeeker)
+2025-02-07 18:12:41.774 +02:00 [INF] AuthenticationScheme: Bearer was challenged.
+2025-02-07 18:12:41.779 +02:00 [INF] HTTP PUT /api/JobApplication/update-job-application responded 401 in 8.9557 ms
+2025-02-07 18:12:41.785 +02:00 [INF] Request finished HTTP/1.1 PUT http://localhost:5093/api/JobApplication/update-job-application - 401 0 null 47.1432ms
+2025-02-07 18:12:58.946 +02:00 [INF] Request starting HTTP/1.1 PUT http://localhost:5093/api/JobApplication/update-job-application - application/json 278
+2025-02-07 18:12:58.968 +02:00 [INF] Executing endpoint 'JobPortal.Host.Controllers.JobApplicationController.UpdateJobApplication (JobPortal.Host)'
+2025-02-07 18:12:58.972 +02:00 [INF] Route matched with {action = "UpdateJobApplication", controller = "JobApplication", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UpdateJobApplication(JobPortal.Application.DTOs.JopApllication.UpdateJobApllicationDTO) on controller JobPortal.Host.Controllers.JobApplicationController (JobPortal.Host).
+2025-02-07 18:13:02.286 +02:00 [INF] Executed DbCommand (4ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [j].[Id], [j].[ApplicantFirstName], [j].[ApplicantLastName], [j].[ApplicationDate], [j].[JobId], [j].[ResumeUrl], [j].[Status], [j].[UserId], [j].[YearsOfExperience]
+FROM [JobsApplication] AS [j]
+WHERE [j].[Id] = @__get_Item_0
+2025-02-07 18:13:02.302 +02:00 [INF] Executing BadRequestObjectResult, writing value of type 'JobPortal.Application.DTOs.ServiceResponse'.
+2025-02-07 18:13:02.309 +02:00 [INF] Executed action JobPortal.Host.Controllers.JobApplicationController.UpdateJobApplication (JobPortal.Host) in 3327.9805ms
+2025-02-07 18:13:02.313 +02:00 [INF] Executed endpoint 'JobPortal.Host.Controllers.JobApplicationController.UpdateJobApplication (JobPortal.Host)'
+2025-02-07 18:13:02.318 +02:00 [INF] HTTP PUT /api/JobApplication/update-job-application responded 400 in 3350.6118 ms
+2025-02-07 18:13:02.329 +02:00 [INF] Request finished HTTP/1.1 PUT http://localhost:5093/api/JobApplication/update-job-application - 400 null application/json; charset=utf-8 3385.9763ms
+2025-02-07 18:13:24.890 +02:00 [INF] Request starting HTTP/1.1 PUT http://localhost:5093/api/JobApplication/update-job-application - application/json 274
+2025-02-07 18:13:24.905 +02:00 [INF] Executing endpoint 'JobPortal.Host.Controllers.JobApplicationController.UpdateJobApplication (JobPortal.Host)'
+2025-02-07 18:13:24.909 +02:00 [INF] Route matched with {action = "UpdateJobApplication", controller = "JobApplication", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UpdateJobApplication(JobPortal.Application.DTOs.JopApllication.UpdateJobApllicationDTO) on controller JobPortal.Host.Controllers.JobApplicationController (JobPortal.Host).
+2025-02-07 18:13:26.561 +02:00 [INF] Executed DbCommand (6ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [j].[Id], [j].[ApplicantFirstName], [j].[ApplicantLastName], [j].[ApplicationDate], [j].[JobId], [j].[ResumeUrl], [j].[Status], [j].[UserId], [j].[YearsOfExperience]
+FROM [JobsApplication] AS [j]
+WHERE [j].[Id] = @__get_Item_0
+2025-02-07 18:13:26.579 +02:00 [INF] Executing BadRequestObjectResult, writing value of type 'JobPortal.Application.DTOs.ServiceResponse'.
+2025-02-07 18:13:26.587 +02:00 [INF] Executed action JobPortal.Host.Controllers.JobApplicationController.UpdateJobApplication (JobPortal.Host) in 1671.6021ms
+2025-02-07 18:13:26.591 +02:00 [INF] Executed endpoint 'JobPortal.Host.Controllers.JobApplicationController.UpdateJobApplication (JobPortal.Host)'
+2025-02-07 18:13:26.596 +02:00 [INF] HTTP PUT /api/JobApplication/update-job-application responded 400 in 1690.8964 ms
+2025-02-07 18:13:26.606 +02:00 [INF] Request finished HTTP/1.1 PUT http://localhost:5093/api/JobApplication/update-job-application - 400 null application/json; charset=utf-8 1717.7789ms
+2025-02-07 18:13:34.334 +02:00 [INF] Request starting HTTP/1.1 PUT http://localhost:5093/api/JobApplication/update-job-application - application/json 274
+2025-02-07 18:13:34.342 +02:00 [INF] Executing endpoint 'JobPortal.Host.Controllers.JobApplicationController.UpdateJobApplication (JobPortal.Host)'
+2025-02-07 18:13:34.344 +02:00 [INF] Route matched with {action = "UpdateJobApplication", controller = "JobApplication", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UpdateJobApplication(JobPortal.Application.DTOs.JopApllication.UpdateJobApllicationDTO) on controller JobPortal.Host.Controllers.JobApplicationController (JobPortal.Host).
+2025-02-07 18:13:44.702 +02:00 [INF] Executed DbCommand (5ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [j].[Id], [j].[ApplicantFirstName], [j].[ApplicantLastName], [j].[ApplicationDate], [j].[JobId], [j].[ResumeUrl], [j].[Status], [j].[UserId], [j].[YearsOfExperience]
+FROM [JobsApplication] AS [j]
+WHERE [j].[Id] = @__get_Item_0
+2025-02-07 18:14:26.383 +02:00 [INF] Request starting HTTP/1.1 PUT http://localhost:5093/api/JobApplication/update-job-application - application/json 274
+2025-02-07 18:14:26.657 +02:00 [INF] Executing endpoint 'JobPortal.Host.Controllers.JobApplicationController.UpdateJobApplication (JobPortal.Host)'
+2025-02-07 18:14:27.118 +02:00 [INF] Executing BadRequestObjectResult, writing value of type 'JobPortal.Application.DTOs.ServiceResponse'.
+2025-02-07 18:14:27.118 +02:00 [INF] Route matched with {action = "UpdateJobApplication", controller = "JobApplication", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UpdateJobApplication(JobPortal.Application.DTOs.JopApllication.UpdateJobApllicationDTO) on controller JobPortal.Host.Controllers.JobApplicationController (JobPortal.Host).
+2025-02-07 18:14:29.340 +02:00 [INF] Executed action JobPortal.Host.Controllers.JobApplicationController.UpdateJobApplication (JobPortal.Host) in 54989.1837ms
+2025-02-07 18:14:29.412 +02:00 [INF] Executed endpoint 'JobPortal.Host.Controllers.JobApplicationController.UpdateJobApplication (JobPortal.Host)'
+2025-02-07 18:14:30.001 +02:00 [INF] Executed DbCommand (6ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [j].[Id], [j].[ApplicantFirstName], [j].[ApplicantLastName], [j].[ApplicationDate], [j].[JobId], [j].[ResumeUrl], [j].[Status], [j].[UserId], [j].[YearsOfExperience]
+FROM [JobsApplication] AS [j]
+WHERE [j].[Id] = @__get_Item_0
+2025-02-07 18:14:31.391 +02:00 [INF] HTTP PUT /api/JobApplication/update-job-application responded 400 in 57049.1828 ms
+2025-02-07 18:14:31.393 +02:00 [INF] Executed DbCommand (1,280ms) [Parameters=[@p8='?' (DbType = Guid), @p0='?' (Size = 50), @p1='?' (Size = 50), @p2='?' (DbType = DateTime2), @p3='?' (DbType = Guid), @p4='?' (Size = 4000), @p5='?' (DbType = Int32), @p6='?' (Size = 450), @p7='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [JobsApplication] SET [ApplicantFirstName] = @p0, [ApplicantLastName] = @p1, [ApplicationDate] = @p2, [JobId] = @p3, [ResumeUrl] = @p4, [Status] = @p5, [UserId] = @p6, [YearsOfExperience] = @p7
+OUTPUT 1
+WHERE [Id] = @p8;
+2025-02-07 18:14:31.401 +02:00 [INF] Request finished HTTP/1.1 PUT http://localhost:5093/api/JobApplication/update-job-application - 499 null application/json; charset=utf-8 57066.782ms
+2025-02-07 18:14:31.410 +02:00 [INF] Executing OkObjectResult, writing value of type 'JobPortal.Application.DTOs.ServiceResponse'.
+2025-02-07 18:14:31.425 +02:00 [INF] Executed action JobPortal.Host.Controllers.JobApplicationController.UpdateJobApplication (JobPortal.Host) in 4259.1241ms
+2025-02-07 18:14:31.429 +02:00 [INF] Executed endpoint 'JobPortal.Host.Controllers.JobApplicationController.UpdateJobApplication (JobPortal.Host)'
+2025-02-07 18:14:31.433 +02:00 [INF] HTTP PUT /api/JobApplication/update-job-application responded 200 in 4777.1242 ms
+2025-02-07 18:14:31.441 +02:00 [INF] Request finished HTTP/1.1 PUT http://localhost:5093/api/JobApplication/update-job-application - 200 null application/json; charset=utf-8 5058.5523ms
+2025-02-07 18:14:51.973 +02:00 [INF] Request starting HTTP/1.1 PUT http://localhost:5093/api/JobApplication/update-job-application - application/json 278
+2025-02-07 18:14:51.994 +02:00 [INF] Executing endpoint 'JobPortal.Host.Controllers.JobApplicationController.UpdateJobApplication (JobPortal.Host)'
+2025-02-07 18:14:51.998 +02:00 [INF] Route matched with {action = "UpdateJobApplication", controller = "JobApplication", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UpdateJobApplication(JobPortal.Application.DTOs.JopApllication.UpdateJobApllicationDTO) on controller JobPortal.Host.Controllers.JobApplicationController (JobPortal.Host).
+2025-02-07 18:15:00.282 +02:00 [INF] Executed DbCommand (8ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [j].[Id], [j].[ApplicantFirstName], [j].[ApplicantLastName], [j].[ApplicationDate], [j].[JobId], [j].[ResumeUrl], [j].[Status], [j].[UserId], [j].[YearsOfExperience]
+FROM [JobsApplication] AS [j]
+WHERE [j].[Id] = @__get_Item_0
+2025-02-07 18:15:00.308 +02:00 [INF] Executed DbCommand (5ms) [Parameters=[@p8='?' (DbType = Guid), @p0='?' (Size = 50), @p1='?' (Size = 50), @p2='?' (DbType = DateTime2), @p3='?' (DbType = Guid), @p4='?' (Size = 4000), @p5='?' (DbType = Int32), @p6='?' (Size = 450), @p7='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [JobsApplication] SET [ApplicantFirstName] = @p0, [ApplicantLastName] = @p1, [ApplicationDate] = @p2, [JobId] = @p3, [ResumeUrl] = @p4, [Status] = @p5, [UserId] = @p6, [YearsOfExperience] = @p7
+OUTPUT 1
+WHERE [Id] = @p8;
+2025-02-07 18:15:00.318 +02:00 [INF] Executing OkObjectResult, writing value of type 'JobPortal.Application.DTOs.ServiceResponse'.
+2025-02-07 18:15:00.322 +02:00 [INF] Executed action JobPortal.Host.Controllers.JobApplicationController.UpdateJobApplication (JobPortal.Host) in 8317.6027ms
+2025-02-07 18:15:00.326 +02:00 [INF] Executed endpoint 'JobPortal.Host.Controllers.JobApplicationController.UpdateJobApplication (JobPortal.Host)'
+2025-02-07 18:15:00.330 +02:00 [INF] HTTP PUT /api/JobApplication/update-job-application responded 200 in 8335.7401 ms
+2025-02-07 18:15:00.338 +02:00 [INF] Request finished HTTP/1.1 PUT http://localhost:5093/api/JobApplication/update-job-application - 200 null application/json; charset=utf-8 8364.3433ms
+2025-02-07 18:15:54.594 +02:00 [INF] Request starting HTTP/1.1 PUT http://localhost:5093/api/JobApplication/update-job-application-status - application/json 79
+2025-02-07 18:15:54.609 +02:00 [INF] Executing endpoint 'JobPortal.Host.Controllers.JobApplicationController.UpdateJobApplicationStatus (JobPortal.Host)'
+2025-02-07 18:15:54.623 +02:00 [INF] Route matched with {action = "UpdateJobApplicationStatus", controller = "JobApplication", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UpdateJobApplicationStatus(JobPortal.Application.DTOs.JopApllication.UpdateJobApplicationStatusDTO) on controller JobPortal.Host.Controllers.JobApplicationController (JobPortal.Host).
+2025-02-07 18:15:54.666 +02:00 [INF] Executed DbCommand (5ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [j].[Id], [j].[ApplicantFirstName], [j].[ApplicantLastName], [j].[ApplicationDate], [j].[JobId], [j].[ResumeUrl], [j].[Status], [j].[UserId], [j].[YearsOfExperience]
+FROM [JobsApplication] AS [j]
+WHERE [j].[Id] = @__get_Item_0
+2025-02-07 18:15:54.703 +02:00 [INF] Executed DbCommand (10ms) [Parameters=[@p8='?' (DbType = Guid), @p0='?' (Size = 50), @p1='?' (Size = 50), @p2='?' (DbType = DateTime2), @p3='?' (DbType = Guid), @p4='?' (Size = 4000), @p5='?' (DbType = Int32), @p6='?' (Size = 450), @p7='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [JobsApplication] SET [ApplicantFirstName] = @p0, [ApplicantLastName] = @p1, [ApplicationDate] = @p2, [JobId] = @p3, [ResumeUrl] = @p4, [Status] = @p5, [UserId] = @p6, [YearsOfExperience] = @p7
+OUTPUT 1
+WHERE [Id] = @p8;
+2025-02-07 18:15:54.711 +02:00 [INF] Executing OkObjectResult, writing value of type 'JobPortal.Application.DTOs.ServiceResponse'.
+2025-02-07 18:15:54.716 +02:00 [INF] Executed action JobPortal.Host.Controllers.JobApplicationController.UpdateJobApplicationStatus (JobPortal.Host) in 86.5119ms
+2025-02-07 18:15:54.720 +02:00 [INF] Executed endpoint 'JobPortal.Host.Controllers.JobApplicationController.UpdateJobApplicationStatus (JobPortal.Host)'
+2025-02-07 18:15:54.723 +02:00 [INF] HTTP PUT /api/JobApplication/update-job-application-status responded 200 in 114.6215 ms
+2025-02-07 18:15:54.728 +02:00 [INF] Request finished HTTP/1.1 PUT http://localhost:5093/api/JobApplication/update-job-application-status - 200 null application/json; charset=utf-8 133.9096ms
+2025-02-07 18:16:09.633 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5093/api/JobApplication/GetAllJobApplications/886cce12-8985-4c84-4e8f-08dd478d5f7b - null null
+2025-02-07 18:16:09.643 +02:00 [INF] Authorization failed. These requirements were not met:
+RolesAuthorizationRequirement:User.IsInRole must be true for one of the following roles: (Recruiter)
+2025-02-07 18:16:09.648 +02:00 [INF] AuthenticationScheme: Bearer was challenged.
+2025-02-07 18:16:09.651 +02:00 [INF] HTTP GET /api/JobApplication/GetAllJobApplications/886cce12-8985-4c84-4e8f-08dd478d5f7b responded 401 in 9.1147 ms
+2025-02-07 18:16:09.657 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5093/api/JobApplication/GetAllJobApplications/886cce12-8985-4c84-4e8f-08dd478d5f7b - 401 0 null 24.4157ms
+2025-02-07 18:16:24.403 +02:00 [INF] Request starting HTTP/1.1 DELETE http://localhost:5093/api/JobApplication/delete-job-application/886cce12-8985-4c84-4e8f-08dd478d5f7b - null null
+2025-02-07 18:16:24.420 +02:00 [INF] CORS policy execution failed.
+2025-02-07 18:16:24.421 +02:00 [INF] Request origin http://localhost:5093 does not have permission to access the resource.
+2025-02-07 18:16:24.428 +02:00 [INF] Executing endpoint 'JobPortal.Host.Controllers.JobApplicationController.Delete (JobPortal.Host)'
+2025-02-07 18:16:24.450 +02:00 [INF] Route matched with {action = "Delete", controller = "JobApplication", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Delete(System.Guid) on controller JobPortal.Host.Controllers.JobApplicationController (JobPortal.Host).
+2025-02-07 18:16:24.477 +02:00 [INF] Executed DbCommand (4ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [j].[Id], [j].[ApplicantFirstName], [j].[ApplicantLastName], [j].[ApplicationDate], [j].[JobId], [j].[ResumeUrl], [j].[Status], [j].[UserId], [j].[YearsOfExperience]
+FROM [JobsApplication] AS [j]
+WHERE [j].[Id] = @__get_Item_0
+2025-02-07 18:16:24.585 +02:00 [INF] Executed DbCommand (62ms) [Parameters=[@p0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+DELETE FROM [JobsApplication]
+OUTPUT 1
+WHERE [Id] = @p0;
+2025-02-07 18:16:24.605 +02:00 [INF] Executing OkObjectResult, writing value of type 'JobPortal.Application.DTOs.ServiceResponse'.
+2025-02-07 18:16:24.609 +02:00 [INF] Executed action JobPortal.Host.Controllers.JobApplicationController.Delete (JobPortal.Host) in 152.8945ms
+2025-02-07 18:16:24.614 +02:00 [INF] Executed endpoint 'JobPortal.Host.Controllers.JobApplicationController.Delete (JobPortal.Host)'
+2025-02-07 18:16:24.618 +02:00 [INF] HTTP DELETE /api/JobApplication/delete-job-application/886cce12-8985-4c84-4e8f-08dd478d5f7b responded 200 in 190.7264 ms
+2025-02-07 18:16:24.624 +02:00 [INF] Request finished HTTP/1.1 DELETE http://localhost:5093/api/JobApplication/delete-job-application/886cce12-8985-4c84-4e8f-08dd478d5f7b - 200 null application/json; charset=utf-8 221.9713ms

@@ -1,0 +1,855 @@
+2025-02-06 21:49:58.975 +02:00 [INF] Application is building...
+2025-02-06 21:49:59.326 +02:00 [ERR] Application failed to start.
+Microsoft.Extensions.Hosting.HostAbortedException: The host was aborted.
+   at Microsoft.Extensions.Hosting.HostFactoryResolver.HostingListener.ThrowHostAborted()
+   at Microsoft.Extensions.Hosting.HostFactoryResolver.HostingListener.OnNext(KeyValuePair`2 value)
+   at System.Diagnostics.DiagnosticListener.Write(String name, Object value)
+   at Microsoft.Extensions.Hosting.HostBuilder.ResolveHost(IServiceProvider serviceProvider, DiagnosticListener diagnosticListener)
+   at Microsoft.Extensions.Hosting.HostApplicationBuilder.Build()
+   at Microsoft.AspNetCore.Builder.WebApplicationBuilder.Build()
+   at Program.<Main>$(String[] args) in D:\Projects\JobPortal\JobPortal.Host\Program.cs:line 39
+2025-02-06 21:50:43.105 +02:00 [INF] Application is building...
+2025-02-06 21:50:43.240 +02:00 [ERR] Application failed to start.
+Microsoft.Extensions.Hosting.HostAbortedException: The host was aborted.
+   at Microsoft.Extensions.Hosting.HostFactoryResolver.HostingListener.ThrowHostAborted()
+   at Microsoft.Extensions.Hosting.HostFactoryResolver.HostingListener.OnNext(KeyValuePair`2 value)
+   at System.Diagnostics.DiagnosticListener.Write(String name, Object value)
+   at Microsoft.Extensions.Hosting.HostBuilder.ResolveHost(IServiceProvider serviceProvider, DiagnosticListener diagnosticListener)
+   at Microsoft.Extensions.Hosting.HostApplicationBuilder.Build()
+   at Microsoft.AspNetCore.Builder.WebApplicationBuilder.Build()
+   at Program.<Main>$(String[] args) in D:\Projects\JobPortal\JobPortal.Host\Program.cs:line 39
+2025-02-06 21:53:25.138 +02:00 [INF] Application is building...
+2025-02-06 21:53:25.283 +02:00 [ERR] Application failed to start.
+Microsoft.Extensions.Hosting.HostAbortedException: The host was aborted.
+   at Microsoft.Extensions.Hosting.HostFactoryResolver.HostingListener.ThrowHostAborted()
+   at Microsoft.Extensions.Hosting.HostFactoryResolver.HostingListener.OnNext(KeyValuePair`2 value)
+   at System.Diagnostics.DiagnosticListener.Write(String name, Object value)
+   at Microsoft.Extensions.Hosting.HostBuilder.ResolveHost(IServiceProvider serviceProvider, DiagnosticListener diagnosticListener)
+   at Microsoft.Extensions.Hosting.HostApplicationBuilder.Build()
+   at Microsoft.AspNetCore.Builder.WebApplicationBuilder.Build()
+   at Program.<Main>$(String[] args) in D:\Projects\JobPortal\JobPortal.Host\Program.cs:line 39
+2025-02-06 21:55:37.110 +02:00 [INF] Application is building...
+2025-02-06 21:55:37.243 +02:00 [ERR] Application failed to start.
+Microsoft.Extensions.Hosting.HostAbortedException: The host was aborted.
+   at Microsoft.Extensions.Hosting.HostFactoryResolver.HostingListener.ThrowHostAborted()
+   at Microsoft.Extensions.Hosting.HostFactoryResolver.HostingListener.OnNext(KeyValuePair`2 value)
+   at System.Diagnostics.DiagnosticListener.Write(String name, Object value)
+   at Microsoft.Extensions.Hosting.HostBuilder.ResolveHost(IServiceProvider serviceProvider, DiagnosticListener diagnosticListener)
+   at Microsoft.Extensions.Hosting.HostApplicationBuilder.Build()
+   at Microsoft.AspNetCore.Builder.WebApplicationBuilder.Build()
+   at Program.<Main>$(String[] args) in D:\Projects\JobPortal\JobPortal.Host\Program.cs:line 39
+2025-02-06 21:56:09.141 +02:00 [INF] Application is building...
+2025-02-06 21:56:09.276 +02:00 [ERR] Application failed to start.
+Microsoft.Extensions.Hosting.HostAbortedException: The host was aborted.
+   at Microsoft.Extensions.Hosting.HostFactoryResolver.HostingListener.ThrowHostAborted()
+   at Microsoft.Extensions.Hosting.HostFactoryResolver.HostingListener.OnNext(KeyValuePair`2 value)
+   at System.Diagnostics.DiagnosticListener.Write(String name, Object value)
+   at Microsoft.Extensions.Hosting.HostBuilder.ResolveHost(IServiceProvider serviceProvider, DiagnosticListener diagnosticListener)
+   at Microsoft.Extensions.Hosting.HostApplicationBuilder.Build()
+   at Microsoft.AspNetCore.Builder.WebApplicationBuilder.Build()
+   at Program.<Main>$(String[] args) in D:\Projects\JobPortal\JobPortal.Host\Program.cs:line 39
+2025-02-06 21:56:25.694 +02:00 [INF] Application is building...
+2025-02-06 21:56:25.826 +02:00 [ERR] Application failed to start.
+Microsoft.Extensions.Hosting.HostAbortedException: The host was aborted.
+   at Microsoft.Extensions.Hosting.HostFactoryResolver.HostingListener.ThrowHostAborted()
+   at Microsoft.Extensions.Hosting.HostFactoryResolver.HostingListener.OnNext(KeyValuePair`2 value)
+   at System.Diagnostics.DiagnosticListener.Write(String name, Object value)
+   at Microsoft.Extensions.Hosting.HostBuilder.ResolveHost(IServiceProvider serviceProvider, DiagnosticListener diagnosticListener)
+   at Microsoft.Extensions.Hosting.HostApplicationBuilder.Build()
+   at Microsoft.AspNetCore.Builder.WebApplicationBuilder.Build()
+   at Program.<Main>$(String[] args) in D:\Projects\JobPortal\JobPortal.Host\Program.cs:line 39
+2025-02-06 21:57:05.906 +02:00 [INF] Application is building...
+2025-02-06 21:57:07.019 +02:00 [INF] User profile is available. Using 'C:\Users\ahmed salah\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-02-06 21:57:07.295 +02:00 [INF] Application is running...
+2025-02-06 21:57:07.722 +02:00 [INF] Now listening on: http://localhost:5093
+2025-02-06 21:57:07.813 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-02-06 21:57:07.817 +02:00 [INF] Hosting environment: Development
+2025-02-06 21:57:07.819 +02:00 [INF] Content root path: D:\Projects\JobPortal\JobPortal.Host
+2025-02-06 21:57:12.313 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5093/swagger - null null
+2025-02-06 21:57:12.875 +02:00 [INF] HTTP GET /swagger responded 301 in 8.2926 ms
+2025-02-06 21:57:12.916 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5093/swagger - 301 0 null 617.9731ms
+2025-02-06 21:57:12.926 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5093/swagger/index.html - null null
+2025-02-06 21:57:13.014 +02:00 [INF] HTTP GET /swagger/index.html responded 200 in 71.0191 ms
+2025-02-06 21:57:13.022 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5093/swagger/swagger-ui.css - null null
+2025-02-06 21:57:13.026 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5093/swagger/index.html - 200 null text/html;charset=utf-8 99.7521ms
+2025-02-06 21:57:13.026 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5093/swagger/swagger-ui-bundle.js - null null
+2025-02-06 21:57:13.026 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5093/swagger/swagger-ui-standalone-preset.js - null null
+2025-02-06 21:57:13.027 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5093/_framework/aspnetcore-browser-refresh.js - null null
+2025-02-06 21:57:13.028 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5093/_vs/browserLink - null null
+2025-02-06 21:57:13.104 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5093/_framework/aspnetcore-browser-refresh.js - 200 13780 application/javascript; charset=utf-8 77.5262ms
+2025-02-06 21:57:13.139 +02:00 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2025-02-06 21:57:13.139 +02:00 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2025-02-06 21:57:13.158 +02:00 [INF] HTTP GET /swagger/swagger-ui-standalone-preset.js responded 200 in 101.1634 ms
+2025-02-06 21:57:13.158 +02:00 [INF] HTTP GET /swagger/swagger-ui-bundle.js responded 200 in 106.6399 ms
+2025-02-06 21:57:13.139 +02:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2025-02-06 21:57:13.165 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5093/swagger/swagger-ui-standalone-preset.js - 200 230280 text/javascript 139.2492ms
+2025-02-06 21:57:13.169 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5093/swagger/swagger-ui-bundle.js - 200 1456926 text/javascript 142.9004ms
+2025-02-06 21:57:13.171 +02:00 [INF] HTTP GET /swagger/swagger-ui.css responded 200 in 130.4977 ms
+2025-02-06 21:57:13.194 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5093/swagger/swagger-ui.css - 200 152034 text/css 171.3023ms
+2025-02-06 21:57:13.251 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5093/_vs/browserLink - 200 null text/javascript; charset=UTF-8 222.3764ms
+2025-02-06 21:57:13.421 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5093/swagger/v1/swagger.json - null null
+2025-02-06 21:57:13.446 +02:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 14.7352 ms
+2025-02-06 21:57:13.454 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5093/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 32.5202ms
+2025-02-06 21:57:13.454 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5093/swagger/favicon-32x32.png - null null
+2025-02-06 21:57:13.471 +02:00 [INF] Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+2025-02-06 21:57:13.477 +02:00 [INF] HTTP GET /swagger/favicon-32x32.png responded 200 in 6.2467 ms
+2025-02-06 21:57:13.481 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5093/swagger/favicon-32x32.png - 200 628 image/png 27.8284ms
+2025-02-06 21:58:48.384 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5093/api/Account/register - application/json 173
+2025-02-06 21:58:48.415 +02:00 [INF] CORS policy execution failed.
+2025-02-06 21:58:48.419 +02:00 [INF] Request origin http://localhost:5093 does not have permission to access the resource.
+2025-02-06 21:58:48.475 +02:00 [WRN] Failed to determine the https port for redirect.
+2025-02-06 21:58:48.486 +02:00 [INF] Executing endpoint 'JobPortal.Host.Controllers.AccountController.Register (JobPortal.Host)'
+2025-02-06 21:58:48.528 +02:00 [INF] Route matched with {action = "Register", controller = "Account", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Register(JobPortal.Application.DTOs.Identity.RegisterDTO) on controller JobPortal.Host.Controllers.AccountController (JobPortal.Host).
+2025-02-06 21:58:48.918 +02:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2025-02-06 21:58:48.955 +02:00 [INF] Executed action JobPortal.Host.Controllers.AccountController.Register (JobPortal.Host) in 412.1131ms
+2025-02-06 21:58:48.962 +02:00 [INF] Executed endpoint 'JobPortal.Host.Controllers.AccountController.Register (JobPortal.Host)'
+2025-02-06 21:58:48.968 +02:00 [INF] HTTP POST /api/Account/register responded 400 in 535.3276 ms
+2025-02-06 21:58:48.983 +02:00 [INF] Request finished HTTP/1.1 POST http://localhost:5093/api/Account/register - 400 null application/problem+json; charset=utf-8 599.504ms
+2025-02-06 21:59:12.125 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5093/api/Account/register - application/json 173
+2025-02-06 21:59:12.139 +02:00 [INF] CORS policy execution failed.
+2025-02-06 21:59:12.143 +02:00 [INF] Request origin http://localhost:5093 does not have permission to access the resource.
+2025-02-06 21:59:12.148 +02:00 [INF] Executing endpoint 'JobPortal.Host.Controllers.AccountController.Register (JobPortal.Host)'
+2025-02-06 21:59:12.155 +02:00 [INF] Route matched with {action = "Register", controller = "Account", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Register(JobPortal.Application.DTOs.Identity.RegisterDTO) on controller JobPortal.Host.Controllers.AccountController (JobPortal.Host).
+2025-02-06 22:00:13.304 +02:00 [WRN] No store type was specified for the decimal property 'SalaryMax' on entity type 'Job'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2025-02-06 22:00:13.310 +02:00 [WRN] No store type was specified for the decimal property 'SalaryMin' on entity type 'Job'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2025-02-06 22:00:17.965 +02:00 [INF] Executed DbCommand (250ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Education], [a].[Email], [a].[EmailConfirmed], [a].[Fullname], [a].[Location], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[ProfileImageUrl], [a].[ResumeUrl], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2025-02-06 22:00:26.890 +02:00 [INF] Executed DbCommand (10ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Education], [a].[Email], [a].[EmailConfirmed], [a].[Fullname], [a].[Location], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[ProfileImageUrl], [a].[ResumeUrl], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2025-02-06 22:00:27.250 +02:00 [INF] Executed DbCommand (37ms) [Parameters=[@p0='?' (Size = 450), @p1='?' (DbType = Int32), @p2='?' (Size = 4000), @p3='?' (Size = 4000), @p4='?' (Size = 256), @p5='?' (DbType = Boolean), @p6='?' (Size = 100), @p7='?' (Size = 200), @p8='?' (DbType = Boolean), @p9='?' (DbType = DateTimeOffset), @p10='?' (Size = 256), @p11='?' (Size = 256), @p12='?' (Size = 4000), @p13='?' (Size = 4000), @p14='?' (DbType = Boolean), @p15='?' (Size = 500), @p16='?' (Size = 4000), @p17='?' (Size = 4000), @p18='?' (DbType = Boolean), @p19='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [AspNetUsers] ([Id], [AccessFailedCount], [ConcurrencyStamp], [Education], [Email], [EmailConfirmed], [Fullname], [Location], [LockoutEnabled], [LockoutEnd], [NormalizedEmail], [NormalizedUserName], [PasswordHash], [PhoneNumber], [PhoneNumberConfirmed], [ProfileImageUrl], [ResumeUrl], [SecurityStamp], [TwoFactorEnabled], [UserName])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11, @p12, @p13, @p14, @p15, @p16, @p17, @p18, @p19);
+2025-02-06 22:00:37.895 +02:00 [INF] Executed DbCommand (24ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Education], [a].[Email], [a].[EmailConfirmed], [a].[Fullname], [a].[Location], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[ProfileImageUrl], [a].[ResumeUrl], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2025-02-06 22:00:42.241 +02:00 [INF] Executed DbCommand (6ms) [Parameters=[@__normalizedRoleName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedRoleName_0
+2025-02-06 22:00:42.291 +02:00 [INF] Executed DbCommand (3ms) [Parameters=[@__normalizedRoleName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedRoleName_0
+2025-02-06 22:00:42.641 +02:00 [INF] Executed action JobPortal.Host.Controllers.AccountController.Register (JobPortal.Host) in 90474.686ms
+2025-02-06 22:00:42.646 +02:00 [INF] Executed endpoint 'JobPortal.Host.Controllers.AccountController.Register (JobPortal.Host)'
+2025-02-06 22:14:16.298 +02:00 [INF] Application is building...
+2025-02-06 22:14:17.313 +02:00 [INF] User profile is available. Using 'C:\Users\ahmed salah\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-02-06 22:14:17.571 +02:00 [INF] Application is running...
+2025-02-06 22:14:17.873 +02:00 [INF] Now listening on: http://localhost:5093
+2025-02-06 22:14:18.095 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-02-06 22:14:18.098 +02:00 [INF] Hosting environment: Development
+2025-02-06 22:14:18.103 +02:00 [INF] Content root path: D:\Projects\JobPortal\JobPortal.Host
+2025-02-06 22:14:18.676 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5093/swagger/index.html - null null
+2025-02-06 22:14:19.368 +02:00 [INF] HTTP GET /swagger/index.html responded 200 in 154.6837 ms
+2025-02-06 22:14:19.380 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5093/_framework/aspnetcore-browser-refresh.js - null null
+2025-02-06 22:14:19.387 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5093/_vs/browserLink - null null
+2025-02-06 22:14:19.394 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5093/swagger/index.html - 200 null text/html;charset=utf-8 735.7204ms
+2025-02-06 22:14:19.399 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5093/_framework/aspnetcore-browser-refresh.js - 200 13780 application/javascript; charset=utf-8 18.5159ms
+2025-02-06 22:14:19.478 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5093/_vs/browserLink - 200 null text/javascript; charset=UTF-8 91.2419ms
+2025-02-06 22:14:19.876 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5093/swagger/v1/swagger.json - null null
+2025-02-06 22:14:19.920 +02:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 33.7926 ms
+2025-02-06 22:14:19.937 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5093/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 61.0159ms
+2025-02-06 22:15:06.290 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5093/api/Account/register - application/json 173
+2025-02-06 22:15:06.319 +02:00 [INF] CORS policy execution failed.
+2025-02-06 22:15:06.322 +02:00 [INF] Request origin http://localhost:5093 does not have permission to access the resource.
+2025-02-06 22:15:06.375 +02:00 [WRN] Failed to determine the https port for redirect.
+2025-02-06 22:15:06.386 +02:00 [INF] Executing endpoint 'JobPortal.Host.Controllers.AccountController.Register (JobPortal.Host)'
+2025-02-06 22:15:06.449 +02:00 [INF] Route matched with {action = "Register", controller = "Account", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Register(JobPortal.Application.DTOs.Identity.RegisterDTO) on controller JobPortal.Host.Controllers.AccountController (JobPortal.Host).
+2025-02-06 22:15:46.520 +02:00 [WRN] No store type was specified for the decimal property 'SalaryMax' on entity type 'Job'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2025-02-06 22:15:46.526 +02:00 [WRN] No store type was specified for the decimal property 'SalaryMin' on entity type 'Job'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2025-02-06 22:15:49.940 +02:00 [INF] Executed DbCommand (286ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Education], [a].[Email], [a].[EmailConfirmed], [a].[Fullname], [a].[Location], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[ProfileImageUrl], [a].[ResumeUrl], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2025-02-06 22:16:12.629 +02:00 [INF] Executing BadRequestObjectResult, writing value of type 'JobPortal.Application.DTOs.ServiceResponse'.
+2025-02-06 22:16:12.721 +02:00 [INF] Executed action JobPortal.Host.Controllers.AccountController.Register (JobPortal.Host) in 66254.9129ms
+2025-02-06 22:16:12.728 +02:00 [INF] Executed endpoint 'JobPortal.Host.Controllers.AccountController.Register (JobPortal.Host)'
+2025-02-06 22:16:12.736 +02:00 [INF] HTTP POST /api/Account/register responded 400 in 66405.8757 ms
+2025-02-06 22:16:12.766 +02:00 [INF] Request finished HTTP/1.1 POST http://localhost:5093/api/Account/register - 400 null application/json; charset=utf-8 66476.0286ms
+2025-02-06 22:18:10.078 +02:00 [INF] Application is building...
+2025-02-06 22:18:11.038 +02:00 [INF] User profile is available. Using 'C:\Users\ahmed salah\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-02-06 22:18:11.242 +02:00 [INF] Application is running...
+2025-02-06 22:18:11.517 +02:00 [INF] Now listening on: http://localhost:5093
+2025-02-06 22:18:11.596 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-02-06 22:18:11.598 +02:00 [INF] Hosting environment: Development
+2025-02-06 22:18:11.600 +02:00 [INF] Content root path: D:\Projects\JobPortal\JobPortal.Host
+2025-02-06 22:18:12.698 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5093/swagger/index.html - null null
+2025-02-06 22:18:13.554 +02:00 [INF] HTTP GET /swagger/index.html responded 200 in 223.7149 ms
+2025-02-06 22:18:13.565 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5093/_framework/aspnetcore-browser-refresh.js - null null
+2025-02-06 22:18:13.623 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5093/_vs/browserLink - null null
+2025-02-06 22:18:13.672 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5093/swagger/index.html - 200 null text/html;charset=utf-8 986.9499ms
+2025-02-06 22:18:13.696 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5093/_framework/aspnetcore-browser-refresh.js - 200 13780 application/javascript; charset=utf-8 131.5778ms
+2025-02-06 22:18:13.869 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5093/_vs/browserLink - 200 null text/javascript; charset=UTF-8 246.2675ms
+2025-02-06 22:18:13.964 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5093/swagger/v1/swagger.json - null null
+2025-02-06 22:18:13.992 +02:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 17.9640 ms
+2025-02-06 22:18:14.001 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5093/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 37.8592ms
+2025-02-06 22:18:19.478 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5093/api/Account/register - application/json 173
+2025-02-06 22:18:19.509 +02:00 [INF] CORS policy execution failed.
+2025-02-06 22:18:19.513 +02:00 [INF] Request origin http://localhost:5093 does not have permission to access the resource.
+2025-02-06 22:18:19.568 +02:00 [WRN] Failed to determine the https port for redirect.
+2025-02-06 22:18:19.580 +02:00 [INF] Executing endpoint 'JobPortal.Host.Controllers.AccountController.Register (JobPortal.Host)'
+2025-02-06 22:18:19.654 +02:00 [INF] Route matched with {action = "Register", controller = "Account", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Register(JobPortal.Application.DTOs.Identity.RegisterDTO) on controller JobPortal.Host.Controllers.AccountController (JobPortal.Host).
+2025-02-06 22:19:36.851 +02:00 [WRN] No store type was specified for the decimal property 'SalaryMax' on entity type 'Job'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2025-02-06 22:19:36.857 +02:00 [WRN] No store type was specified for the decimal property 'SalaryMin' on entity type 'Job'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2025-02-06 22:19:40.013 +02:00 [INF] Executed DbCommand (112ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Education], [a].[Email], [a].[EmailConfirmed], [a].[Fullname], [a].[Location], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[ProfileImageUrl], [a].[ResumeUrl], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2025-02-06 22:19:43.495 +02:00 [INF] Executed DbCommand (18ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Education], [a].[Email], [a].[EmailConfirmed], [a].[Fullname], [a].[Location], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[ProfileImageUrl], [a].[ResumeUrl], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2025-02-06 22:19:43.990 +02:00 [INF] Executed DbCommand (9ms) [Parameters=[@p0='?' (Size = 450), @p1='?' (DbType = Int32), @p2='?' (Size = 4000), @p3='?' (Size = 4000), @p4='?' (Size = 256), @p5='?' (DbType = Boolean), @p6='?' (Size = 100), @p7='?' (Size = 200), @p8='?' (DbType = Boolean), @p9='?' (DbType = DateTimeOffset), @p10='?' (Size = 256), @p11='?' (Size = 256), @p12='?' (Size = 4000), @p13='?' (Size = 4000), @p14='?' (DbType = Boolean), @p15='?' (Size = 500), @p16='?' (Size = 4000), @p17='?' (Size = 4000), @p18='?' (DbType = Boolean), @p19='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [AspNetUsers] ([Id], [AccessFailedCount], [ConcurrencyStamp], [Education], [Email], [EmailConfirmed], [Fullname], [Location], [LockoutEnabled], [LockoutEnd], [NormalizedEmail], [NormalizedUserName], [PasswordHash], [PhoneNumber], [PhoneNumberConfirmed], [ProfileImageUrl], [ResumeUrl], [SecurityStamp], [TwoFactorEnabled], [UserName])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11, @p12, @p13, @p14, @p15, @p16, @p17, @p18, @p19);
+2025-02-06 22:19:50.545 +02:00 [INF] Executed DbCommand (13ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Education], [a].[Email], [a].[EmailConfirmed], [a].[Fullname], [a].[Location], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[ProfileImageUrl], [a].[ResumeUrl], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2025-02-06 22:19:57.867 +02:00 [INF] Executed DbCommand (62ms) [Parameters=[@__normalizedRoleName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedRoleName_0
+2025-02-06 22:19:58.012 +02:00 [INF] Executed DbCommand (5ms) [Parameters=[@__p_0='?' (Size = 450), @__p_1='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[UserId], [a].[RoleId]
+FROM [AspNetUserRoles] AS [a]
+WHERE [a].[UserId] = @__p_0 AND [a].[RoleId] = @__p_1
+2025-02-06 22:19:58.031 +02:00 [INF] Executed DbCommand (3ms) [Parameters=[@__normalizedRoleName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedRoleName_0
+2025-02-06 22:19:58.079 +02:00 [INF] Executed DbCommand (10ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Education], [a].[Email], [a].[EmailConfirmed], [a].[Fullname], [a].[Location], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[ProfileImageUrl], [a].[ResumeUrl], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2025-02-06 22:19:58.180 +02:00 [INF] Executed DbCommand (15ms) [Parameters=[@p0='?' (Size = 450), @p1='?' (Size = 450), @p21='?' (Size = 450), @p2='?' (DbType = Int32), @p3='?' (Size = 4000), @p22='?' (Size = 4000), @p4='?' (Size = 4000), @p5='?' (Size = 256), @p6='?' (DbType = Boolean), @p7='?' (Size = 100), @p8='?' (Size = 200), @p9='?' (DbType = Boolean), @p10='?' (DbType = DateTimeOffset), @p11='?' (Size = 256), @p12='?' (Size = 256), @p13='?' (Size = 4000), @p14='?' (Size = 4000), @p15='?' (DbType = Boolean), @p16='?' (Size = 500), @p17='?' (Size = 4000), @p18='?' (Size = 4000), @p19='?' (DbType = Boolean), @p20='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [AspNetUserRoles] ([RoleId], [UserId])
+VALUES (@p0, @p1);
+UPDATE [AspNetUsers] SET [AccessFailedCount] = @p2, [ConcurrencyStamp] = @p3, [Education] = @p4, [Email] = @p5, [EmailConfirmed] = @p6, [Fullname] = @p7, [Location] = @p8, [LockoutEnabled] = @p9, [LockoutEnd] = @p10, [NormalizedEmail] = @p11, [NormalizedUserName] = @p12, [PasswordHash] = @p13, [PhoneNumber] = @p14, [PhoneNumberConfirmed] = @p15, [ProfileImageUrl] = @p16, [ResumeUrl] = @p17, [SecurityStamp] = @p18, [TwoFactorEnabled] = @p19, [UserName] = @p20
+OUTPUT 1
+WHERE [Id] = @p21 AND [ConcurrencyStamp] = @p22;
+2025-02-06 22:20:17.325 +02:00 [INF] Executing OkObjectResult, writing value of type 'JobPortal.Application.DTOs.ServiceResponse'.
+2025-02-06 22:20:17.421 +02:00 [INF] Executed action JobPortal.Host.Controllers.AccountController.Register (JobPortal.Host) in 117747.4797ms
+2025-02-06 22:20:17.427 +02:00 [INF] Executed endpoint 'JobPortal.Host.Controllers.AccountController.Register (JobPortal.Host)'
+2025-02-06 22:20:17.434 +02:00 [INF] HTTP POST /api/Account/register responded 200 in 117914.6009 ms
+2025-02-06 22:20:17.460 +02:00 [INF] Request finished HTTP/1.1 POST http://localhost:5093/api/Account/register - 200 null application/json; charset=utf-8 117981.2734ms
+2025-02-06 22:21:00.314 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5093/api/Account/login - application/json 59
+2025-02-06 22:21:00.363 +02:00 [INF] CORS policy execution failed.
+2025-02-06 22:21:00.365 +02:00 [INF] Request origin http://localhost:5093 does not have permission to access the resource.
+2025-02-06 22:21:00.370 +02:00 [INF] Executing endpoint 'JobPortal.Host.Controllers.AccountController.Login (JobPortal.Host)'
+2025-02-06 22:21:00.385 +02:00 [INF] Route matched with {action = "Login", controller = "Account", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(JobPortal.Application.DTOs.Identity.LoginDTO) on controller JobPortal.Host.Controllers.AccountController (JobPortal.Host).
+2025-02-06 22:21:00.601 +02:00 [INF] Executed DbCommand (11ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Education], [a].[Email], [a].[EmailConfirmed], [a].[Fullname], [a].[Location], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[ProfileImageUrl], [a].[ResumeUrl], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2025-02-06 22:21:00.616 +02:00 [INF] Executed DbCommand (3ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Education], [a].[Email], [a].[EmailConfirmed], [a].[Fullname], [a].[Location], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[ProfileImageUrl], [a].[ResumeUrl], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2025-02-06 22:21:00.746 +02:00 [INF] Executed DbCommand (15ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a0].[Name]
+FROM [AspNetUserRoles] AS [a]
+INNER JOIN [AspNetRoles] AS [a0] ON [a].[RoleId] = [a0].[Id]
+WHERE [a].[UserId] = @__userId_0
+2025-02-06 22:21:01.028 +02:00 [INF] Executed DbCommand (3ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Education], [a].[Email], [a].[EmailConfirmed], [a].[Fullname], [a].[Location], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[ProfileImageUrl], [a].[ResumeUrl], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2025-02-06 22:21:01.045 +02:00 [INF] Executed DbCommand (3ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Education], [a].[Email], [a].[EmailConfirmed], [a].[Fullname], [a].[Location], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[ProfileImageUrl], [a].[ResumeUrl], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2025-02-06 22:21:01.057 +02:00 [INF] Executed DbCommand (3ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Education], [a].[Email], [a].[EmailConfirmed], [a].[Fullname], [a].[Location], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[ProfileImageUrl], [a].[ResumeUrl], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2025-02-06 22:21:01.070 +02:00 [INF] Executed DbCommand (3ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a0].[Name]
+FROM [AspNetUserRoles] AS [a]
+INNER JOIN [AspNetRoles] AS [a0] ON [a].[RoleId] = [a0].[Id]
+WHERE [a].[UserId] = @__userId_0
+2025-02-06 22:21:01.274 +02:00 [INF] Executed DbCommand (101ms) [Parameters=[@__refreshToken_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [r].[Id], [r].[Token], [r].[UserId]
+FROM [RefreshTokens] AS [r]
+WHERE [r].[Token] = @__refreshToken_0
+2025-02-06 22:21:01.345 +02:00 [INF] Executed DbCommand (5ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (Size = 4000), @p2='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [RefreshTokens] ([Id], [Token], [UserId])
+VALUES (@p0, @p1, @p2);
+2025-02-06 22:21:01.356 +02:00 [INF] Executing OkObjectResult, writing value of type 'JobPortal.Application.DTOs.LoginResponse'.
+2025-02-06 22:21:01.362 +02:00 [INF] Executed action JobPortal.Host.Controllers.AccountController.Login (JobPortal.Host) in 969.4989ms
+2025-02-06 22:21:01.366 +02:00 [INF] Executed endpoint 'JobPortal.Host.Controllers.AccountController.Login (JobPortal.Host)'
+2025-02-06 22:21:01.371 +02:00 [INF] HTTP POST /api/Account/login responded 200 in 1001.2781 ms
+2025-02-06 22:21:01.376 +02:00 [INF] Request finished HTTP/1.1 POST http://localhost:5093/api/Account/login - 200 null application/json; charset=utf-8 1061.9481ms
+2025-02-06 22:21:41.260 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5093/api/Account/refreshToken/PENtI2r8knTo5LzxZIx4XZC%2F3nXCqPqFxuY0qYIEBu%2B9mAMq8O1wXLw4yAq4DfRRFemG%2FdWHgvkOEuB%2BKrq7Gw%3D%3D - null null
+2025-02-06 22:21:41.275 +02:00 [INF] Executing endpoint 'JobPortal.Host.Controllers.AccountController.ReviveToken (JobPortal.Host)'
+2025-02-06 22:21:41.289 +02:00 [INF] Route matched with {action = "ReviveToken", controller = "Account", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ReviveToken(System.String) on controller JobPortal.Host.Controllers.AccountController (JobPortal.Host).
+2025-02-06 22:21:41.407 +02:00 [INF] Executed DbCommand (7ms) [Parameters=[@__refreshToken_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [r].[Id], [r].[Token], [r].[UserId]
+FROM [RefreshTokens] AS [r]
+WHERE [r].[Token] = @__refreshToken_0
+2025-02-06 22:21:41.446 +02:00 [INF] Executed DbCommand (3ms) [Parameters=[@__refreshToken_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [r].[Id], [r].[Token], [r].[UserId]
+FROM [RefreshTokens] AS [r]
+WHERE [r].[Token] = @__refreshToken_0
+2025-02-06 22:21:41.491 +02:00 [INF] Executed DbCommand (4ms) [Parameters=[@__p_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Education], [a].[Email], [a].[EmailConfirmed], [a].[Fullname], [a].[Location], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[ProfileImageUrl], [a].[ResumeUrl], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[Id] = @__p_0
+2025-02-06 22:21:41.506 +02:00 [INF] Executed DbCommand (4ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Education], [a].[Email], [a].[EmailConfirmed], [a].[Fullname], [a].[Location], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[ProfileImageUrl], [a].[ResumeUrl], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2025-02-06 22:21:41.518 +02:00 [INF] Executed DbCommand (3ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Education], [a].[Email], [a].[EmailConfirmed], [a].[Fullname], [a].[Location], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[ProfileImageUrl], [a].[ResumeUrl], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2025-02-06 22:21:41.537 +02:00 [INF] Executed DbCommand (6ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a0].[Name]
+FROM [AspNetUserRoles] AS [a]
+INNER JOIN [AspNetRoles] AS [a0] ON [a].[RoleId] = [a0].[Id]
+WHERE [a].[UserId] = @__userId_0
+2025-02-06 22:21:41.563 +02:00 [INF] Executed DbCommand (3ms) [Parameters=[@__refreshToken_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [r].[Id], [r].[Token], [r].[UserId]
+FROM [RefreshTokens] AS [r]
+WHERE [r].[Token] = @__refreshToken_0
+2025-02-06 22:21:41.572 +02:00 [INF] Executing OkObjectResult, writing value of type 'JobPortal.Application.DTOs.LoginResponse'.
+2025-02-06 22:21:41.575 +02:00 [INF] Executed action JobPortal.Host.Controllers.AccountController.ReviveToken (JobPortal.Host) in 279.6215ms
+2025-02-06 22:21:41.580 +02:00 [INF] Executed endpoint 'JobPortal.Host.Controllers.AccountController.ReviveToken (JobPortal.Host)'
+2025-02-06 22:21:41.584 +02:00 [INF] HTTP GET /api/Account/refreshToken/PENtI2r8knTo5LzxZIx4XZC%2F3nXCqPqFxuY0qYIEBu%2B9mAMq8O1wXLw4yAq4DfRRFemG%2FdWHgvkOEuB%2BKrq7Gw%3D%3D responded 200 in 309.4170 ms
+2025-02-06 22:21:41.589 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5093/api/Account/refreshToken/PENtI2r8knTo5LzxZIx4XZC%2F3nXCqPqFxuY0qYIEBu%2B9mAMq8O1wXLw4yAq4DfRRFemG%2FdWHgvkOEuB%2BKrq7Gw%3D%3D - 200 null application/json; charset=utf-8 338.7003ms
+2025-02-06 22:23:18.738 +02:00 [INF] Application is building...
+2025-02-06 22:23:18.968 +02:00 [INF] User profile is available. Using 'C:\Users\ahmed salah\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-02-06 22:23:19.060 +02:00 [INF] Application is running...
+2025-02-06 22:23:19.146 +02:00 [INF] Now listening on: http://localhost:5093
+2025-02-06 22:23:19.203 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-02-06 22:23:19.207 +02:00 [INF] Hosting environment: Development
+2025-02-06 22:23:19.210 +02:00 [INF] Content root path: D:\Projects\JobPortal\JobPortal.Host
+2025-02-06 22:23:19.905 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5093/swagger/index.html - null null
+2025-02-06 22:23:20.362 +02:00 [INF] HTTP GET /swagger/index.html responded 200 in 137.7891 ms
+2025-02-06 22:23:20.377 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5093/swagger/index.html - 200 null text/html;charset=utf-8 500.5147ms
+2025-02-06 22:23:20.389 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5093/_framework/aspnetcore-browser-refresh.js - null null
+2025-02-06 22:23:20.390 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5093/_vs/browserLink - null null
+2025-02-06 22:23:20.401 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5093/_framework/aspnetcore-browser-refresh.js - 200 13780 application/javascript; charset=utf-8 11.9654ms
+2025-02-06 22:23:20.482 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5093/_vs/browserLink - 200 null text/javascript; charset=UTF-8 92.0374ms
+2025-02-06 22:23:20.607 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5093/swagger/v1/swagger.json - null null
+2025-02-06 22:23:20.634 +02:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 12.8462 ms
+2025-02-06 22:23:20.638 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5093/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 31.445ms
+2025-02-06 22:23:26.211 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5093/api/Account/register - application/json 163
+2025-02-06 22:23:26.239 +02:00 [INF] CORS policy execution failed.
+2025-02-06 22:23:26.243 +02:00 [INF] Request origin http://localhost:5093 does not have permission to access the resource.
+2025-02-06 22:23:26.255 +02:00 [WRN] Failed to determine the https port for redirect.
+2025-02-06 22:23:26.264 +02:00 [INF] Executing endpoint 'JobPortal.Host.Controllers.AccountController.Register (JobPortal.Host)'
+2025-02-06 22:23:26.293 +02:00 [INF] Route matched with {action = "Register", controller = "Account", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Register(JobPortal.Application.DTOs.Identity.RegisterDTO) on controller JobPortal.Host.Controllers.AccountController (JobPortal.Host).
+2025-02-06 22:23:26.556 +02:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2025-02-06 22:23:26.580 +02:00 [INF] Executed action JobPortal.Host.Controllers.AccountController.Register (JobPortal.Host) in 264.9989ms
+2025-02-06 22:23:26.583 +02:00 [INF] Executed endpoint 'JobPortal.Host.Controllers.AccountController.Register (JobPortal.Host)'
+2025-02-06 22:23:26.584 +02:00 [INF] HTTP POST /api/Account/register responded 400 in 334.4302 ms
+2025-02-06 22:23:26.589 +02:00 [INF] Request finished HTTP/1.1 POST http://localhost:5093/api/Account/register - 400 null application/problem+json; charset=utf-8 377.9432ms
+2025-02-06 22:23:49.125 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5093/api/Account/register - application/json 173
+2025-02-06 22:23:49.153 +02:00 [INF] CORS policy execution failed.
+2025-02-06 22:23:49.160 +02:00 [INF] Request origin http://localhost:5093 does not have permission to access the resource.
+2025-02-06 22:23:49.169 +02:00 [INF] Executing endpoint 'JobPortal.Host.Controllers.AccountController.Register (JobPortal.Host)'
+2025-02-06 22:23:49.176 +02:00 [INF] Route matched with {action = "Register", controller = "Account", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Register(JobPortal.Application.DTOs.Identity.RegisterDTO) on controller JobPortal.Host.Controllers.AccountController (JobPortal.Host).
+2025-02-06 22:23:49.889 +02:00 [WRN] No store type was specified for the decimal property 'SalaryMax' on entity type 'Job'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2025-02-06 22:23:49.894 +02:00 [WRN] No store type was specified for the decimal property 'SalaryMin' on entity type 'Job'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2025-02-06 22:23:51.201 +02:00 [INF] Executed DbCommand (157ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Education], [a].[Email], [a].[EmailConfirmed], [a].[Fullname], [a].[Location], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[ProfileImageUrl], [a].[ResumeUrl], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2025-02-06 22:23:51.359 +02:00 [INF] Executed DbCommand (7ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Education], [a].[Email], [a].[EmailConfirmed], [a].[Fullname], [a].[Location], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[ProfileImageUrl], [a].[ResumeUrl], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2025-02-06 22:23:51.583 +02:00 [INF] Executed DbCommand (58ms) [Parameters=[@p0='?' (Size = 450), @p1='?' (DbType = Int32), @p2='?' (Size = 4000), @p3='?' (Size = 4000), @p4='?' (Size = 256), @p5='?' (DbType = Boolean), @p6='?' (Size = 100), @p7='?' (Size = 200), @p8='?' (DbType = Boolean), @p9='?' (DbType = DateTimeOffset), @p10='?' (Size = 256), @p11='?' (Size = 256), @p12='?' (Size = 4000), @p13='?' (Size = 4000), @p14='?' (DbType = Boolean), @p15='?' (Size = 500), @p16='?' (Size = 4000), @p17='?' (Size = 4000), @p18='?' (DbType = Boolean), @p19='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [AspNetUsers] ([Id], [AccessFailedCount], [ConcurrencyStamp], [Education], [Email], [EmailConfirmed], [Fullname], [Location], [LockoutEnabled], [LockoutEnd], [NormalizedEmail], [NormalizedUserName], [PasswordHash], [PhoneNumber], [PhoneNumberConfirmed], [ProfileImageUrl], [ResumeUrl], [SecurityStamp], [TwoFactorEnabled], [UserName])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11, @p12, @p13, @p14, @p15, @p16, @p17, @p18, @p19);
+2025-02-06 22:23:51.609 +02:00 [INF] Executed DbCommand (1ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Education], [a].[Email], [a].[EmailConfirmed], [a].[Fullname], [a].[Location], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[ProfileImageUrl], [a].[ResumeUrl], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2025-02-06 22:23:51.648 +02:00 [INF] Executed DbCommand (13ms) [Parameters=[@__normalizedRoleName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedRoleName_0
+2025-02-06 22:23:51.718 +02:00 [INF] Executed DbCommand (14ms) [Parameters=[@__p_0='?' (Size = 450), @__p_1='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[UserId], [a].[RoleId]
+FROM [AspNetUserRoles] AS [a]
+WHERE [a].[UserId] = @__p_0 AND [a].[RoleId] = @__p_1
+2025-02-06 22:23:51.735 +02:00 [INF] Executed DbCommand (1ms) [Parameters=[@__normalizedRoleName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedRoleName_0
+2025-02-06 22:23:51.761 +02:00 [INF] Executed DbCommand (2ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Education], [a].[Email], [a].[EmailConfirmed], [a].[Fullname], [a].[Location], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[ProfileImageUrl], [a].[ResumeUrl], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2025-02-06 22:23:51.830 +02:00 [INF] Executed DbCommand (24ms) [Parameters=[@p0='?' (Size = 450), @p1='?' (Size = 450), @p21='?' (Size = 450), @p2='?' (DbType = Int32), @p3='?' (Size = 4000), @p22='?' (Size = 4000), @p4='?' (Size = 4000), @p5='?' (Size = 256), @p6='?' (DbType = Boolean), @p7='?' (Size = 100), @p8='?' (Size = 200), @p9='?' (DbType = Boolean), @p10='?' (DbType = DateTimeOffset), @p11='?' (Size = 256), @p12='?' (Size = 256), @p13='?' (Size = 4000), @p14='?' (Size = 4000), @p15='?' (DbType = Boolean), @p16='?' (Size = 500), @p17='?' (Size = 4000), @p18='?' (Size = 4000), @p19='?' (DbType = Boolean), @p20='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [AspNetUserRoles] ([RoleId], [UserId])
+VALUES (@p0, @p1);
+UPDATE [AspNetUsers] SET [AccessFailedCount] = @p2, [ConcurrencyStamp] = @p3, [Education] = @p4, [Email] = @p5, [EmailConfirmed] = @p6, [Fullname] = @p7, [Location] = @p8, [LockoutEnabled] = @p9, [LockoutEnd] = @p10, [NormalizedEmail] = @p11, [NormalizedUserName] = @p12, [PasswordHash] = @p13, [PhoneNumber] = @p14, [PhoneNumberConfirmed] = @p15, [ProfileImageUrl] = @p16, [ResumeUrl] = @p17, [SecurityStamp] = @p18, [TwoFactorEnabled] = @p19, [UserName] = @p20
+OUTPUT 1
+WHERE [Id] = @p21 AND [ConcurrencyStamp] = @p22;
+2025-02-06 22:23:51.861 +02:00 [INF] Executing OkObjectResult, writing value of type 'JobPortal.Application.DTOs.ServiceResponse'.
+2025-02-06 22:23:51.877 +02:00 [INF] Executed action JobPortal.Host.Controllers.AccountController.Register (JobPortal.Host) in 2687.3799ms
+2025-02-06 22:23:51.886 +02:00 [INF] Executed endpoint 'JobPortal.Host.Controllers.AccountController.Register (JobPortal.Host)'
+2025-02-06 22:23:51.895 +02:00 [INF] HTTP POST /api/Account/register responded 200 in 2725.8980 ms
+2025-02-06 22:23:51.917 +02:00 [INF] Request finished HTTP/1.1 POST http://localhost:5093/api/Account/register - 200 null application/json; charset=utf-8 2792.1531ms
+2025-02-06 22:24:20.292 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5093/api/Account/login - application/json 60
+2025-02-06 22:24:20.299 +02:00 [INF] CORS policy execution failed.
+2025-02-06 22:24:20.302 +02:00 [INF] Request origin http://localhost:5093 does not have permission to access the resource.
+2025-02-06 22:24:20.305 +02:00 [INF] Executing endpoint 'JobPortal.Host.Controllers.AccountController.Login (JobPortal.Host)'
+2025-02-06 22:24:20.314 +02:00 [INF] Route matched with {action = "Login", controller = "Account", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(JobPortal.Application.DTOs.Identity.LoginDTO) on controller JobPortal.Host.Controllers.AccountController (JobPortal.Host).
+2025-02-06 22:24:20.409 +02:00 [INF] Executed DbCommand (10ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Education], [a].[Email], [a].[EmailConfirmed], [a].[Fullname], [a].[Location], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[ProfileImageUrl], [a].[ResumeUrl], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2025-02-06 22:24:20.421 +02:00 [INF] Executed DbCommand (2ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Education], [a].[Email], [a].[EmailConfirmed], [a].[Fullname], [a].[Location], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[ProfileImageUrl], [a].[ResumeUrl], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2025-02-06 22:24:20.478 +02:00 [INF] Executed DbCommand (9ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a0].[Name]
+FROM [AspNetUserRoles] AS [a]
+INNER JOIN [AspNetRoles] AS [a0] ON [a].[RoleId] = [a0].[Id]
+WHERE [a].[UserId] = @__userId_0
+2025-02-06 22:24:20.595 +02:00 [INF] Executed DbCommand (1ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Education], [a].[Email], [a].[EmailConfirmed], [a].[Fullname], [a].[Location], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[ProfileImageUrl], [a].[ResumeUrl], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2025-02-06 22:24:20.604 +02:00 [INF] Executed DbCommand (1ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Education], [a].[Email], [a].[EmailConfirmed], [a].[Fullname], [a].[Location], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[ProfileImageUrl], [a].[ResumeUrl], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2025-02-06 22:24:20.614 +02:00 [INF] Executed DbCommand (1ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Education], [a].[Email], [a].[EmailConfirmed], [a].[Fullname], [a].[Location], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[ProfileImageUrl], [a].[ResumeUrl], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2025-02-06 22:24:20.621 +02:00 [INF] Executed DbCommand (1ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a0].[Name]
+FROM [AspNetUserRoles] AS [a]
+INNER JOIN [AspNetRoles] AS [a0] ON [a].[RoleId] = [a0].[Id]
+WHERE [a].[UserId] = @__userId_0
+2025-02-06 22:24:20.987 +02:00 [INF] Executed DbCommand (329ms) [Parameters=[@__refreshToken_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [r].[Id], [r].[Token], [r].[UserId]
+FROM [RefreshTokens] AS [r]
+WHERE [r].[Token] = @__refreshToken_0
+2025-02-06 22:24:21.083 +02:00 [INF] Executed DbCommand (70ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (Size = 4000), @p2='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [RefreshTokens] ([Id], [Token], [UserId])
+VALUES (@p0, @p1, @p2);
+2025-02-06 22:24:21.094 +02:00 [INF] Executing OkObjectResult, writing value of type 'JobPortal.Application.DTOs.LoginResponse'.
+2025-02-06 22:24:21.099 +02:00 [INF] Executed action JobPortal.Host.Controllers.AccountController.Login (JobPortal.Host) in 779.9514ms
+2025-02-06 22:24:21.103 +02:00 [INF] Executed endpoint 'JobPortal.Host.Controllers.AccountController.Login (JobPortal.Host)'
+2025-02-06 22:24:21.107 +02:00 [INF] HTTP POST /api/Account/login responded 200 in 801.9024 ms
+2025-02-06 22:24:21.116 +02:00 [INF] Request finished HTTP/1.1 POST http://localhost:5093/api/Account/login - 200 null application/json; charset=utf-8 823.1002ms
+2025-02-06 23:39:48.179 +02:00 [INF] Application is building...
+2025-02-06 23:39:48.610 +02:00 [INF] User profile is available. Using 'C:\Users\ahmed salah\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-02-06 23:39:48.831 +02:00 [INF] Application is running...
+2025-02-06 23:39:48.889 +02:00 [INF] Now listening on: http://localhost:5093
+2025-02-06 23:39:48.922 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-02-06 23:39:48.924 +02:00 [INF] Hosting environment: Development
+2025-02-06 23:39:48.925 +02:00 [INF] Content root path: D:\Projects\JobPortal\JobPortal.Host
+2025-02-06 23:39:49.235 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5093/swagger/index.html - null null
+2025-02-06 23:39:49.482 +02:00 [INF] HTTP GET /swagger/index.html responded 200 in 39.5973 ms
+2025-02-06 23:39:49.486 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5093/_framework/aspnetcore-browser-refresh.js - null null
+2025-02-06 23:39:49.488 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5093/swagger/index.html - 200 null text/html;charset=utf-8 255.1068ms
+2025-02-06 23:39:49.492 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5093/_framework/aspnetcore-browser-refresh.js - 200 13780 application/javascript; charset=utf-8 5.2611ms
+2025-02-06 23:39:49.494 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5093/_vs/browserLink - null null
+2025-02-06 23:39:49.531 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5093/_vs/browserLink - 200 null text/javascript; charset=UTF-8 36.373ms
+2025-02-06 23:39:49.580 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5093/swagger/v1/swagger.json - null null
+2025-02-06 23:39:49.593 +02:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 8.9935 ms
+2025-02-06 23:39:49.595 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5093/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 15.3264ms
+2025-02-06 23:40:13.078 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5093/api/Account/login - application/json 60
+2025-02-06 23:40:13.090 +02:00 [INF] CORS policy execution failed.
+2025-02-06 23:40:13.091 +02:00 [INF] Request origin http://localhost:5093 does not have permission to access the resource.
+2025-02-06 23:40:13.194 +02:00 [WRN] Failed to determine the https port for redirect.
+2025-02-06 23:40:13.199 +02:00 [INF] Executing endpoint 'JobPortal.Host.Controllers.AccountController.Login (JobPortal.Host)'
+2025-02-06 23:40:13.212 +02:00 [INF] Route matched with {action = "Login", controller = "Account", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(JobPortal.Application.DTOs.Identity.LoginDTO) on controller JobPortal.Host.Controllers.AccountController (JobPortal.Host).
+2025-02-06 23:40:13.877 +02:00 [WRN] No store type was specified for the decimal property 'SalaryMax' on entity type 'Job'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2025-02-06 23:40:13.880 +02:00 [WRN] No store type was specified for the decimal property 'SalaryMin' on entity type 'Job'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2025-02-06 23:40:15.097 +02:00 [INF] Executed DbCommand (173ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Education], [a].[Email], [a].[EmailConfirmed], [a].[Fullname], [a].[Location], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[ProfileImageUrl], [a].[ResumeUrl], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2025-02-06 23:40:15.175 +02:00 [INF] Executed DbCommand (1ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Education], [a].[Email], [a].[EmailConfirmed], [a].[Fullname], [a].[Location], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[ProfileImageUrl], [a].[ResumeUrl], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2025-02-06 23:40:15.239 +02:00 [INF] Executed DbCommand (32ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a0].[Name]
+FROM [AspNetUserRoles] AS [a]
+INNER JOIN [AspNetRoles] AS [a0] ON [a].[RoleId] = [a0].[Id]
+WHERE [a].[UserId] = @__userId_0
+2025-02-06 23:40:15.303 +02:00 [INF] Executed DbCommand (1ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Education], [a].[Email], [a].[EmailConfirmed], [a].[Fullname], [a].[Location], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[ProfileImageUrl], [a].[ResumeUrl], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2025-02-06 23:40:15.308 +02:00 [INF] Executed DbCommand (0ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Education], [a].[Email], [a].[EmailConfirmed], [a].[Fullname], [a].[Location], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[ProfileImageUrl], [a].[ResumeUrl], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2025-02-06 23:40:15.310 +02:00 [INF] Executed DbCommand (0ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Education], [a].[Email], [a].[EmailConfirmed], [a].[Fullname], [a].[Location], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[ProfileImageUrl], [a].[ResumeUrl], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2025-02-06 23:40:15.313 +02:00 [INF] Executed DbCommand (1ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a0].[Name]
+FROM [AspNetUserRoles] AS [a]
+INNER JOIN [AspNetRoles] AS [a0] ON [a].[RoleId] = [a0].[Id]
+WHERE [a].[UserId] = @__userId_0
+2025-02-06 23:40:15.357 +02:00 [INF] Executed DbCommand (11ms) [Parameters=[@__refreshToken_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [r].[Id], [r].[Token], [r].[UserId]
+FROM [RefreshTokens] AS [r]
+WHERE [r].[Token] = @__refreshToken_0
+2025-02-06 23:40:15.437 +02:00 [INF] Executed DbCommand (3ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (Size = 4000), @p2='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [RefreshTokens] ([Id], [Token], [UserId])
+VALUES (@p0, @p1, @p2);
+2025-02-06 23:40:15.449 +02:00 [INF] Executing OkObjectResult, writing value of type 'JobPortal.Application.DTOs.LoginResponse'.
+2025-02-06 23:40:15.454 +02:00 [INF] Executed action JobPortal.Host.Controllers.AccountController.Login (JobPortal.Host) in 2236.202ms
+2025-02-06 23:40:15.455 +02:00 [INF] Executed endpoint 'JobPortal.Host.Controllers.AccountController.Login (JobPortal.Host)'
+2025-02-06 23:40:15.457 +02:00 [INF] HTTP POST /api/Account/login responded 200 in 2364.1492 ms
+2025-02-06 23:40:15.462 +02:00 [INF] Request finished HTTP/1.1 POST http://localhost:5093/api/Account/login - 200 null application/json; charset=utf-8 2383.8769ms
+2025-02-06 23:52:27.307 +02:00 [INF] Application is building...
+2025-02-06 23:52:27.968 +02:00 [INF] User profile is available. Using 'C:\Users\ahmed salah\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-02-06 23:52:28.109 +02:00 [INF] Application is running...
+2025-02-06 23:52:28.288 +02:00 [INF] Now listening on: http://localhost:5093
+2025-02-06 23:52:28.331 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-02-06 23:52:28.333 +02:00 [INF] Hosting environment: Development
+2025-02-06 23:52:28.334 +02:00 [INF] Content root path: D:\Projects\JobPortal\JobPortal.Host
+2025-02-06 23:52:28.871 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5093/swagger/index.html - null null
+2025-02-06 23:52:29.169 +02:00 [INF] HTTP GET /swagger/index.html responded 200 in 62.5008 ms
+2025-02-06 23:52:29.181 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5093/_vs/browserLink - null null
+2025-02-06 23:52:29.181 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5093/_framework/aspnetcore-browser-refresh.js - null null
+2025-02-06 23:52:29.191 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5093/swagger/index.html - 200 null text/html;charset=utf-8 325.4951ms
+2025-02-06 23:52:29.214 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5093/_framework/aspnetcore-browser-refresh.js - 200 13780 application/javascript; charset=utf-8 33.1542ms
+2025-02-06 23:52:29.228 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5093/_vs/browserLink - 200 null text/javascript; charset=UTF-8 47.2026ms
+2025-02-06 23:52:29.263 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5093/swagger/v1/swagger.json - null null
+2025-02-06 23:52:29.283 +02:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 16.7678 ms
+2025-02-06 23:52:29.286 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5093/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 22.9509ms
+2025-02-06 23:52:53.559 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5093/api/Account/login - application/json 60
+2025-02-06 23:52:53.571 +02:00 [INF] CORS policy execution failed.
+2025-02-06 23:52:53.573 +02:00 [INF] Request origin http://localhost:5093 does not have permission to access the resource.
+2025-02-06 23:52:53.660 +02:00 [WRN] Failed to determine the https port for redirect.
+2025-02-06 23:52:53.664 +02:00 [INF] Executing endpoint 'JobPortal.Host.Controllers.AccountController.Login (JobPortal.Host)'
+2025-02-06 23:52:53.698 +02:00 [INF] Route matched with {action = "Login", controller = "Account", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(JobPortal.Application.DTOs.Identity.LoginDTO) on controller JobPortal.Host.Controllers.AccountController (JobPortal.Host).
+2025-02-06 23:52:55.044 +02:00 [WRN] No store type was specified for the decimal property 'SalaryMax' on entity type 'Job'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2025-02-06 23:52:55.047 +02:00 [WRN] No store type was specified for the decimal property 'SalaryMin' on entity type 'Job'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2025-02-06 23:52:57.088 +02:00 [INF] Executed DbCommand (197ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Education], [a].[Email], [a].[EmailConfirmed], [a].[Fullname], [a].[Location], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[ProfileImageUrl], [a].[ResumeUrl], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2025-02-06 23:52:57.215 +02:00 [INF] Executed DbCommand (2ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Education], [a].[Email], [a].[EmailConfirmed], [a].[Fullname], [a].[Location], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[ProfileImageUrl], [a].[ResumeUrl], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2025-02-06 23:52:57.288 +02:00 [INF] Executed DbCommand (28ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a0].[Name]
+FROM [AspNetUserRoles] AS [a]
+INNER JOIN [AspNetRoles] AS [a0] ON [a].[RoleId] = [a0].[Id]
+WHERE [a].[UserId] = @__userId_0
+2025-02-06 23:52:57.459 +02:00 [INF] Executed DbCommand (1ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Education], [a].[Email], [a].[EmailConfirmed], [a].[Fullname], [a].[Location], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[ProfileImageUrl], [a].[ResumeUrl], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2025-02-06 23:52:57.468 +02:00 [INF] Executed DbCommand (2ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Education], [a].[Email], [a].[EmailConfirmed], [a].[Fullname], [a].[Location], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[ProfileImageUrl], [a].[ResumeUrl], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2025-02-06 23:52:57.474 +02:00 [INF] Executed DbCommand (1ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Education], [a].[Email], [a].[EmailConfirmed], [a].[Fullname], [a].[Location], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[ProfileImageUrl], [a].[ResumeUrl], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2025-02-06 23:52:57.478 +02:00 [INF] Executed DbCommand (1ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a0].[Name]
+FROM [AspNetUserRoles] AS [a]
+INNER JOIN [AspNetRoles] AS [a0] ON [a].[RoleId] = [a0].[Id]
+WHERE [a].[UserId] = @__userId_0
+2025-02-06 23:52:57.589 +02:00 [INF] Executed DbCommand (21ms) [Parameters=[@__refreshToken_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [r].[Id], [r].[Token], [r].[UserId]
+FROM [RefreshTokens] AS [r]
+WHERE [r].[Token] = @__refreshToken_0
+2025-02-06 23:52:57.786 +02:00 [INF] Executed DbCommand (3ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (Size = 4000), @p2='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [RefreshTokens] ([Id], [Token], [UserId])
+VALUES (@p0, @p1, @p2);
+2025-02-06 23:52:57.806 +02:00 [INF] Executing OkObjectResult, writing value of type 'JobPortal.Application.DTOs.LoginResponse'.
+2025-02-06 23:52:57.815 +02:00 [INF] Executed action JobPortal.Host.Controllers.AccountController.Login (JobPortal.Host) in 4110.3713ms
+2025-02-06 23:52:57.816 +02:00 [INF] Executed endpoint 'JobPortal.Host.Controllers.AccountController.Login (JobPortal.Host)'
+2025-02-06 23:52:57.818 +02:00 [INF] HTTP POST /api/Account/login responded 200 in 4241.6845 ms
+2025-02-06 23:52:57.829 +02:00 [INF] Request finished HTTP/1.1 POST http://localhost:5093/api/Account/login - 200 null application/json; charset=utf-8 4270.0015ms
+2025-02-06 23:53:19.161 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5093/api/job/add-job - application/json 437
+2025-02-06 23:53:19.216 +02:00 [INF] Executing endpoint 'JobPortal.Host.Controllers.Job.Add (JobPortal.Host)'
+2025-02-06 23:53:19.222 +02:00 [INF] Route matched with {action = "Add", controller = "Job", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Add(JobPortal.Application.DTOs.Job.CreateJob) on controller JobPortal.Host.Controllers.Job (JobPortal.Host).
+2025-02-06 23:53:19.229 +02:00 [INF] Executed action JobPortal.Host.Controllers.Job.Add (JobPortal.Host) in 4.9501ms
+2025-02-06 23:53:19.232 +02:00 [INF] Executed endpoint 'JobPortal.Host.Controllers.Job.Add (JobPortal.Host)'
+2025-02-06 23:53:19.357 +02:00 [ERR] Unknwon exception
+System.InvalidOperationException: Unable to resolve service for type 'JobPortal.Application.Services.Interfaces.IJobServices' while attempting to activate 'JobPortal.Host.Controllers.Job'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.ThrowHelperUnableToResolveService(Type type, Type requiredBy)
+   at lambda_method335(Closure, IServiceProvider, Object[])
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at JobPortal.Infrastructure.Middleware.ExceptionHandlingMiddleware.InvokeAsync(HttpContext context) in D:\Projects\JobPortal\JobPortal.Infrastructure\Middleware\ExceptionHandlingMiddleware.cs:line 20
+2025-02-06 23:53:19.413 +02:00 [ERR] HTTP POST /api/job/add-job responded 500 in 203.5376 ms
+2025-02-06 23:53:19.414 +02:00 [INF] Request finished HTTP/1.1 POST http://localhost:5093/api/job/add-job - 500 null application/json 253.2996ms
+2025-02-06 23:54:05.181 +02:00 [INF] Application is building...
+2025-02-06 23:54:05.733 +02:00 [INF] User profile is available. Using 'C:\Users\ahmed salah\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-02-06 23:54:05.840 +02:00 [INF] Application is running...
+2025-02-06 23:54:06.052 +02:00 [INF] Now listening on: http://localhost:5093
+2025-02-06 23:54:06.092 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-02-06 23:54:06.093 +02:00 [INF] Hosting environment: Development
+2025-02-06 23:54:06.094 +02:00 [INF] Content root path: D:\Projects\JobPortal\JobPortal.Host
+2025-02-06 23:54:06.486 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5093/swagger/index.html - null null
+2025-02-06 23:54:06.728 +02:00 [INF] HTTP GET /swagger/index.html responded 200 in 53.7501 ms
+2025-02-06 23:54:06.734 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5093/_framework/aspnetcore-browser-refresh.js - null null
+2025-02-06 23:54:06.734 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5093/_vs/browserLink - null null
+2025-02-06 23:54:06.739 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5093/swagger/index.html - 200 null text/html;charset=utf-8 258.5781ms
+2025-02-06 23:54:06.740 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5093/_framework/aspnetcore-browser-refresh.js - 200 13780 application/javascript; charset=utf-8 5.9237ms
+2025-02-06 23:54:06.782 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5093/_vs/browserLink - 200 null text/javascript; charset=UTF-8 48.1759ms
+2025-02-06 23:54:06.822 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5093/swagger/v1/swagger.json - null null
+2025-02-06 23:54:06.839 +02:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 11.9704 ms
+2025-02-06 23:54:06.841 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5093/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 18.492ms
+2025-02-06 23:54:21.052 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5093/api/Account/login - application/json 60
+2025-02-06 23:54:21.066 +02:00 [INF] CORS policy execution failed.
+2025-02-06 23:54:21.068 +02:00 [INF] Request origin http://localhost:5093 does not have permission to access the resource.
+2025-02-06 23:54:21.093 +02:00 [WRN] Failed to determine the https port for redirect.
+2025-02-06 23:54:21.098 +02:00 [INF] Executing endpoint 'JobPortal.Host.Controllers.AccountController.Login (JobPortal.Host)'
+2025-02-06 23:54:21.132 +02:00 [INF] Route matched with {action = "Login", controller = "Account", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(JobPortal.Application.DTOs.Identity.LoginDTO) on controller JobPortal.Host.Controllers.AccountController (JobPortal.Host).
+2025-02-06 23:54:22.265 +02:00 [WRN] No store type was specified for the decimal property 'SalaryMax' on entity type 'Job'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2025-02-06 23:54:22.270 +02:00 [WRN] No store type was specified for the decimal property 'SalaryMin' on entity type 'Job'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2025-02-06 23:54:23.855 +02:00 [INF] Executed DbCommand (199ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Education], [a].[Email], [a].[EmailConfirmed], [a].[Fullname], [a].[Location], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[ProfileImageUrl], [a].[ResumeUrl], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2025-02-06 23:54:24.068 +02:00 [INF] Executed DbCommand (3ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Education], [a].[Email], [a].[EmailConfirmed], [a].[Fullname], [a].[Location], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[ProfileImageUrl], [a].[ResumeUrl], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2025-02-06 23:54:24.202 +02:00 [INF] Executed DbCommand (32ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a0].[Name]
+FROM [AspNetUserRoles] AS [a]
+INNER JOIN [AspNetRoles] AS [a0] ON [a].[RoleId] = [a0].[Id]
+WHERE [a].[UserId] = @__userId_0
+2025-02-06 23:54:24.358 +02:00 [INF] Executed DbCommand (2ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Education], [a].[Email], [a].[EmailConfirmed], [a].[Fullname], [a].[Location], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[ProfileImageUrl], [a].[ResumeUrl], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2025-02-06 23:54:24.369 +02:00 [INF] Executed DbCommand (2ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Education], [a].[Email], [a].[EmailConfirmed], [a].[Fullname], [a].[Location], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[ProfileImageUrl], [a].[ResumeUrl], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2025-02-06 23:54:24.378 +02:00 [INF] Executed DbCommand (2ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Education], [a].[Email], [a].[EmailConfirmed], [a].[Fullname], [a].[Location], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[ProfileImageUrl], [a].[ResumeUrl], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2025-02-06 23:54:24.386 +02:00 [INF] Executed DbCommand (2ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a0].[Name]
+FROM [AspNetUserRoles] AS [a]
+INNER JOIN [AspNetRoles] AS [a0] ON [a].[RoleId] = [a0].[Id]
+WHERE [a].[UserId] = @__userId_0
+2025-02-06 23:54:24.485 +02:00 [INF] Executed DbCommand (49ms) [Parameters=[@__refreshToken_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [r].[Id], [r].[Token], [r].[UserId]
+FROM [RefreshTokens] AS [r]
+WHERE [r].[Token] = @__refreshToken_0
+2025-02-06 23:54:24.674 +02:00 [INF] Executed DbCommand (3ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (Size = 4000), @p2='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [RefreshTokens] ([Id], [Token], [UserId])
+VALUES (@p0, @p1, @p2);
+2025-02-06 23:54:24.699 +02:00 [INF] Executing OkObjectResult, writing value of type 'JobPortal.Application.DTOs.LoginResponse'.
+2025-02-06 23:54:24.714 +02:00 [INF] Executed action JobPortal.Host.Controllers.AccountController.Login (JobPortal.Host) in 3573.9431ms
+2025-02-06 23:54:24.716 +02:00 [INF] Executed endpoint 'JobPortal.Host.Controllers.AccountController.Login (JobPortal.Host)'
+2025-02-06 23:54:24.718 +02:00 [INF] HTTP POST /api/Account/login responded 200 in 3647.6475 ms
+2025-02-06 23:54:24.730 +02:00 [INF] Request finished HTTP/1.1 POST http://localhost:5093/api/Account/login - 200 null application/json; charset=utf-8 3678.4406ms
+2025-02-06 23:54:41.539 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5093/api/job/add-job - application/json 437
+2025-02-06 23:54:41.594 +02:00 [INF] Executing endpoint 'JobPortal.Host.Controllers.Job.Add (JobPortal.Host)'
+2025-02-06 23:54:41.601 +02:00 [INF] Route matched with {action = "Add", controller = "Job", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Add(JobPortal.Application.DTOs.Job.CreateJob) on controller JobPortal.Host.Controllers.Job (JobPortal.Host).
+2025-02-06 23:55:10.365 +02:00 [INF] Executed action JobPortal.Host.Controllers.Job.Add (JobPortal.Host) in 28763.1476ms
+2025-02-06 23:55:10.369 +02:00 [INF] Executed endpoint 'JobPortal.Host.Controllers.Job.Add (JobPortal.Host)'
+2025-02-06 23:56:11.647 +02:00 [INF] Application is building...
+2025-02-06 23:56:12.063 +02:00 [INF] User profile is available. Using 'C:\Users\ahmed salah\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-02-06 23:56:12.170 +02:00 [INF] Application is running...
+2025-02-06 23:56:12.358 +02:00 [INF] Now listening on: http://localhost:5093
+2025-02-06 23:56:12.400 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-02-06 23:56:12.402 +02:00 [INF] Hosting environment: Development
+2025-02-06 23:56:12.403 +02:00 [INF] Content root path: D:\Projects\JobPortal\JobPortal.Host
+2025-02-06 23:56:12.700 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5093/swagger/index.html - null null
+2025-02-06 23:56:12.964 +02:00 [INF] HTTP GET /swagger/index.html responded 200 in 55.3772 ms
+2025-02-06 23:56:12.970 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5093/swagger/index.html - 200 null text/html;charset=utf-8 276.8185ms
+2025-02-06 23:56:12.974 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5093/_framework/aspnetcore-browser-refresh.js - null null
+2025-02-06 23:56:12.980 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5093/_framework/aspnetcore-browser-refresh.js - 200 13780 application/javascript; charset=utf-8 5.9712ms
+2025-02-06 23:56:12.992 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5093/_vs/browserLink - null null
+2025-02-06 23:56:13.030 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5093/_vs/browserLink - 200 null text/javascript; charset=UTF-8 37.9947ms
+2025-02-06 23:56:13.154 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5093/swagger/v1/swagger.json - null null
+2025-02-06 23:56:13.172 +02:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 11.3770 ms
+2025-02-06 23:56:13.174 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5093/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 20.1778ms
+2025-02-06 23:56:32.176 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5093/api/Account/login - application/json 60
+2025-02-06 23:56:32.188 +02:00 [INF] CORS policy execution failed.
+2025-02-06 23:56:32.189 +02:00 [INF] Request origin http://localhost:5093 does not have permission to access the resource.
+2025-02-06 23:56:32.205 +02:00 [WRN] Failed to determine the https port for redirect.
+2025-02-06 23:56:32.208 +02:00 [INF] Executing endpoint 'JobPortal.Host.Controllers.AccountController.Login (JobPortal.Host)'
+2025-02-06 23:56:32.222 +02:00 [INF] Route matched with {action = "Login", controller = "Account", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(JobPortal.Application.DTOs.Identity.LoginDTO) on controller JobPortal.Host.Controllers.AccountController (JobPortal.Host).
+2025-02-06 23:56:32.855 +02:00 [WRN] No store type was specified for the decimal property 'SalaryMax' on entity type 'Job'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2025-02-06 23:56:32.859 +02:00 [WRN] No store type was specified for the decimal property 'SalaryMin' on entity type 'Job'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2025-02-06 23:56:34.066 +02:00 [INF] Executed DbCommand (174ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Education], [a].[Email], [a].[EmailConfirmed], [a].[Fullname], [a].[Location], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[ProfileImageUrl], [a].[ResumeUrl], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2025-02-06 23:56:34.155 +02:00 [INF] Executed DbCommand (2ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Education], [a].[Email], [a].[EmailConfirmed], [a].[Fullname], [a].[Location], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[ProfileImageUrl], [a].[ResumeUrl], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2025-02-06 23:56:34.215 +02:00 [INF] Executed DbCommand (28ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a0].[Name]
+FROM [AspNetUserRoles] AS [a]
+INNER JOIN [AspNetRoles] AS [a0] ON [a].[RoleId] = [a0].[Id]
+WHERE [a].[UserId] = @__userId_0
+2025-02-06 23:56:34.286 +02:00 [INF] Executed DbCommand (1ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Education], [a].[Email], [a].[EmailConfirmed], [a].[Fullname], [a].[Location], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[ProfileImageUrl], [a].[ResumeUrl], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2025-02-06 23:56:34.292 +02:00 [INF] Executed DbCommand (1ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Education], [a].[Email], [a].[EmailConfirmed], [a].[Fullname], [a].[Location], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[ProfileImageUrl], [a].[ResumeUrl], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2025-02-06 23:56:34.296 +02:00 [INF] Executed DbCommand (1ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Education], [a].[Email], [a].[EmailConfirmed], [a].[Fullname], [a].[Location], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[ProfileImageUrl], [a].[ResumeUrl], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2025-02-06 23:56:34.301 +02:00 [INF] Executed DbCommand (1ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a0].[Name]
+FROM [AspNetUserRoles] AS [a]
+INNER JOIN [AspNetRoles] AS [a0] ON [a].[RoleId] = [a0].[Id]
+WHERE [a].[UserId] = @__userId_0
+2025-02-06 23:56:34.347 +02:00 [INF] Executed DbCommand (15ms) [Parameters=[@__refreshToken_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [r].[Id], [r].[Token], [r].[UserId]
+FROM [RefreshTokens] AS [r]
+WHERE [r].[Token] = @__refreshToken_0
+2025-02-06 23:56:34.425 +02:00 [INF] Executed DbCommand (3ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (Size = 4000), @p2='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [RefreshTokens] ([Id], [Token], [UserId])
+VALUES (@p0, @p1, @p2);
+2025-02-06 23:56:34.439 +02:00 [INF] Executing OkObjectResult, writing value of type 'JobPortal.Application.DTOs.LoginResponse'.
+2025-02-06 23:56:34.448 +02:00 [INF] Executed action JobPortal.Host.Controllers.AccountController.Login (JobPortal.Host) in 2219.711ms
+2025-02-06 23:56:34.450 +02:00 [INF] Executed endpoint 'JobPortal.Host.Controllers.AccountController.Login (JobPortal.Host)'
+2025-02-06 23:56:34.452 +02:00 [INF] HTTP POST /api/Account/login responded 200 in 2261.0699 ms
+2025-02-06 23:56:34.458 +02:00 [INF] Request finished HTTP/1.1 POST http://localhost:5093/api/Account/login - 200 null application/json; charset=utf-8 2282.5151ms
+2025-02-06 23:56:49.575 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5093/api/job/add-job - application/json 437
+2025-02-06 23:56:49.613 +02:00 [INF] Executing endpoint 'JobPortal.Host.Controllers.Job.Add (JobPortal.Host)'
+2025-02-06 23:56:49.624 +02:00 [INF] Route matched with {action = "Add", controller = "Job", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Add(JobPortal.Application.DTOs.Job.CreateJob) on controller JobPortal.Host.Controllers.Job (JobPortal.Host).
+2025-02-06 23:57:01.169 +02:00 [INF] Executed DbCommand (67ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (DbType = Guid), @p2='?' (DbType = Guid), @p3='?' (Size = 4000), @p4='?' (Size = 4000), @p5='?' (Size = 4000), @p6='?' (Size = 4000), @p7='?' (Size = 4000), @p8='?' (Size = 4000), @p9='?' (Precision = 18) (Scale = 2) (DbType = Decimal), @p10='?' (Precision = 18) (Scale = 2) (DbType = Decimal), @p11='?' (Size = 4000), @p12='?' (Size = 50)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Jobs] ([Id], [CategoryId], [CompanyId], [Description], [EmploymentType], [ExperienceLevel], [Location], [Requirements], [Responsibilities], [SalaryMax], [SalaryMin], [Status], [Title])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11, @p12);
+2025-02-06 23:57:09.095 +02:00 [INF] Executing OkObjectResult, writing value of type 'JobPortal.Application.DTOs.ServiceResponse'.
+2025-02-06 23:57:09.132 +02:00 [INF] Executed action JobPortal.Host.Controllers.Job.Add (JobPortal.Host) in 19506.8542ms
+2025-02-06 23:57:09.134 +02:00 [INF] Executed endpoint 'JobPortal.Host.Controllers.Job.Add (JobPortal.Host)'
+2025-02-06 23:57:09.135 +02:00 [INF] HTTP POST /api/job/add-job responded 200 in 19526.5842 ms
+2025-02-06 23:57:09.137 +02:00 [INF] Request finished HTTP/1.1 POST http://localhost:5093/api/job/add-job - 200 null application/json; charset=utf-8 19562.5351ms
+2025-02-06 23:57:27.171 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5093/api/Job/get-all-jobs - null null
+2025-02-06 23:57:35.454 +02:00 [INF] Executing endpoint 'JobPortal.Host.Controllers.Job.GetAll (JobPortal.Host)'
+2025-02-06 23:57:35.459 +02:00 [INF] Route matched with {action = "GetAll", controller = "Job", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller JobPortal.Host.Controllers.Job (JobPortal.Host).
+2025-02-06 23:57:44.105 +02:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [j].[Id], [j].[CategoryId], [j].[CompanyId], [j].[Description], [j].[EmploymentType], [j].[ExperienceLevel], [j].[Location], [j].[Requirements], [j].[Responsibilities], [j].[SalaryMax], [j].[SalaryMin], [j].[Status], [j].[Title]
+FROM [Jobs] AS [j]
+2025-02-06 23:57:44.218 +02:00 [INF] Executed action JobPortal.Host.Controllers.Job.GetAll (JobPortal.Host) in 8757.0474ms
+2025-02-06 23:57:44.221 +02:00 [INF] Executed endpoint 'JobPortal.Host.Controllers.Job.GetAll (JobPortal.Host)'
+2025-02-06 23:57:44.258 +02:00 [ERR] Unknwon exception
+AutoMapper.AutoMapperMappingException: Error mapping types.
+
+Mapping types:
+List`1 -> IEnumerable`1
+System.Collections.Generic.List`1[[JobPortal.Domain.Entities.Job, JobPortal.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] -> System.Collections.Generic.IEnumerable`1[[JobPortal.Application.DTOs.Job.GetJobDTO, JobPortal.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]
+ ---> AutoMapper.AutoMapperMappingException: Missing type map configuration or unsupported mapping.
+
+Mapping types:
+Job -> GetJobDTO
+JobPortal.Domain.Entities.Job -> JobPortal.Application.DTOs.Job.GetJobDTO
+   at lambda_method521(Closure, Job, GetJobDTO, ResolutionContext)
+   at lambda_method520(Closure, Object, IEnumerable`1, ResolutionContext)
+   --- End of inner exception stack trace ---
+   at lambda_method520(Closure, Object, IEnumerable`1, ResolutionContext)
+   at JobPortal.Application.Services.Implementations.JobServices.GetAllAsync() in D:\Projects\JobPortal\JobPortal.Application\Services\Implementations\JobServices.cs:line 37
+   at JobPortal.Host.Controllers.Job.GetAll() in D:\Projects\JobPortal\JobPortal.Host\Controllers\Job.cs:line 15
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at JobPortal.Infrastructure.Middleware.ExceptionHandlingMiddleware.InvokeAsync(HttpContext context) in D:\Projects\JobPortal\JobPortal.Infrastructure\Middleware\ExceptionHandlingMiddleware.cs:line 20
+2025-02-06 23:57:44.304 +02:00 [ERR] HTTP GET /api/Job/get-all-jobs responded 500 in 17126.1286 ms
+2025-02-06 23:57:44.306 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5093/api/Job/get-all-jobs - 500 null application/json 17134.93ms
+2025-02-06 23:58:11.730 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5093/api/job/add-job - application/json 444
+2025-02-06 23:58:11.746 +02:00 [INF] Authorization failed. These requirements were not met:
+RolesAuthorizationRequirement:User.IsInRole must be true for one of the following roles: (Recruiter)
+2025-02-06 23:58:11.756 +02:00 [INF] AuthenticationScheme: Bearer was challenged.
+2025-02-06 23:58:11.758 +02:00 [INF] HTTP POST /api/job/add-job responded 401 in 13.5916 ms
+2025-02-06 23:58:11.760 +02:00 [INF] Request finished HTTP/1.1 POST http://localhost:5093/api/job/add-job - 401 0 null 30.4513ms
+2025-02-06 23:59:10.288 +02:00 [INF] Application is building...
+2025-02-06 23:59:10.712 +02:00 [INF] User profile is available. Using 'C:\Users\ahmed salah\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-02-06 23:59:10.811 +02:00 [INF] Application is running...
+2025-02-06 23:59:10.943 +02:00 [INF] Now listening on: http://localhost:5093
+2025-02-06 23:59:10.977 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-02-06 23:59:10.980 +02:00 [INF] Hosting environment: Development
+2025-02-06 23:59:10.980 +02:00 [INF] Content root path: D:\Projects\JobPortal\JobPortal.Host
+2025-02-06 23:59:11.409 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5093/swagger/index.html - null null
+2025-02-06 23:59:11.728 +02:00 [INF] HTTP GET /swagger/index.html responded 200 in 64.3166 ms
+2025-02-06 23:59:11.737 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5093/_framework/aspnetcore-browser-refresh.js - null null
+2025-02-06 23:59:11.742 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5093/swagger/index.html - 200 null text/html;charset=utf-8 338.8992ms
+2025-02-06 23:59:11.751 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5093/_framework/aspnetcore-browser-refresh.js - 200 13780 application/javascript; charset=utf-8 14.4195ms
+2025-02-06 23:59:11.754 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5093/_vs/browserLink - null null
+2025-02-06 23:59:11.806 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5093/_vs/browserLink - 200 null text/javascript; charset=UTF-8 52.6427ms
+2025-02-06 23:59:11.850 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5093/swagger/v1/swagger.json - null null
+2025-02-06 23:59:11.867 +02:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 12.0655 ms
+2025-02-06 23:59:11.870 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5093/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 20.1199ms
+2025-02-06 23:59:15.978 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5093/api/Job/get-all-jobs - null null
+2025-02-06 23:59:16.003 +02:00 [WRN] Failed to determine the https port for redirect.
+2025-02-06 23:59:16.006 +02:00 [INF] Executing endpoint 'JobPortal.Host.Controllers.Job.GetAll (JobPortal.Host)'
+2025-02-06 23:59:16.019 +02:00 [INF] Route matched with {action = "GetAll", controller = "Job", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller JobPortal.Host.Controllers.Job (JobPortal.Host).
+2025-02-06 23:59:16.512 +02:00 [WRN] No store type was specified for the decimal property 'SalaryMax' on entity type 'Job'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2025-02-06 23:59:16.516 +02:00 [WRN] No store type was specified for the decimal property 'SalaryMin' on entity type 'Job'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2025-02-06 23:59:22.446 +02:00 [INF] Executed DbCommand (137ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [j].[Id], [j].[CategoryId], [j].[CompanyId], [j].[Description], [j].[EmploymentType], [j].[ExperienceLevel], [j].[Location], [j].[Requirements], [j].[Responsibilities], [j].[SalaryMax], [j].[SalaryMin], [j].[Status], [j].[Title]
+FROM [Jobs] AS [j]
+2025-02-06 23:59:25.087 +02:00 [INF] Executed action JobPortal.Host.Controllers.Job.GetAll (JobPortal.Host) in 9063.225ms
+2025-02-06 23:59:25.090 +02:00 [INF] Executed endpoint 'JobPortal.Host.Controllers.Job.GetAll (JobPortal.Host)'
