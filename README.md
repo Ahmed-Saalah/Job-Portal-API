@@ -57,8 +57,8 @@ The project follows the **Clean Architecture** pattern with the following layers
 - `GET /api/jobapplications/job/{jobId}` → Retrieve all applications for a specific job.  
 - `GET /api/jobapplications/user/{userId}/job/{jobId}` → Retrieve a specific user's application for a job.  
 - `POST /api/jobapplications` → Allows job seekers to apply for a job.  
-- `PUT /api/jobapplications/update-status-by-recruiter` → Allows recruiters to update the application status.  
-- `PUT /api/jobapplications/update-job-application` → Allows job seekers to update the application.  
+- `PUT /api/jobapplications/status` → Allows recruiters to update the application status.  
+- `PUT /api/jobapplications` → Allows job seekers to update the application.  
 - `DELETE /api/jobapplications/{id}` → Allows job seekers to withdraw their application.  
 
 ---
