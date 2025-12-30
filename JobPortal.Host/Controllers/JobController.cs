@@ -1,5 +1,6 @@
 ﻿using JobPortal.Application.DTOs.Job;
 using JobPortal.Application.Services.Interfaces;
+using JobPortal.Domain.Consts;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
@@ -41,7 +42,7 @@ namespace JobPortal.Host.Controllers
             return Ok(jobs);
         }
 
-        [Authorize(Roles = "Recruiter")]
+        [Authorize(Roles = UserRolesConstants.Recruiter)]
         [HttpPost("jobs")]
         public async Task<IActionResult> Add([FromBody] CreateJobDto job)
         {
@@ -52,7 +53,7 @@ namespace JobPortal.Host.Controllers
             return result.Success ? Ok(result) : BadRequest(ModelState);
         }
 
-        [Authorize(Roles = "Recruiter")]
+        [Authorize(Roles = UserRolesConstants.Recruiter)]
         [HttpPut("jobs/{jobId}")]
         public async Task<IActionResult> Update([FromRoute] Guid jobId, [FromBody] UpdateJobDto job)
         {
@@ -63,7 +64,7 @@ namespace JobPortal.Host.Controllers
             return result.Success ? Ok(result) : BadRequest(result);
         }
 
-        [Authorize(Roles = "Recruiter")]
+        [Authorize(Roles = UserRolesConstants.Recruiter)]
         [HttpDelete("delete/{id}")]
         public async Task<IActionResult> Delete([FromRoute] Guid id)
         {

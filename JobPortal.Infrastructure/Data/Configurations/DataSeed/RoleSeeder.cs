@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Identity;
+﻿using JobPortal.Domain.Consts;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.Extensions.DependencyInjection;
 
 namespace JobPortal.Infrastructure.Data.Configurations.DataSeed
@@ -9,7 +10,7 @@ namespace JobPortal.Infrastructure.Data.Configurations.DataSeed
         {
             var roleManager = serviceProvider.GetRequiredService<RoleManager<IdentityRole>>();
 
-            string[] roleNames = { "JOBSEEKER", "RECRUITER" };
+            var roleNames = UserRolesConstants.AllRoles;
 
             foreach (var roleName in roleNames)
             {

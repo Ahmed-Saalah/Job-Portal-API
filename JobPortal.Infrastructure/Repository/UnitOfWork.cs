@@ -5,31 +5,24 @@ using JobPortal.Infrastructure.Data;
 
 namespace JobPortal.Infrastructure.Repository
 {
-    public class UnitOfWork : IUnitOfWork
+    public class UnitOfWork(AppDbContext context) : IUnitOfWork
     {
-        private readonly AppDbContext _context;
+        private readonly AppDbContext _context = context;
 
-        public UnitOfWork(AppDbContext context)
-        {
-            _context = context;
-            Jobs = new GenericRepository<Job>(context);
-            JobApplications = new GenericRepository<JobApplication>(context);
-            Skills = new GenericRepository<Skill>(context);
-            UserSkills = new GenericRepository<UserSkill>(context);
-            JobSkills = new GenericRepository<JobSkill>(context);
-            AppUsers = new GenericRepository<AppUser>(context);
-            Companies = new GenericRepository<Company>(context);
-            Categories = new GenericRepository<Category>(context);
-        }
-
-        public IGenericRepository<Job> Jobs { get; }
-        public IGenericRepository<JobApplication> JobApplications { get; }
-        public IGenericRepository<Skill> Skills { get; }
-        public IGenericRepository<UserSkill> UserSkills { get; }
-        public IGenericRepository<JobSkill> JobSkills { get; }
-        public IGenericRepository<AppUser> AppUsers { get; }
-        public IGenericRepository<Company> Companies { get; }
-        public IGenericRepository<Category> Categories { get; }
+        public IGenericRepository<Job> Jobs { get; } = new GenericRepository<Job>(context);
+        public IGenericRepository<JobApplication> JobApplications { get; } =
+            new GenericRepository<JobApplication>(context);
+        public IGenericRepository<Skill> Skills { get; } = new GenericRepository<Skill>(context);
+        public IGenericRepository<UserSkill> UserSkills { get; } =
+            new GenericRepository<UserSkill>(context);
+        public IGenericRepository<JobSkill> JobSkills { get; } =
+            new GenericRepository<JobSkill>(context);
+        public IGenericRepository<AppUser> AppUsers { get; } =
+            new GenericRepository<AppUser>(context);
+        public IGenericRepository<Company> Companies { get; } =
+            new GenericRepository<Company>(context);
+        public IGenericRepository<Category> Categories { get; } =
+            new GenericRepository<Category>(context);
 
         public async Task SaveAsync()
         {

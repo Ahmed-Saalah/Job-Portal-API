@@ -1,5 +1,6 @@
 ﻿using JobPortal.Application.DTOs.JopApllication;
 using JobPortal.Application.Services.Interfaces;
+using JobPortal.Domain.Consts;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
@@ -10,7 +11,7 @@ namespace JobPortal.Host.Controllers
     public class JobApplicationController(IJobApplicationService jobApplicationService)
         : ControllerBase
     {
-        [Authorize(Roles = "Recruiter")]
+        [Authorize(Roles = UserRolesConstants.Recruiter)]
         [HttpGet("jobs/{jobId}")]
         public async Task<IActionResult> GetAllJobApplications(Guid jobId)
         {
@@ -47,7 +48,7 @@ namespace JobPortal.Host.Controllers
             return result.Success ? Ok(result) : BadRequest(result);
         }
 
-        [Authorize(Roles = "JobSeeker")]
+        [Authorize(Roles = UserRolesConstants.JobSeeker)]
         [HttpPut("jobs/applications/{applicationId}")]
         public async Task<IActionResult> UpdateJobApplication(
             [FromRoute] Guid applicationId,
@@ -64,7 +65,7 @@ namespace JobPortal.Host.Controllers
             return result.Success ? Ok(result) : BadRequest(result);
         }
 
-        [Authorize(Roles = "Recruiter")]
+        [Authorize(Roles = UserRolesConstants.Recruiter)]
         [HttpPut("jobs/applications/{applicationId}/status")]
         public async Task<IActionResult> UpdateJobApplicationStatus(
             [FromRoute] Guid applicationId,
