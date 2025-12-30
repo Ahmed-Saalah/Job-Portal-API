@@ -9,14 +9,14 @@ namespace JobPortal.Application.Services.Implementations
 {
     public class JobServices(IUnitOfWork unitOfWork, IMapper mapper) : IJobServices
     {
-        public async Task<ServiceResponse> AddAsync(CreateJob job)
+        public async Task<ServiceResponse> AddAsync(CreateJobDto job)
         {
             var mappedData = mapper.Map<Job>(job);
             int result = await unitOfWork.Jobs.AddAsync(mappedData);
             if (result > 0)
                 return new ServiceResponse(true, "Job Added");
 
-            return new ServiceResponse(false,"Added faild");
+            return new ServiceResponse(false, "Added faild");
         }
 
         public async Task<ServiceResponse> DeleteAsync(Guid id)
@@ -24,7 +24,7 @@ namespace JobPortal.Application.Services.Implementations
             int result = await unitOfWork.Jobs.DeleteAsync(id);
             if (result > 0)
                 return new ServiceResponse(true, "Deleted");
-            
+
             return new ServiceResponse(false, "Job faild to be deleted");
         }
 
@@ -33,7 +33,7 @@ namespace JobPortal.Application.Services.Implementations
             var rawData = await unitOfWork.Jobs.GetAllAsync();
             if (!rawData.Any())
                 return [];
-            
+
             return mapper.Map<IEnumerable<GetJobDTO>>(rawData);
         }
 
@@ -55,7 +55,7 @@ namespace JobPortal.Application.Services.Implementations
             return mapper.Map<GetJobDTO>(rawData);
         }
 
-        public async Task<ServiceResponse> UpdateAsync(UpdateJob job)
+        public async Task<ServiceResponse> UpdateAsync(Guid jobId, UpdateJobDto job)
         {
             var mappedData = mapper.Map<Job>(job);
             int result = await unitOfWork.Jobs.UpdateAsync(mappedData);

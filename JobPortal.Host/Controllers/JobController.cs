@@ -9,7 +9,7 @@ namespace JobPortal.Host.Controllers
     [ApiController]
     public class JobController(IJobServices jobServices) : ControllerBase
     {
-        [HttpGet("get-all-jobs")]
+        [HttpGet("jobs")]
         public async Task<IActionResult> GetAll()
         {
             var jobs = await jobServices.GetAllAsync();
@@ -20,18 +20,18 @@ namespace JobPortal.Host.Controllers
             return Ok(jobs);
         }
 
-        [HttpGet("get-job")]
-        public async Task<IActionResult> GetById(Guid id)
+        [HttpGet("jobs/{id}")]
+        public async Task<IActionResult> GetById([FromRoute] Guid id)
         {
             var job = await jobServices.GetByIdAsync(id);
-            if (job == null) 
+            if (job == null)
                 return NotFound(job);
 
             return Ok(job);
         }
 
-        [HttpGet("category/{categoryId}")]
-        public async Task<IActionResult> GetAllByCategory(Guid categoryId)
+        [HttpGet("jobs/categories/{categoryId}")]
+        public async Task<IActionResult> GetAllByCategory([FromRoute] Guid categoryId)
         {
             var jobs = await jobServices.GetAllByCategoryIdAsync(categoryId);
             if (jobs == null)
@@ -40,32 +40,32 @@ namespace JobPortal.Host.Controllers
             }
             return Ok(jobs);
         }
-        
+
         [Authorize(Roles = "Recruiter")]
-        [HttpPost("add-job")]
-        public async Task<IActionResult> Add(CreateJob job)
+        [HttpPost("jobs")]
+        public async Task<IActionResult> Add([FromBody] CreateJobDto job)
         {
             if (!ModelState.IsValid)
                 return BadRequest(ModelState);
 
-            var result = await jobServices.AddAsync(job);   
+            var result = await jobServices.AddAsync(job);
             return result.Success ? Ok(result) : BadRequest(ModelState);
         }
 
         [Authorize(Roles = "Recruiter")]
-        [HttpPut("update-job")]
-        public async Task<IActionResult> Update(UpdateJob job)
+        [HttpPut("jobs/{jobId}")]
+        public async Task<IActionResult> Update([FromRoute] Guid jobId, [FromBody] UpdateJobDto job)
         {
             if (!ModelState.IsValid)
                 return BadRequest(ModelState);
 
-            var result = await jobServices.UpdateAsync(job);
+            var result = await jobServices.UpdateAsync(jobId, job);
             return result.Success ? Ok(result) : BadRequest(result);
         }
 
         [Authorize(Roles = "Recruiter")]
         [HttpDelete("delete/{id}")]
-        public async Task<IActionResult> Delete(Guid id)
+        public async Task<IActionResult> Delete([FromRoute] Guid id)
         {
             var result = await jobServices.DeleteAsync(id);
             return result.Success ? Ok(result) : BadRequest(result);
