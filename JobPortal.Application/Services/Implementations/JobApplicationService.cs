@@ -7,7 +7,8 @@ using JobPortal.Domain.Interfaces;
 
 namespace JobPortal.Application.Services.Implementations
 {
-    internal class JobApplicationService(IUnitOfWork unitOfWork, IMapper mapper) : IJobApplicationService
+    internal class JobApplicationService(IUnitOfWork unitOfWork, IMapper mapper)
+        : IJobApplicationService
     {
         public async Task<ServiceResponse> AddAsync(CreateJobApplicationDTO job)
         {
@@ -37,17 +38,27 @@ namespace JobPortal.Application.Services.Implementations
             return mapper.Map<IEnumerable<GetJobApplicationDTO>>(rawData);
         }
 
-        public async Task<GetJobApplicationDTO> GetJobApplicationByUserIdAsync(string userId, Guid jobId)
+        public async Task<GetJobApplicationDTO> GetJobApplicationByUserIdAsync(
+            string userId,
+            Guid jobId
+        )
         {
-            var rawData = await unitOfWork.JobApplications
-                .FindAsync(ja => ja.UserId == userId && ja.JobId == jobId);
+            var rawData = await unitOfWork.JobApplications.FindAsync(ja =>
+                ja.UserId == userId && ja.JobId == jobId
+            );
 
             var jobApplication = rawData.FirstOrDefault();
-            return jobApplication is not null ? mapper.Map<GetJobApplicationDTO>(jobApplication) : new GetJobApplicationDTO();
+            return jobApplication is not null
+                ? mapper.Map<GetJobApplicationDTO>(jobApplication)
+                : new GetJobApplicationDTO();
         }
-        public async Task<ServiceResponse> UpdateJobApplicationAsync(UpdateJobApllicationDTO job)
+
+        public async Task<ServiceResponse> UpdateJobApplicationAsync(
+            Guid applicationId,
+            UpdateJobApllicationDTO job
+        )
         {
-            var existingApplication = await unitOfWork.JobApplications.GetByIdAsync(job.Id);
+            var existingApplication = await unitOfWork.JobApplications.GetByIdAsync(applicationId);
             if (existingApplication is null)
                 return new ServiceResponse(false, "Job application not found");
 
@@ -62,9 +73,12 @@ namespace JobPortal.Application.Services.Implementations
                 : new ServiceResponse(false, "Failed to update job application");
         }
 
-        public async Task<ServiceResponse> UpdateJobApplicationStatusAsync(UpdateJobApplicationStatusDTO job)
+        public async Task<ServiceResponse> UpdateJobApplicationStatusAsync(
+            Guid applicationId,
+            UpdateJobApplicationStatusDTO job
+        )
         {
-            var existingApplication = await unitOfWork.JobApplications.GetByIdAsync(job.ApplicationId);
+            var existingApplication = await unitOfWork.JobApplications.GetByIdAsync(applicationId);
             if (existingApplication is null)
                 return new ServiceResponse(false, "Job application not found");
 
