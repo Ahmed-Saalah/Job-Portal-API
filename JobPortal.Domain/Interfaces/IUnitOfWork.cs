@@ -5,16 +5,14 @@ namespace JobPortal.Domain.Interfaces
 {
     public interface IUnitOfWork
     {
-        IGeneric<AppUser> AppUsers { get; }
-        IGeneric<Job> Jobs { get; }
-        IGeneric<JobApplication> JobApplications { get; }
-        IGeneric<Skill> Skills { get; }
-        IGeneric<UserSkill> UserSkills { get; }
-        IGeneric<JobSkill> JobSkills { get; }
-        IGeneric<Company> Companies { get; }
-        IGeneric<Category> Categories { get; }
-        IDapperRepository<Job> JobDapper { get; }
-        IDapperRepository<JobApplication> JobApplicationDapper { get; }
+        IGenericRepository<AppUser> AppUsers { get; }
+        IGenericRepository<Job> Jobs { get; }
+        IGenericRepository<JobApplication> JobApplications { get; }
+        IGenericRepository<Skill> Skills { get; }
+        IGenericRepository<UserSkill> UserSkills { get; }
+        IGenericRepository<JobSkill> JobSkills { get; }
+        IGenericRepository<Company> Companies { get; }
+        IGenericRepository<Category> Categories { get; }
         Task SaveAsync();
     }
 }

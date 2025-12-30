@@ -2,7 +2,8 @@
 
 namespace JobPortal.Domain.Interfaces
 {
-    public interface IGeneric<T> where T : class
+    public interface IGenericRepository<T>
+        where T : class
     {
         Task<T> GetByIdAsync(Guid id);
         Task<IEnumerable<T>> GetAllAsync();
