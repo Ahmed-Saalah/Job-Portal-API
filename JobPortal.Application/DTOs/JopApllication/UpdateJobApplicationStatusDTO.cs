@@ -7,7 +7,6 @@ namespace JobPortal.Application.DTOs.JopApllication
     /// </summary>
     public class UpdateJobApplicationStatusDTO
     {
-        public required Guid ApplicationId { get; set; }
         public required ApplicationStatus Status { get; set; }
     }
 }
