@@ -8,11 +8,11 @@ namespace JobPortal.Host.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class JobApplicationController(IJobApplicationService jobApplicationService)
+    public class JobApplicationsController(IJobApplicationService jobApplicationService)
         : ControllerBase
     {
         [Authorize(Roles = UserRolesConstants.Recruiter)]
-        [HttpGet("jobs/{jobId}")]
+        [HttpGet("job/{jobId:guid}")]
         public async Task<IActionResult> GetAllJobApplications(Guid jobId)
         {
             var jobApplications = await jobApplicationService.GetAllJobApplicationsAsync(jobId);
@@ -23,7 +23,7 @@ namespace JobPortal.Host.Controllers
             return Ok(jobApplications);
         }
 
-        [HttpGet("jobs/{jobId}/users/{userId}")]
+        [HttpGet("user/{userId}/job/{jobId:guid}")]
         public async Task<IActionResult> GetJobApplicationByUserId(string userId, Guid jobId)
         {
             var userApplication = await jobApplicationService.GetJobApplicationByUserIdAsync(
@@ -32,44 +32,42 @@ namespace JobPortal.Host.Controllers
             );
             if (userApplication == null)
             {
-                return NotFound("No job applications found for the given user ID andjob ID.");
+                return NotFound("Application not found.");
             }
 
             return Ok(userApplication);
         }
 
-        [HttpPost("jobs")]
-        public async Task<IActionResult> Add([FromBody] CreateJobApplicationDTO jobApplication)
+        [Authorize(Roles = UserRolesConstants.JobSeeker)]
+        [HttpPost]
+        public async Task<IActionResult> Create([FromBody] CreateJobApplicationDTO dto)
         {
             if (!ModelState.IsValid)
                 return BadRequest(ModelState);
 
-            var result = await jobApplicationService.AddAsync(jobApplication);
+            var result = await jobApplicationService.AddAsync(dto);
             return result.Success ? Ok(result) : BadRequest(result);
         }
 
         [Authorize(Roles = UserRolesConstants.JobSeeker)]
-        [HttpPut("jobs/applications/{applicationId}")]
-        public async Task<IActionResult> UpdateJobApplication(
+        [HttpPut()]
+        public async Task<IActionResult> Update(
             [FromRoute] Guid applicationId,
-            [FromBody] UpdateJobApllicationDTO jobApplication
+            [FromBody] UpdateJobApllicationDTO dto
         )
         {
             if (!ModelState.IsValid)
                 return BadRequest(ModelState);
 
-            var result = await jobApplicationService.UpdateJobApplicationAsync(
-                applicationId,
-                jobApplication
-            );
+            var result = await jobApplicationService.UpdateJobApplicationAsync(applicationId, dto);
             return result.Success ? Ok(result) : BadRequest(result);
         }
 
         [Authorize(Roles = UserRolesConstants.Recruiter)]
-        [HttpPut("jobs/applications/{applicationId}/status")]
-        public async Task<IActionResult> UpdateJobApplicationStatus(
+        [HttpPut("status")]
+        public async Task<IActionResult> UpdateStatus(
             [FromRoute] Guid applicationId,
-            [FromBody] UpdateJobApplicationStatusDTO jobApplication
+            [FromBody] UpdateJobApplicationStatusDTO dto
         )
         {
             if (!ModelState.IsValid)
@@ -77,12 +75,13 @@ namespace JobPortal.Host.Controllers
 
             var result = await jobApplicationService.UpdateJobApplicationStatusAsync(
                 applicationId,
-                jobApplication
+                dto
             );
             return result.Success ? Ok(result) : BadRequest(result);
         }
 
-        [HttpDelete("jobs/{id}")]
+        [Authorize(Roles = UserRolesConstants.JobSeeker)]
+        [HttpDelete("{id:guid}")]
         public async Task<IActionResult> Delete(Guid id)
         {
             var result = await jobApplicationService.DeleteAsync(id);
