@@ -1,4 +1,5 @@
-﻿using JobPortal.Domain.Entities.Identity;
+﻿using JobPortal.Domain.Consts;
+using JobPortal.Domain.Entities.Identity;
 
 namespace JobPortal.Domain.Entities
 {
@@ -14,15 +15,9 @@ namespace JobPortal.Domain.Entities
         public required string ApplicantLastName { get; set; } = string.Empty;
         public int YearsOfExperience { get; set; }
         public string ResumeUrl { get; set; } = string.Empty;
-        
-        public DateTime ApplicationDate { get; set; } = DateTime.UtcNow;
-        public ApplicationStatus Status { get; set; } = ApplicationStatus.Pending;
-    }
 
-    public enum ApplicationStatus
-    {
-        Pending,
-        Accepted,
-        Rejected
+        public DateTime ApplicationDate { get; set; } = DateTime.UtcNow;
+
+        public string Status { get; set; } = ApplicationStatus.Pending;
     }
 }

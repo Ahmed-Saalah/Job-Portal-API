@@ -1,4 +1,4 @@
-﻿using JobPortal.Domain.Entities;
+﻿using JobPortal.Domain.Consts;
 
 namespace JobPortal.Application.DTOs.JopApllication
 {
@@ -8,6 +8,6 @@ namespace JobPortal.Application.DTOs.JopApllication
     public class GetJobApplicationDTO : JopApplicationBase
     {
         public DateTime ApplicationDate { get; set; } = DateTime.UtcNow;
-        public ApplicationStatus Status { get; set; } = ApplicationStatus.Pending;
+        public string Status { get; set; } = ApplicationStatus.Pending;
     }
 }
